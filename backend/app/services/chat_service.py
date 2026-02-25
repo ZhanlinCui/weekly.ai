@@ -151,14 +151,20 @@ def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, Non
                 "max_tokens": 2048,
                 "temperature": 0.6,
                 "stream": True,
+                "thinking": {"type": "disabled"},
             },
             stream=True,
             timeout=30,
         )
 
         if resp.status_code != 200:
-            error_body = resp.text[:200]
-            msg = f"API 返回错误 ({resp.status_code})" if locale == "zh" else f"API error ({resp.status_code})"
+            error_detail = ""
+            try:
+                err_json = resp.json()
+                error_detail = err_json.get("error", {}).get("message", resp.text[:200])
+            except Exception:
+                error_detail = resp.text[:200]
+            msg = f"API 返回错误 ({resp.status_code}): {error_detail}" if locale == "zh" else f"API error ({resp.status_code}): {error_detail}"
             yield _sse_event({"type": "text", "content": msg})
             yield _sse_event({"type": "done"})
             return
