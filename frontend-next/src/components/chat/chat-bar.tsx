@@ -50,6 +50,7 @@ export function ChatBar() {
   return (
     <div className="chat-bar">
       <form className="chat-bar__form" onSubmit={handleBarSubmit}>
+        <div className="chat-bar__glow-blur" aria-hidden="true" />
         <span className="chat-bar__icon">
           <Sparkles size={18} />
         </span>
