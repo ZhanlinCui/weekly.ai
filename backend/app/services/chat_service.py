@@ -25,8 +25,8 @@ def _get_model() -> str:
 def _get_product_context(locale: str = "zh") -> str:
     try:
         from app.services.product_service import ProductService
-        dark_horses = ProductService.get_dark_horse_products(limit=15, min_index=4)
-        rising = ProductService.get_rising_star_products(limit=10)
+        dark_horses = ProductService.get_dark_horse_products(limit=8, min_index=4)
+        rising = ProductService.get_rising_star_products(limit=5)
     except Exception:
         dark_horses = []
         rising = []
@@ -35,7 +35,7 @@ def _get_product_context(locale: str = "zh") -> str:
 
     if dark_horses:
         lines.append("=== Dark Horse Products (4-5 pts) ===")
-        for p in dark_horses[:15]:
+        for p in dark_horses[:8]:
             name = p.get("name", "")
             score = p.get("dark_horse_index", "")
             funding = p.get("funding_total", "")
@@ -47,7 +47,7 @@ def _get_product_context(locale: str = "zh") -> str:
 
     if rising:
         lines.append("\n=== Rising Stars (2-3 pts) ===")
-        for p in rising[:10]:
+        for p in rising[:5]:
             name = p.get("name", "")
             score = p.get("dark_horse_index", "")
             why = p.get("why_matters", "")
@@ -111,9 +111,10 @@ def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, Non
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": message},
                 ],
-                "max_tokens": 2048,
+                "max_tokens": 1024,
                 "temperature": 0.5,
                 "stream": True,
+                "search_context_size": "none",
             },
             stream=True,
             timeout=25,
