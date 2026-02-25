@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { SmartLogo } from "@/components/common/smart-logo";
 import { FavoriteButton } from "@/components/favorites/favorite-button";
+import { ArticleReader } from "@/components/blog/article-reader";
 import {
   cleanDescription,
   getFreshnessLabel,
@@ -112,8 +113,8 @@ type MarketValue = "hybrid" | "cn" | "us";
 
 const MARKET_KEYS: MarketValue[] = ["hybrid", "cn", "us"];
 
-function BlogCard({ item }: { item: BlogPost }) {
-  const { t } = useLocale();
+function BlogCard({ item, onRead }: { item: BlogPost; onRead: (url: string, title: string) => void }) {
+  const { t, locale } = useLocale();
   const sourceLabels = useSourceLabels();
   const marketLabels = useMarketLabels();
   const website = normalizeWebsite(item.website);
@@ -126,13 +127,15 @@ function BlogCard({ item }: { item: BlogPost }) {
     published_at: item.published_at,
   });
   const publishedLabel = item.published_at
-    ? new Date(item.published_at).toLocaleString("zh-CN", {
+    ? new Date(item.published_at).toLocaleString(locale === "zh" ? "zh-CN" : "en-US", {
         month: "2-digit",
         day: "2-digit",
         hour: "2-digit",
         minute: "2-digit",
       })
     : t.freshness.unknown;
+
+  const readLabel = locale === "zh" ? "阅读" : "Read";
 
   return (
     <article className="product-card product-card--signal product-card--watch product-card--compact">
@@ -162,9 +165,13 @@ function BlogCard({ item }: { item: BlogPost }) {
         <div className="product-card__actions blog-card__actions">
           <FavoriteButton blog={item} />
           {hasWebsite ? (
-            <a className="link-btn link-btn--card" href={website} target="_blank" rel="noopener noreferrer">
-              {t.common.original}
-            </a>
+            <button
+              type="button"
+              className="link-btn link-btn--card link-btn--card-primary"
+              onClick={() => onRead(website, item.name)}
+            >
+              {readLabel}
+            </button>
           ) : (
             <span className="pending-tag">{t.common.linkPending}</span>
           )}
@@ -184,6 +191,8 @@ export function BlogClient({ initialBlogs }: BlogClientProps) {
   const marketLabels = useMarketLabels();
   const [source, setSource] = useState("");
   const [market, setMarket] = useState<MarketValue>("hybrid");
+  const [readerUrl, setReaderUrl] = useState<string | null>(null);
+  const [readerTitle, setReaderTitle] = useState("");
 
   const marketBlogs = useMemo(() => initialBlogs.filter((item) => matchesMarket(item, market)), [initialBlogs, market]);
   const sourceOptions = useMemo(() => buildSourceOptions(marketBlogs), [marketBlogs]);
@@ -243,7 +252,11 @@ export function BlogClient({ initialBlogs }: BlogClientProps) {
 
       <div className="products-grid">
         {posts.map((item) => (
-          <BlogCard item={item} key={`${item.source || "source"}-${item.website || item.name}`} />
+          <BlogCard
+            item={item}
+            key={`${item.source || "source"}-${item.website || item.name}`}
+            onRead={(url, title) => { setReaderUrl(url); setReaderTitle(title); }}
+          />
         ))}
       </div>
 
@@ -251,6 +264,14 @@ export function BlogClient({ initialBlogs }: BlogClientProps) {
         <div className="empty-state">
           <p className="empty-state-text">{emptyStateText}</p>
         </div>
+      ) : null}
+
+      {readerUrl ? (
+        <ArticleReader
+          url={readerUrl}
+          blogTitle={readerTitle}
+          onClose={() => { setReaderUrl(null); setReaderTitle(""); }}
+        />
       ) : null}
     </section>
   );

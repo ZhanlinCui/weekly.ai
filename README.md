@@ -5,8 +5,8 @@
 <h1 align="center">WeeklyAI</h1>
 
 <p align="center">
-  <strong>The world's first AI-powered product intelligence platform</strong><br/>
-  <em>Discover tomorrow's AI unicorns before everyone else</em>
+  <strong>AI product intelligence for builders who ship</strong><br/>
+  <em>Built for founders, solopreneurs, AI engineers & solution architects — and anyone obsessed with what's next in AI</em>
 </p>
 
 <p align="center">
@@ -24,9 +24,9 @@
 </p>
 
 <p align="center">
-  <a href="https://frontend-next-psi-nine.vercel.app"><strong>Live Demo</strong></a> · 
-  <a href="https://backend-flax-mu-17.vercel.app/api/v1/products/dark-horses"><strong>API</strong></a> · 
-  <a href="https://backend-flax-mu-17.vercel.app/api/v1/products/feed/rss"><strong>RSS Feed</strong></a>
+  <a href="https://weekly-ai-hub.vercel.app"><strong>Live Demo</strong></a> · 
+  <a href="https://weekly-ai-api.vercel.app/api/v1/products/dark-horses"><strong>API</strong></a> · 
+  <a href="https://weekly-ai-api.vercel.app/api/v1/products/feed/rss"><strong>RSS Feed</strong></a>
 </p>
 
 ---
@@ -35,7 +35,7 @@
 
 ### 产品定位
 
-**WeeklyAI** 是全球首个 AI 驱动的产品情报平台。我们每天自动扫描全球 6 大地区的 AI 创业生态，通过多模型智能评分体系（Perplexity Sonar + 智谱 GLM-4.7），从海量信息中精准筛选出高潜力 AI 产品，让产品经理、投资人和创业者在 5 分钟内掌握全球 AI 产品脉搏。
+**WeeklyAI** 是专为创业者、超级个体、AI 工程师、解决方案架构师以及一切对 AI 感兴趣的人打造的产品情报平台。我们每天自动扫描全球 6 大地区的 AI 创业生态，通过双 AI 引擎（Perplexity Sonar + 智谱 GLM-4.7）从海量信息中精准筛选高潜力 AI 产品 — 无论你是在找下一个创业灵感、技术选型参考，还是行业趋势洞察，5 分钟即可掌握全球 AI 产品脉搏。
 
 ### 核心竞争力
 
@@ -121,7 +121,7 @@ cd crawler && python3 tools/auto_discover.py --region all --dry-run
 
 ### What is WeeklyAI?
 
-**WeeklyAI** is the world's first AI-powered product intelligence platform. We automatically scan the global AI startup ecosystem across 6 regions daily, using a multi-model scoring system (Perplexity Sonar + Zhipu GLM-4.7) to surface high-potential AI products — so product managers, investors, and founders can catch the next breakout in 5 minutes.
+**WeeklyAI** is an AI product intelligence platform built for founders, solopreneurs, AI engineers, solution architects, and anyone passionate about AI. We scan the global AI startup ecosystem across 6 regions daily using dual AI engines (Perplexity Sonar + Zhipu GLM-4.7) to surface high-potential products — whether you're hunting for startup inspiration, evaluating tech stacks, or tracking industry trends, get the full picture in 5 minutes.
 
 ### Why WeeklyAI?
 
@@ -207,7 +207,7 @@ cd crawler && python3 tools/auto_discover.py --region all --dry-run
 
 ### WeeklyAI とは
 
-**WeeklyAI** は、世界初の AI 駆動型プロダクトインテリジェンスプラットフォームです。毎日グローバル 6 地域の AI スタートアップエコシステムを自動スキャンし、マルチモデルスコアリングシステム（Perplexity Sonar + Zhipu GLM-4.7）を活用して、高ポテンシャルな AI プロダクトを精密に抽出。プロダクトマネージャー、投資家、起業家が 5 分で世界の AI プロダクト動向を把握できます。
+**WeeklyAI** は、起業家、ソロプレナー、AI エンジニア、ソリューションアーキテクト、そして AI に情熱を持つすべての方のためのプロダクトインテリジェンスプラットフォームです。デュアル AI エンジン（Perplexity Sonar + Zhipu GLM-4.7）を活用し、毎日グローバル 6 地域の AI スタートアップエコシステムを自動スキャン。スタートアップのインスピレーション探し、技術スタック評価、業界トレンドの追跡まで — 5 分で全体像を把握できます。
 
 ### コア機能
 
@@ -317,8 +317,8 @@ weekly.ai/
 
 | Service | Platform | URL |
 |---------|----------|-----|
-| Frontend | Vercel (Next.js) | [frontend-next-psi-nine.vercel.app](https://frontend-next-psi-nine.vercel.app) |
-| Backend | Vercel (Serverless Python) | [backend-flax-mu-17.vercel.app](https://backend-flax-mu-17.vercel.app) |
+| Frontend | Vercel (Next.js) | [weekly-ai-hub.vercel.app](https://weekly-ai-hub.vercel.app) |
+| Backend | Vercel (Serverless Python) | [weekly-ai-api.vercel.app](https://weekly-ai-api.vercel.app) |
 | Database | MongoDB Atlas / JSON Fallback | Configurable |
 
 ## License
