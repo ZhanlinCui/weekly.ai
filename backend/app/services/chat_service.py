@@ -24,30 +24,35 @@ def _get_model() -> str:
 
 
 def _generate_token(api_key: str) -> str:
-    """Generate JWT token for Zhipu API authentication."""
-    try:
-        import jwt
-    except ImportError:
-        try:
-            import jose.jwt as jwt
-        except ImportError:
-            return api_key
+    """Generate JWT token for Zhipu API authentication.
 
+    Zhipu API requires:
+    - Header: {"alg": "HS256", "sign_type": "SIGN"}
+    - Payload: {"api_key": <id>, "exp": <ts+3600>, "timestamp": <ts>}
+    - Secret: the part after the dot in the API key
+    """
     parts = api_key.split(".")
     if len(parts) != 2:
         return api_key
 
     kid, secret = parts
-    now = int(time.time())
+    now_ms = int(time.time() * 1000)
+    exp_ms = now_ms + 3600 * 1000
+
     payload = {
         "api_key": kid,
-        "exp": now + 3600,
-        "timestamp": now,
+        "exp": exp_ms,
+        "timestamp": now_ms,
     }
-    headers = {"alg": "HS256", "sign_type": "SIGN"}
 
     try:
-        return jwt.encode(payload, secret, algorithm="HS256", headers=headers)
+        import jwt
+        return jwt.encode(
+            payload,
+            secret,
+            algorithm="HS256",
+            headers={"alg": "HS256", "sign_type": "SIGN"},
+        )
     except Exception:
         return api_key
 
