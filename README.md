@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/WeeklyAI-Global_AI_Discovery-635bff?style=for-the-badge&logo=sparkles&logoColor=white" alt="WeeklyAI" />
+  <img src="https://img.shields.io/badge/WeeklyAI-AI_Radar_for_Builders-635bff?style=for-the-badge&logo=sparkles&logoColor=white" alt="WeeklyAI" />
 </p>
 
 <h1 align="center">WeeklyAI</h1>
 
 <p align="center">
-  <strong>AI product intelligence for builders who ship</strong><br/>
-  <em>Built for founders, solopreneurs, AI engineers & solution architects — and anyone obsessed with what's next in AI</em>
+  <strong>Your AI product radar — built for the new roles of the AI era</strong><br/>
+  <em>For AI founders, one-person companies, frontier deployment engineers, super individuals, solution architects, and anyone building with AI</em>
 </p>
 
 <p align="center">
@@ -33,30 +33,63 @@
 
 ## 🇨🇳 中文
 
-### 产品定位
+### 为什么需要 WeeklyAI？
 
-**WeeklyAI** 是专为创业者、超级个体、AI 工程师、解决方案架构师以及一切对 AI 感兴趣的人打造的产品情报平台。我们每天自动扫描全球 6 大地区的 AI 创业生态，通过双 AI 引擎（Perplexity Sonar + 智谱 GLM-4.7）从海量信息中精准筛选高潜力 AI 产品 — 无论你是在找下一个创业灵感、技术选型参考，还是行业趋势洞察，5 分钟即可掌握全球 AI 产品脉搏。
+AI 时代正在诞生全新的职业角色：**前沿部署工程师**在评估哪个 AI 产品能最快落地；**一人公司（OPC）** 创始人在寻找能 10x 杠杆自己的 AI 工具；**超级个体**在筛选值得 all-in 的赛道；**AI 初创团队**在研究竞品和找灵感；**解决方案架构师**在追踪能集成到企业方案中的新产品。
 
-### 核心竞争力
+但现有工具要么是用户提交的目录（Product Hunt），要么是过时的百科（TAAFT/Futurepedia），要么是大众化新闻简报（Ben's Bites）。它们的共同盲点：
+
+- **没有为决策者设计的评分体系** — 只有列表，没有判断
+- **完全忽视中国 AI 生态** — 全球第二大市场的信息为零
+- **无法识别"早期黑马"** — 只能记录已经爆火的产品
+- **没有"为什么重要"** — 列了产品但不告诉你商业背景
+
+**WeeklyAI 不同。** 我们花 $50/月 API 成本，用双 AI 引擎自动扫描全球 6 大地区，给每个产品打出量化评分（2-5 分），并附上"为什么重要"——融资金额、创始人背景、增长信号、品类创新——让你像读情报简报一样 5 分钟做出判断。
+
+### 谁在用 WeeklyAI？
+
+| 角色 | 使用场景 |
+|------|----------|
+| **AI 初创创始人** | 发现竞品动态，找到蓝海方向，追踪同赛道融资 |
+| **一人公司（OPC）** | 筛选能 10x 效率的 AI 工具，评估构建 vs 购买 |
+| **前沿部署工程师** | 追踪可落地的 AI 产品，评估技术成熟度和集成难度 |
+| **超级个体** | 发现可以组合的 AI 工具栈，保持信息优势 |
+| **解决方案架构师** | 追踪新产品 API 和集成能力，评估企业级就绪度 |
+| **VC / 投资人** | 发现早期黑马，追踪全球 AI 融资动态 |
+
+### vs 竞品
+
+| 维度 | Product Hunt | TAAFT / Futurepedia | Ben's Bites | **WeeklyAI** |
+|------|:---:|:---:|:---:|:---:|
+| 数据来源 | 用户提交 | 手动收录 | 编辑策展 | **双 AI 引擎自动扫描** |
+| 中国市场 | - | - | - | **智谱 GLM + 中国媒体源** |
+| 量化评分 | - | - | - | **5 级评分体系** |
+| "为什么重要" | - | - | 部分 | **每条必须附带** |
+| 硬件专项 | - | - | - | **独立评分维度** |
+| AI 对话 | - | - | - | **GLM-4.7 流式问答** |
+| 更新频率 | 实时(用户驱动) | 周/月 | 日刊 | **每日自动流水线** |
+
+### 核心能力
 
 | 能力 | 描述 |
 |------|------|
 | **全球六区覆盖** | 美国 · 中国 · 欧洲 · 日韩 · 东南亚 · 全球硬件，多语言原生搜索 |
 | **双 AI 引擎** | Perplexity Sonar（全球）+ 智谱 GLM-4.7（中国），智能路由，互为回退 |
-| **5 级评分体系** | 融资规模 × 创始人背景 × 品类创新 × 社区热度 × 增长信号，量化评判 |
-| **硬件专项发掘** | 创新形态硬件（可穿戴 / 桌面 / 随身），40% 形态创新权重，独家评分维度 |
-| **AI 对话助手** | 基于 GLM-4.7 的流式对话，实时注入产品数据，秒级回答产品问题 |
-| **中英双语** | 前端一键切换中 / 英，语言偏好自动记忆 |
-| **Swipe 发现** | Tinder 式卡片交互，支持手势 / 惯性 / 连击特效，30 秒筛出黑马 |
-| **10 步自动化流水线** | 发现 → 发布 → 回填 → 解析 → 验证 → 去重 → Logo → 新闻 → 社交信号 → 同步 |
+| **5 级评分体系** | 融资 × 创始人 × 品类创新 × 社区热度 × 增长信号，量化评判 |
+| **硬件专项发掘** | 创新形态硬件（可穿戴 / 桌面 / 随身），40% 形态创新权重 |
+| **AI 对话助手** | 基于 GLM-4.7 的流式对话，实时注入产品数据 |
+| **应用内阅读** | 新闻/博客一键预加载阅读，无需跳转外链 |
+| **中英双语** | 前端一键切换，语言偏好自动记忆 |
+| **Swipe 发现** | Tinder 式卡片交互，30 秒筛出黑马 |
+| **10 步自动流水线** | 发现 → 发布 → 回填 → 解析 → 验证 → 去重 → Logo → 新闻 → 社交信号 → 同步 |
 
 ### 产品分层
 
 ```
- 5分  现象级黑马    融资 >$100M / 品类开创 / 社交爆火
- 4分  强力黑马      融资 >$30M / 顶级 VC / ARR >$10M
- 3分  高潜力股      融资 $1M-$5M / ProductHunt 上榜
- 2分  早期观察      有创新点 / 数据不足但值得追踪
+ 5分  现象级    融资 >$100M / 品类开创 / 社交爆火
+ 4分  黑马      融资 >$30M / 顶级 VC / ARR >$10M
+ 3分  潜力股    融资 $1M-$5M / ProductHunt 上榜
+ 2分  早期观察  有创新点 / 数据不足但值得追踪
 ```
 
 ### 技术架构
@@ -81,16 +114,10 @@
 ### 快速启动
 
 ```bash
-git clone https://github.com/ZhanlinCui/weekly.ai.git
-cd weekly.ai
+git clone https://github.com/ZhanlinCui/weekly.ai.git && cd weekly.ai
 
-# 前端
 cd frontend-next && npm install && npm run dev    # localhost:3001
-
-# 后端
 cd backend && pip install -r requirements.txt && python run.py  # localhost:5000
-
-# AI 发现（需要 API Key）
 cd crawler && python3 tools/auto_discover.py --region all --dry-run
 ```
 
@@ -103,111 +130,96 @@ cd crawler && python3 tools/auto_discover.py --region all --dry-run
 | `MONGO_URI` | 可选 | MongoDB 连接（不设则用 JSON） |
 | `NEXT_PUBLIC_API_BASE_URL` | 部署时 | 前端 API 地址 |
 
-### API 端点
-
-| 端点 | 说明 |
-|------|------|
-| `GET /products/dark-horses` | 本周黑马（4-5 分，自动轮换） |
-| `GET /products/rising-stars` | 潜力股（2-3 分） |
-| `GET /products/weekly-top` | 本周 Top 15（composite / trending / recency） |
-| `GET /products/blogs` | 新闻动态（YouTube / X / HN / PH） |
-| `GET /search?q=xxx` | 全文搜索（多字段加权） |
-| `POST /chat` | AI 对话（GLM-4.7 流式 SSE） |
-| `GET /products/feed/rss` | RSS 订阅源 |
-
 ---
 
 ## 🇺🇸 English
 
-### What is WeeklyAI?
-
-**WeeklyAI** is an AI product intelligence platform built for founders, solopreneurs, AI engineers, solution architects, and anyone passionate about AI. We scan the global AI startup ecosystem across 6 regions daily using dual AI engines (Perplexity Sonar + Zhipu GLM-4.7) to surface high-potential products — whether you're hunting for startup inspiration, evaluating tech stacks, or tracking industry trends, get the full picture in 5 minutes.
-
 ### Why WeeklyAI?
+
+The AI era is creating entirely new roles: **frontier deployment engineers** evaluating which AI products ship fastest; **one-person company (OPC) founders** looking for 10x leverage tools; **super individuals** screening which lanes to go all-in on; **AI startup teams** studying competitors and finding inspiration; **solution architects** tracking products they can integrate into enterprise stacks.
+
+Existing tools are either user-submitted directories (Product Hunt), outdated encyclopedias (TAAFT/Futurepedia), or mass-market newsletters (Ben's Bites). Their shared blind spots:
+
+- **No scoring system designed for decision-makers** — just lists, no judgment
+- **Zero coverage of China's AI ecosystem** — the world's second-largest market, invisible
+- **Can't identify "early dark horses"** — only records products after they've already blown up
+- **No "why it matters"** — lists products without business context
+
+**WeeklyAI is different.** For ~$50/month in API costs, we use dual AI engines to scan 6 global regions daily, score every product quantitatively (2-5 pts), and attach "why it matters" — funding, founder background, growth signals, category innovation — so you read it like an intelligence briefing and make decisions in 5 minutes.
+
+### Who uses WeeklyAI?
+
+| Role | Use Case |
+|------|----------|
+| **AI Startup Founders** | Track competitor moves, find blue ocean opportunities, monitor funding in your lane |
+| **One-Person Companies (OPC)** | Screen 10x-efficiency AI tools, evaluate build vs buy |
+| **Frontier Deployment Engineers** | Track shippable AI products, assess tech maturity and integration difficulty |
+| **Super Individuals** | Discover composable AI tool stacks, maintain information advantage |
+| **Solution Architects** | Track new product APIs and integration readiness, evaluate enterprise-grade status |
+| **VCs / Investors** | Discover early dark horses, track global AI funding dynamics |
+
+### vs Competitors
+
+| Dimension | Product Hunt | TAAFT / Futurepedia | Ben's Bites | **WeeklyAI** |
+|-----------|:---:|:---:|:---:|:---:|
+| Data Source | User-submitted | Manual curation | Editorial | **Dual AI engine auto-scan** |
+| China Market | - | - | - | **GLM + Chinese media sources** |
+| Scoring | - | - | - | **5-tier quantitative system** |
+| "Why it matters" | - | - | Partial | **Required for every entry** |
+| Hardware Track | - | - | - | **Dedicated scoring dimensions** |
+| AI Chat | - | - | - | **GLM-4.7 streaming Q&A** |
+| Update Frequency | Real-time (user) | Weekly/Monthly | Daily | **Daily automated pipeline** |
+
+### Core Capabilities
 
 | Capability | Description |
 |------------|-------------|
 | **6-Region Coverage** | US · China · Europe · Japan/Korea · Southeast Asia · Global Hardware |
 | **Dual AI Engine** | Perplexity Sonar (global) + Zhipu GLM-4.7 (China), smart routing with fallback |
-| **5-Tier Scoring** | Funding × Founder Background × Category Innovation × Community Buzz × Growth Signals |
+| **5-Tier Scoring** | Funding × Founder × Category Innovation × Community Buzz × Growth Signals |
 | **Hardware Discovery** | Innovative form factors (wearables / desktop / portable), 40% innovation weight |
 | **AI Chat Assistant** | GLM-4.7 streaming chat with real-time product data injection |
+| **In-App Reading** | Blog/news articles pre-fetched and rendered in-app, no external redirects |
 | **Bilingual (ZH/EN)** | One-click language switch, preference auto-saved |
-| **Swipe Discovery** | Tinder-style card interaction with gesture, inertia, and streak effects |
+| **Swipe Discovery** | Tinder-style card interaction, 30 seconds to surface dark horses |
 | **10-Step Pipeline** | Discover → Publish → Backfill → Resolve → Validate → Dedup → Logo → News → Social → Sync |
-
-### Product Tiers
-
-```
- 5pts  Phenomenal     Funding >$100M / Category creator / Viral
- 4pts  Dark Horse     Funding >$30M / Top VC / ARR >$10M
- 3pts  Rising Star    Funding $1M-$5M / ProductHunt featured
- 2pts  Early Watch    Innovative but insufficient data
-```
-
-### Architecture
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Frontend (Next.js 16)                     │
-│  React 19 · TypeScript · SWR · Zod · p5.js · i18n          │
-├─────────────────────────────────────────────────────────────┤
-│                    Backend (Flask 3.0)                       │
-│  REST API · SSE Streaming · Rate Limiting · MongoDB/JSON    │
-├──────────────────────┬──────────────────────────────────────┤
-│  Perplexity Sonar    │    Zhipu GLM-4.7                     │
-│  (US/EU/JP/KR/SEA)   │    (China · search_pro)              │
-├──────────────────────┴──────────────────────────────────────┤
-│              MongoDB 7 / JSON Fallback                      │
-├─────────────────────────────────────────────────────────────┤
-│  10-Step Daily Pipeline · launchd · Docker · Vercel         │
-└─────────────────────────────────────────────────────────────┘
-```
 
 ### Quick Start
 
 ```bash
-git clone https://github.com/ZhanlinCui/weekly.ai.git
-cd weekly.ai
+git clone https://github.com/ZhanlinCui/weekly.ai.git && cd weekly.ai
 
-# Frontend
 cd frontend-next && npm install && npm run dev    # localhost:3001
-
-# Backend
 cd backend && pip install -r requirements.txt && python run.py  # localhost:5000
-
-# AI Discovery (requires API keys)
 cd crawler && python3 tools/auto_discover.py --region all --dry-run
 ```
-
-### Environment Variables
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `ZHIPU_API_KEY` | For China | Zhipu GLM-4.7 API Key |
-| `PERPLEXITY_API_KEY` | For Global | Perplexity Sonar API Key |
-| `MONGO_URI` | Optional | MongoDB connection (falls back to JSON) |
-| `NEXT_PUBLIC_API_BASE_URL` | Deploy | Frontend API base URL |
-
-### API Endpoints
-
-| Endpoint | Description |
-|----------|-------------|
-| `GET /products/dark-horses` | This week's dark horses (4-5 pts, auto-rotation) |
-| `GET /products/rising-stars` | Rising stars (2-3 pts) |
-| `GET /products/weekly-top` | Weekly Top 15 (composite / trending / recency) |
-| `GET /products/blogs` | News feed (YouTube / X / HN / PH) |
-| `GET /search?q=xxx` | Full-text search (multi-field weighted) |
-| `POST /chat` | AI chat (GLM-4.7 streaming SSE) |
-| `GET /products/feed/rss` | RSS feed |
 
 ---
 
 ## 🇯🇵 日本語
 
-### WeeklyAI とは
+### なぜ WeeklyAI？
 
-**WeeklyAI** は、起業家、ソロプレナー、AI エンジニア、ソリューションアーキテクト、そして AI に情熱を持つすべての方のためのプロダクトインテリジェンスプラットフォームです。デュアル AI エンジン（Perplexity Sonar + Zhipu GLM-4.7）を活用し、毎日グローバル 6 地域の AI スタートアップエコシステムを自動スキャン。スタートアップのインスピレーション探し、技術スタック評価、業界トレンドの追跡まで — 5 分で全体像を把握できます。
+AI 時代は全く新しい職種を生み出しています：**フロンティアデプロイメントエンジニア**は最速で実装できる AI プロダクトを評価し、**一人会社（OPC）創業者**は 10 倍のレバレッジツールを探し、**スーパーインディビデュアル**はオールインすべきレーンを選別し、**AI スタートアップチーム**は競合研究とインスピレーションを求め、**ソリューションアーキテクト**はエンタープライズスタックに統合できる新プロダクトを追跡しています。
+
+既存ツールの共通の死角：
+
+- **意思決定者向けのスコアリングがない** — リストだけで判断がない
+- **中国 AI エコシステムのカバーがゼロ** — 世界第 2 位の市場が見えない
+- **"アーリーダークホース"を識別できない** — すでに話題になったものだけを記録
+- **"なぜ重要か"がない** — プロダクトを並べるだけでビジネス背景がない
+
+**WeeklyAI は違います。** デュアル AI エンジンで毎日 6 地域をスキャンし、各プロダクトを定量スコアリング（2-5pt）、「なぜ重要か」を付加 — 資金調達、創業者背景、成長シグナル、カテゴリ革新 — 5 分でインテリジェンスブリーフィングとして読めます。
+
+### 利用者
+
+| 役割 | ユースケース |
+|------|-------------|
+| **AI スタートアップ創業者** | 競合動向の追跡、ブルーオーシャン発見、同分野の資金調達モニタリング |
+| **一人会社（OPC）** | 10 倍効率化 AI ツールのスクリーニング、構築 vs 購入の評価 |
+| **フロンティアデプロイメントエンジニア** | 実装可能な AI プロダクトの追跡、技術成熟度と統合難易度の評価 |
+| **スーパーインディビデュアル** | 組み合わせ可能な AI ツールスタックの発見、情報優位の維持 |
+| **ソリューションアーキテクト** | 新プロダクト API と統合準備状況の追跡、エンタープライズ対応度の評価 |
 
 ### コア機能
 
@@ -215,77 +227,12 @@ cd crawler && python3 tools/auto_discover.py --region all --dry-run
 |------|------|
 | **6 地域カバー** | 米国 · 中国 · 欧州 · 日韓 · 東南アジア · グローバルハードウェア |
 | **デュアル AI エンジン** | Perplexity Sonar（グローバル）+ Zhipu GLM-4.7（中国）、スマートルーティング |
-| **5 段階スコアリング** | 資金調達 × 創業者背景 × カテゴリ革新 × コミュニティ注目度 × 成長シグナル |
-| **ハードウェア発掘** | 革新的フォームファクタ（ウェアラブル / デスクトップ / ポータブル） |
-| **AI チャットアシスタント** | GLM-4.7 ストリーミング対話、リアルタイムプロダクトデータ注入 |
-| **バイリンガル（中/英）** | ワンクリック言語切替、設定自動保存 |
-| **スワイプ発見** | Tinder 式カードインタラクション、ジェスチャー・慣性・連続ヒット対応 |
-| **10 ステップ自動パイプライン** | 発見 → 公開 → 補完 → 解決 → 検証 → 重複排除 → ロゴ → ニュース → ソーシャル → 同期 |
-
-### プロダクトティア
-
-```
- 5pt  フェノメナル    資金調達 >$100M / カテゴリ創造 / バイラル
- 4pt  ダークホース    資金調達 >$30M / トップ VC / ARR >$10M
- 3pt  ライジングスター 資金調達 $1M-$5M / ProductHunt 注目
- 2pt  アーリーウォッチ 革新的だがデータ不足
-```
-
-### アーキテクチャ
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Frontend (Next.js 16)                     │
-│  React 19 · TypeScript · SWR · Zod · p5.js · i18n          │
-├─────────────────────────────────────────────────────────────┤
-│                    Backend (Flask 3.0)                       │
-│  REST API · SSE Streaming · Rate Limiting · MongoDB/JSON    │
-├──────────────────────┬──────────────────────────────────────┤
-│  Perplexity Sonar    │    Zhipu GLM-4.7                     │
-│  (US/EU/JP/KR/SEA)   │    (China · search_pro)              │
-├──────────────────────┴──────────────────────────────────────┤
-│              MongoDB 7 / JSON Fallback                      │
-├─────────────────────────────────────────────────────────────┤
-│  10-Step Daily Pipeline · launchd · Docker · Vercel         │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### クイックスタート
-
-```bash
-git clone https://github.com/ZhanlinCui/weekly.ai.git
-cd weekly.ai
-
-# フロントエンド
-cd frontend-next && npm install && npm run dev    # localhost:3001
-
-# バックエンド
-cd backend && pip install -r requirements.txt && python run.py  # localhost:5000
-
-# AI ディスカバリー（API キーが必要）
-cd crawler && python3 tools/auto_discover.py --region all --dry-run
-```
-
-### 環境変数
-
-| 変数 | 必須 | 説明 |
-|------|------|------|
-| `ZHIPU_API_KEY` | 中国向け | Zhipu GLM-4.7 API キー |
-| `PERPLEXITY_API_KEY` | グローバル | Perplexity Sonar API キー |
-| `MONGO_URI` | 任意 | MongoDB 接続（未設定で JSON フォールバック） |
-| `NEXT_PUBLIC_API_BASE_URL` | デプロイ時 | フロントエンド API ベース URL |
-
-### API エンドポイント
-
-| エンドポイント | 説明 |
-|----------------|------|
-| `GET /products/dark-horses` | 今週のダークホース（4-5pt、自動ローテーション） |
-| `GET /products/rising-stars` | ライジングスター（2-3pt） |
-| `GET /products/weekly-top` | ウィークリー Top 15（composite / trending / recency） |
-| `GET /products/blogs` | ニュースフィード（YouTube / X / HN / PH） |
-| `GET /search?q=xxx` | 全文検索（マルチフィールド加重） |
-| `POST /chat` | AI チャット（GLM-4.7 ストリーミング SSE） |
-| `GET /products/feed/rss` | RSS フィード |
+| **5 段階スコアリング** | 資金調達 × 創業者 × カテゴリ革新 × コミュニティ注目度 × 成長シグナル |
+| **ハードウェア発掘** | 革新的フォームファクタ、40% イノベーション重み |
+| **AI チャット** | GLM-4.7 ストリーミング対話、リアルタイムデータ注入 |
+| **アプリ内リーディング** | ニュース記事をアプリ内で事前取得・表示、外部リダイレクト不要 |
+| **バイリンガル** | ワンクリック切替、設定自動保存 |
+| **スワイプ発見** | Tinder 式カード、30 秒でダークホースを発見 |
 
 ---
 
@@ -295,13 +242,13 @@ cd crawler && python3 tools/auto_discover.py --region all --dry-run
 weekly.ai/
 ├── frontend-next/        Next.js 16 + React 19 (primary frontend)
 │   ├── src/app/          Pages (home, product, blog, discover, search)
-│   ├── src/components/   Components (chat, home, product, layout, favorites)
+│   ├── src/components/   Components (chat, home, product, blog, layout)
 │   ├── src/i18n/         Bilingual system (zh/en)
 │   ├── src/lib/          API client, product utils, schemas
-│   └── src/styles/       Design tokens, base, home, chat
+│   └── src/styles/       Design tokens, base, home, chat, reader
 ├── backend/              Flask 3.0 API
 │   ├── app/routes/       products, search, chat
-│   └── app/services/     repository, service, filters, sorting, chat
+│   └── app/services/     repository, service, filters, sorting, chat, reader
 ├── crawler/              AI Discovery Engine
 │   ├── tools/            33 automation scripts
 │   ├── utils/            Perplexity + GLM clients
@@ -328,6 +275,6 @@ MIT
 ---
 
 <p align="center">
-  <strong>WeeklyAI</strong> — Discover the future of AI, before it happens.<br/>
-  <sub>Built with Perplexity Sonar, Zhipu GLM-4.7, Next.js 16, and Flask 3.0</sub>
+  <strong>WeeklyAI</strong> — Your AI product radar. Built for the builders of tomorrow.<br/>
+  <sub>Solo-built · $50/mo API cost · Dual AI engines · 6 global regions · 10-step daily pipeline</sub>
 </p>

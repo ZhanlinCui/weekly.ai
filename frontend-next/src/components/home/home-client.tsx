@@ -122,7 +122,7 @@ function DarkHorseSpotlightCard({ product }: DarkHorseSpotlightCardProps) {
           secondaryLogoUrl={product.logo}
           website={product.website}
           sourceUrl={product.source_url}
-          size={64}
+          size={44}
         />
 
         <div className="darkhorse-spotlight__content">

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import type { Product } from "@/types/api";
 import { SmartLogo } from "@/components/common/smart-logo";
 import { FavoriteButton } from "@/components/favorites/favorite-button";
@@ -36,86 +37,69 @@ function scoreBadgeTone(score: number): string {
 
 export function ProductCard({ product, compact = false }: ProductCardProps) {
   const { t } = useLocale();
+  const router = useRouter();
   const website = normalizeWebsite(product.website);
   const hasWebsite = isValidWebsite(website);
   const detailId = encodeURIComponent(product._id || product.name);
+  const detailHref = `/product/${detailId}`;
   const score = getProductScore(product);
   const scoreLabel = formatScore(score, t.common.pointsSuffix);
   const freshness = getFreshnessLabel(product);
   const country = resolveProductCountry(product);
-  const regionLabel = country.unknown ? "Unknown" : country.name;
-  const regionMark = country.flag;
-  const hasRegionText = true;
-  const microlineParts = [freshness, product.source || t.common.sourcePending];
+  const regionMark = country.flag || "?";
   const description = cleanDescription(product.description);
-  const whyMatters = product.why_matters?.trim();
   const tierClass = score >= 4 ? "product-card--darkhorse" : score >= 2 ? "product-card--rising" : "product-card--watch";
-  const secondaryBadge = product.funding_total || (isHardware(product) ? t.product.hw : t.product.sw);
+  const fundingLabel = product.funding_total || "";
+
+  function handleCardClick(e: React.MouseEvent) {
+    const target = e.target as HTMLElement;
+    if (target.closest("a, button")) return;
+    router.push(detailHref);
+  }
 
   return (
-    <article className={`product-card product-card--signal ${tierClass} ${compact ? "product-card--compact" : ""}`}>
+    <article
+      className={`product-card product-card--signal product-card--dense ${tierClass}`}
+      onClick={handleCardClick}
+      role="link"
+      tabIndex={0}
+      onKeyDown={(e) => { if (e.key === "Enter") router.push(detailHref); }}
+    >
       <div className="product-card__content">
-        <div className="product-card__topline">
-          <span className="product-card__region-pill" aria-label={t.product.regionTooltip(regionLabel)} title={t.product.regionTooltip(regionLabel)}>
-            {regionMark ? (
-              <span className="product-card__region-flag" aria-hidden="true">
-                {regionMark}
-              </span>
-            ) : null}
-            {hasRegionText ? <span className="product-card__region-text">{regionLabel}</span> : null}
+        <div className="product-card__row-top">
+          <SmartLogo
+            key={`${product._id || product.name}-${product.logo_url || ""}-${product.logo || ""}-${product.website || ""}`}
+            className="product-card__logo product-card__logo--sm"
+            name={product.name}
+            logoUrl={product.logo_url}
+            secondaryLogoUrl={product.logo}
+            website={product.website}
+            sourceUrl={product.source_url}
+            size={36}
+          />
+          <div className="product-card__identity-copy">
+            <h3 className="product-card__title">{product.name}</h3>
+            <p className="product-card__meta">{formatCategories(product)} · {regionMark} · {freshness}</p>
+          </div>
+          <span className={`product-badge product-badge--sm ${scoreBadgeTone(score)}`}>
+            {scoreLabel}
           </span>
-          <p className="product-card__microline">{microlineParts.join(" · ")}</p>
         </div>
 
-        <header className="product-card__header">
-          <div className="product-card__identity">
-            <SmartLogo
-              key={`${product._id || product.name}-${product.logo_url || ""}-${product.logo || ""}-${product.website || ""}-${product.source_url || ""}`}
-              className="product-card__logo"
-              name={product.name}
-              logoUrl={product.logo_url}
-              secondaryLogoUrl={product.logo}
-              website={product.website}
-              sourceUrl={product.source_url}
-              size={compact ? 44 : 48}
-            />
-            <div className="product-card__identity-copy">
-              <h3 className="product-card__title">{product.name}</h3>
-              <p className="product-card__meta">{formatCategories(product)}</p>
-            </div>
-          </div>
+        <p className="product-card__desc-dense">{description}</p>
 
-          <div className="product-card__badges">
-            <span className={`product-badge ${scoreBadgeTone(score)}`}>
-              {score >= 4 ? t.product.darkHorseLabel(scoreLabel) : score >= 2 ? t.product.risingLabel(scoreLabel) : scoreLabel}
-            </span>
-            <span className="product-badge">{secondaryBadge}</span>
+        <div className="product-card__row-bottom">
+          {fundingLabel ? <span className="product-card__funding-tag">{fundingLabel}</span> : null}
+          <span className="product-card__type-tag">{isHardware(product) ? t.product.hw : t.product.sw}</span>
+          <div className="product-card__actions-dense">
+            <FavoriteButton product={product} />
+            {hasWebsite ? (
+              <a className="link-btn link-btn--card link-btn--xs" href={website} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                {t.common.website}
+              </a>
+            ) : null}
           </div>
-        </header>
-
-        <div className="product-card__summary">
-          <p className="product-card__summary-text">{description}</p>
-          {!compact && whyMatters ? (
-            <p className="product-card__summary-why">
-              <span className="product-card__summary-why-label">WHY</span>
-              {whyMatters}
-            </p>
-          ) : null}
         </div>
-
-        <footer className="product-card__footer">
-          <FavoriteButton product={product} />
-          <Link href={`/product/${detailId}`} className="link-btn link-btn--card link-btn--card-primary">
-            {t.common.details}
-          </Link>
-          {hasWebsite ? (
-            <a className="link-btn link-btn--card" href={website} target="_blank" rel="noopener noreferrer">
-              {t.common.website}
-            </a>
-          ) : (
-            <span className="pending-tag">{t.common.websitePending}</span>
-          )}
-        </footer>
       </div>
     </article>
   );
