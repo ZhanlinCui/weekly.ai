@@ -60,8 +60,8 @@ def _get_product_context(locale: str = "zh") -> str:
     """Build a product summary to inject into the system prompt."""
     try:
         from app.services.product_service import ProductService
-        dark_horses = ProductService.get_dark_horse_products(limit=15, min_index=4)
-        rising = ProductService.get_rising_star_products(limit=10)
+        dark_horses = ProductService.get_dark_horse_products(limit=8, min_index=4)
+        rising = ProductService.get_rising_star_products(limit=5)
     except Exception:
         dark_horses = []
         rising = []
@@ -70,7 +70,7 @@ def _get_product_context(locale: str = "zh") -> str:
 
     if dark_horses:
         lines.append("=== Dark Horse Products (4-5 pts) ===")
-        for p in dark_horses[:15]:
+        for p in dark_horses[:8]:
             name = p.get("name", "")
             score = p.get("dark_horse_index", "")
             funding = p.get("funding_total", "")
@@ -82,7 +82,7 @@ def _get_product_context(locale: str = "zh") -> str:
 
     if rising:
         lines.append("\n=== Rising Stars (2-3 pts) ===")
-        for p in rising[:10]:
+        for p in rising[:5]:
             name = p.get("name", "")
             score = p.get("dark_horse_index", "")
             why = p.get("why_matters", "")
@@ -102,11 +102,11 @@ def _build_system_prompt(locale: str = "zh") -> str:
 {product_context}
 
 回答规则：
-1. 基于上述产品数据回答，如果数据不够，坦诚说明
-2. 推荐产品时，提及产品名、评分、融资情况和核心亮点
-3. 回答简洁有力，每个产品 1-2 句话即可
-4. 如果用户问的不是 AI 产品相关，礼貌引导回主题
-5. 使用中文回答"""
+1. 基于上述产品数据回答，不够就坦诚说明
+2. 推荐产品时提及产品名、评分、融资和亮点
+3. 严格控制在 200 字以内，每个产品 1 句话
+4. 非 AI 产品问题礼貌引导回主题
+5. 使用中文"""
     else:
         return f"""You are the WeeklyAI AI Assistant, focused on helping users discover the latest global AI products.
 
@@ -114,11 +114,11 @@ Your knowledge base contains the following latest AI product data:
 
 {product_context}
 
-Response rules:
-1. Answer based on the product data above; if insufficient, be upfront about it
-2. When recommending products, mention the name, score, funding, and key highlights
-3. Keep answers concise — 1-2 sentences per product
-4. If the user asks about non-AI topics, politely redirect
+Rules:
+1. Answer based on product data above; be upfront if insufficient
+2. Mention product name, score, funding, and one key highlight
+3. Keep under 200 words total, 1 sentence per product
+4. Redirect non-AI questions politely
 5. Respond in English"""
 
 
@@ -147,8 +147,8 @@ def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, Non
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": message},
                 ],
-                "max_tokens": 2048,
-                "temperature": 0.6,
+                "max_tokens": 800,
+                "temperature": 0.5,
                 "stream": True,
                 "thinking": {"type": "disabled"},
             },
