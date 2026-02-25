@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
-import { Dice5, Heart, Flame, Newspaper, Search, Sparkles } from "lucide-react";
+import { Dice5, Heart, Flame, Newspaper, Search } from "lucide-react";
 import { useEffect, useState } from "react";
 import { countFavorites, openFavoritesPanel, subscribeFavorites } from "@/lib/favorites";
 import { useLocale } from "@/i18n";
@@ -33,9 +34,7 @@ export function SiteHeader() {
     <header className="navbar">
       <div className="nav-container">
         <Link href="/" className="logo" aria-label={t.nav.home}>
-          <span className="logo-icon">
-            <Sparkles size={18} />
-          </span>
+          <Image src="/logo.png" alt="WAI" width={28} height={28} className="logo-img" priority />
           <span className="logo-text">WeeklyAI</span>
         </Link>
 

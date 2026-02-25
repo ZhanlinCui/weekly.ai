@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles } from "lucide-react";
+import Image from "next/image";
 import { useLocale } from "@/i18n";
 
 export function SiteFooter() {
@@ -10,7 +10,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="site-footer__brand">
-        <Sparkles size={14} />
+        <Image src="/logo.png" alt="WAI" width={18} height={18} />
         <span>WeeklyAI</span>
       </div>
       <div className="site-footer__meta">
