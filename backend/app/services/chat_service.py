@@ -1,15 +1,18 @@
 """
 Chat Service — GLM-powered conversational AI for WeeklyAI.
 
-Provides streaming responses about AI products using the Zhipu GLM model,
-with product data injected as system context.
-
-Designed to work standalone (no crawler dependency) for Vercel deployment.
+Uses raw HTTP requests to Zhipu API (no zhipuai SDK dependency)
+for maximum compatibility with Vercel Serverless.
 """
 
 import json
 import os
+import time
+import requests
 from typing import Generator
+
+
+GLM_CHAT_URL = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
 
 
 def _get_api_key() -> str:
@@ -18,6 +21,35 @@ def _get_api_key() -> str:
 
 def _get_model() -> str:
     return os.environ.get('GLM_MODEL', 'glm-4.7')
+
+
+def _generate_token(api_key: str) -> str:
+    """Generate JWT token for Zhipu API authentication."""
+    try:
+        import jwt
+    except ImportError:
+        try:
+            import jose.jwt as jwt
+        except ImportError:
+            return api_key
+
+    parts = api_key.split(".")
+    if len(parts) != 2:
+        return api_key
+
+    kid, secret = parts
+    now = int(time.time())
+    payload = {
+        "api_key": kid,
+        "exp": now + 3600,
+        "timestamp": now,
+    }
+    headers = {"alg": "HS256", "sign_type": "SIGN"}
+
+    try:
+        return jwt.encode(payload, secret, algorithm="HS256", headers=headers)
+    except Exception:
+        return api_key
 
 
 def _get_product_context(locale: str = "zh") -> str:
@@ -56,7 +88,6 @@ def _get_product_context(locale: str = "zh") -> str:
 
 
 def _build_system_prompt(locale: str = "zh") -> str:
-    """Build the system prompt with product context."""
     product_context = _get_product_context(locale)
 
     if locale == "zh":
@@ -87,61 +118,75 @@ Response rules:
 5. Respond in English"""
 
 
-def _get_zhipu_client():
-    """Create a ZhipuAI client directly (no crawler dependency)."""
-    api_key = _get_api_key()
-    if not api_key:
-        return None
-    try:
-        from zhipuai import ZhipuAI
-        return ZhipuAI(api_key=api_key)
-    except ImportError:
-        return None
-
-
 def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, None, None]:
-    """
-    Stream a chat response as SSE events.
+    """Stream a chat response as SSE events using raw HTTP."""
+    api_key = _get_api_key()
 
-    Yields SSE-formatted strings: 'data: {...}\\n\\n'
-    """
-    client = _get_zhipu_client()
-
-    if not client:
+    if not api_key:
         yield _sse_event({"type": "text", "content": _no_api_message(locale)})
         yield _sse_event({"type": "done"})
         return
 
     system_prompt = _build_system_prompt(locale)
+    token = _generate_token(api_key)
 
     try:
-        response = client.chat.completions.create(
-            model=_get_model(),
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": message},
-            ],
-            max_tokens=2048,
-            temperature=0.6,
+        resp = requests.post(
+            GLM_CHAT_URL,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": _get_model(),
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": message},
+                ],
+                "max_tokens": 2048,
+                "temperature": 0.6,
+                "stream": True,
+            },
             stream=True,
+            timeout=30,
         )
 
-        for chunk in response:
-            if not chunk.choices:
+        if resp.status_code != 200:
+            error_body = resp.text[:200]
+            msg = f"API 返回错误 ({resp.status_code})" if locale == "zh" else f"API error ({resp.status_code})"
+            yield _sse_event({"type": "text", "content": msg})
+            yield _sse_event({"type": "done"})
+            return
+
+        for line in resp.iter_lines(decode_unicode=True):
+            if not line:
                 continue
-            delta = chunk.choices[0].delta
-            content = getattr(delta, 'content', None) or ""
-            if content:
-                yield _sse_event({"type": "text", "content": content})
+            if not line.startswith("data:"):
+                continue
+
+            payload = line[5:].strip()
+            if payload == "[DONE]":
+                break
+
+            try:
+                chunk = json.loads(payload)
+                choices = chunk.get("choices", [])
+                if choices:
+                    delta = choices[0].get("delta", {})
+                    content = delta.get("content", "")
+                    if content:
+                        yield _sse_event({"type": "text", "content": content})
+            except (json.JSONDecodeError, KeyError, IndexError):
+                continue
 
         yield _sse_event({"type": "done"})
 
-    except Exception as e:
-        error_msg = str(e)
-        if "429" in error_msg or "并发" in error_msg:
-            msg = "服务繁忙，请稍后再试。" if locale == "zh" else "Service is busy, please try again later."
-        else:
-            msg = "抱歉，发生了错误。" if locale == "zh" else "Sorry, an error occurred."
+    except requests.exceptions.Timeout:
+        msg = "请求超时，请重试。" if locale == "zh" else "Request timed out. Please try again."
+        yield _sse_event({"type": "text", "content": msg})
+        yield _sse_event({"type": "done"})
+    except Exception:
+        msg = "抱歉，发生了错误。" if locale == "zh" else "Sorry, an error occurred."
         yield _sse_event({"type": "text", "content": msg})
         yield _sse_event({"type": "done"})
 
@@ -153,4 +198,4 @@ def _sse_event(data: dict) -> str:
 def _no_api_message(locale: str) -> str:
     if locale == "zh":
         return "AI 助手暂不可用（ZHIPU_API_KEY 未配置）。请先配置环境变量后重试。"
-    return "AI assistant is not available (ZHIPU_API_KEY not configured). Please configure the environment variable and try again."
+    return "AI assistant is not available (ZHIPU_API_KEY not configured)."

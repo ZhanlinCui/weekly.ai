@@ -32,17 +32,19 @@ def chat_status():
     """Check if chat service is configured."""
     key = os.environ.get('ZHIPU_API_KEY', '')
     has_key = bool(key and len(key) > 5)
+    has_jwt = False
     try:
-        from zhipuai import ZhipuAI
-        has_sdk = True
+        import jwt
+        has_jwt = True
     except ImportError:
-        has_sdk = False
+        pass
     return jsonify({
         'success': True,
         'has_api_key': has_key,
         'key_prefix': key[:8] + '...' if has_key else 'NOT_SET',
-        'has_sdk': has_sdk,
+        'has_jwt': has_jwt,
         'model': os.environ.get('GLM_MODEL', 'glm-4.7'),
+        'mode': 'raw_http',
     })
 
 
