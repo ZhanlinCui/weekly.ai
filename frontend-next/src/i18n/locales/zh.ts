@@ -299,5 +299,15 @@ const zh = {
   },
 } as const;
 
-export type Locale = typeof zh;
+type Widen<T> = {
+  readonly [K in keyof T]: T[K] extends string
+    ? string
+    : T[K] extends (...args: infer A) => string
+      ? (...args: A) => string
+      : T[K] extends object
+        ? Widen<T[K]>
+        : T[K];
+};
+
+export type Locale = Widen<typeof zh>;
 export default zh;
