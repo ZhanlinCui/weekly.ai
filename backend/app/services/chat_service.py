@@ -11,8 +11,13 @@ import json
 import os
 from typing import Generator
 
-ZHIPU_API_KEY = os.environ.get('ZHIPU_API_KEY', '')
-GLM_MODEL = os.environ.get('GLM_MODEL', 'glm-4.7')
+
+def _get_api_key() -> str:
+    return os.environ.get('ZHIPU_API_KEY', '')
+
+
+def _get_model() -> str:
+    return os.environ.get('GLM_MODEL', 'glm-4.7')
 
 
 def _get_product_context(locale: str = "zh") -> str:
@@ -84,11 +89,12 @@ Response rules:
 
 def _get_zhipu_client():
     """Create a ZhipuAI client directly (no crawler dependency)."""
-    if not ZHIPU_API_KEY:
+    api_key = _get_api_key()
+    if not api_key:
         return None
     try:
         from zhipuai import ZhipuAI
-        return ZhipuAI(api_key=ZHIPU_API_KEY)
+        return ZhipuAI(api_key=api_key)
     except ImportError:
         return None
 
@@ -110,7 +116,7 @@ def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, Non
 
     try:
         response = client.chat.completions.create(
-            model=GLM_MODEL,
+            model=_get_model(),
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": message},

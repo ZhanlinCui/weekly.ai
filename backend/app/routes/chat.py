@@ -9,6 +9,7 @@ POST /api/v1/chat
 from flask import Blueprint, request, Response, jsonify
 from collections import defaultdict
 import time
+import os
 
 chat_bp = Blueprint('chat', __name__)
 
@@ -24,6 +25,25 @@ def _is_chat_allowed(ip: str) -> bool:
         return False
     _chat_rate_tracker[ip].append(now)
     return True
+
+
+@chat_bp.route('/status', methods=['GET'])
+def chat_status():
+    """Check if chat service is configured."""
+    key = os.environ.get('ZHIPU_API_KEY', '')
+    has_key = bool(key and len(key) > 5)
+    try:
+        from zhipuai import ZhipuAI
+        has_sdk = True
+    except ImportError:
+        has_sdk = False
+    return jsonify({
+        'success': True,
+        'has_api_key': has_key,
+        'key_prefix': key[:8] + '...' if has_key else 'NOT_SET',
+        'has_sdk': has_sdk,
+        'model': os.environ.get('GLM_MODEL', 'glm-4.7'),
+    })
 
 
 @chat_bp.route('', methods=['POST'])
