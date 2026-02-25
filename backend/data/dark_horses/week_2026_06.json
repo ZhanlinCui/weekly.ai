@@ -1,0 +1,221 @@
+[
+  {
+    "name": "Adaption Labs",
+    "website": "https://adaptionlabs.ai",
+    "description": "由前Cohere高管创立，开发自适应AI模型以降低计算成本和功耗，支持个性化任务。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$50M Seed",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "founder_background"
+    ],
+    "why_matters": "前Cohere研究副总裁Sara Hooker与推理计算总监Sudip Roy创立，获Emergence Capital领投5000万美元Seed轮，专注高效自适应AI模型，非标准聊天界面设计。",
+    "latest_news": "2026-02: Emergence Capital领投$50M Seed轮",
+    "source": "Fortune",
+    "source_url": "https://fortune.com/2026/02/04/adaption-labs-50-million-seed-funding-emergence-captial-sara-hooker-sudip-roy-ai-models-that-learn-on-the-fly/",
+    "confidence": 0.95,
+    "discovered_at": "2026-02-05",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026"
+  },
+  {
+    "name": "Google x Gentle Monster Android XR Glasses",
+    "website": "https://gentlemonster.com",
+    "description": "Stylish AI smart glasses blending avant-garde fashion frames with Android XR and Gemini AI for contextual assistance.",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "ambient_assistant",
+    "innovation_traits": [
+      "wearable",
+      "non_traditional_form",
+      "voice_first",
+      "proactive_ai",
+      "media_coverage"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "$100M",
+    "price": "unknown",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "strategic_partnership"
+    ],
+    "why_matters": "Google's $100M investment in Gentle Monster for fashion-forward AI glasses, overcoming past Glass stigma with elegant design.",
+    "latest_news": "June 2025: Google acquires 4% stake valuing brand at $2.5B for 2026 launch.",
+    "source": "[1]",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-05",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI glasses startup 2026"
+  },
+  {
+    "name": "Google x Warby Parker Android XR Glasses",
+    "website": "https://warbyparker.com",
+    "description": "Accessible everyday smart glasses with corrective lenses, Android XR, and Gemini AI for hands-free contextual help.",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "wearable",
+      "non_traditional_form",
+      "screenless",
+      "proactive_ai",
+      "affordable"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "$150M",
+    "price": "unknown",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "strategic_partnership"
+    ],
+    "why_matters": "Up to $150M Google funding for mainstream adoption via direct-to-consumer model and regular eyewear aesthetics.",
+    "latest_news": "May 2025: Partnership announced for first Android XR glasses in 2026.",
+    "source": "[1]",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-05",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI glasses startup 2026"
+  },
+  {
+    "name": "Ricursive Intelligence",
+    "website": "https://recursiveintelligence.ai",
+    "description": "前沿AI实验室，专注于开发尖端AI模型。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$300M Series A",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly"
+    ],
+    "why_matters": "成立仅2个月即获Lightspeed领投3亿美元A轮，估值达40亿美元，展现爆炸性增长和顶级投资人信心。",
+    "latest_news": "2026-02: $300M Series A at $4B valuation",
+    "source": "Crunchbase",
+    "source_url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ricursive-intelligence-cellares-ai-funding/",
+    "confidence": 0.95,
+    "discovered_at": "2026-02-06",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026"
+  },
+  {
+    "name": "雷鸟创新 X3 Pro Project",
+    "website": "https://www.thunderbird.com",
+    "description": "支持eSIM功能的AI眼镜，首次具备独立于手机的联网与通话能力。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "smart_glasses",
+    "use_case": "independent_communication",
+    "innovation_traits": [
+      "wearable",
+      "always_on",
+      "single_use_case"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "AI眼镜eSIM独立联网通话，突破手机依赖，场景创新显著。",
+    "latest_news": "CES 2026展示",
+    "source": "[1]",
+    "confidence": 0.8,
+    "is_hardware": true,
+    "discovered_at": "2026-02-06",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI hardware kickstarter indiegogo 2026"
+  },
+  {
+    "name": "Frame",
+    "website": "https://brilliantlabs.ai",
+    "description": "OpenAI 投资的多模态 AI 智能眼镜，具备物体识别与实时信息显示功能。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "visual_assistant",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "multimodal_ai",
+      "screenless"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "Seed (OpenAI participated)",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "media_coverage"
+    ],
+    "why_matters": "获得 OpenAI 投资的初创产品，将多模态 AI 集成到普通眼镜形态中，主打无感视觉辅助。",
+    "latest_news": "前 Meta 员工创立，获 OpenAI 种子轮投资",
+    "source": "Brilliant Labs",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-02-07",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI智能眼镜 创业公司"
+  },
+  {
+    "name": "Cerebras WSE-3",
+    "website": "https://www.cerebras.ai",
+    "description": "Wafer-scale AI inference chip with 4 trillion transistors and 44GB on-chip SRAM, shipped as water-cooled CS-3 system.",
+    "category": "hardware",
+    "hardware_type": "traditional",
+    "form_factor": "wafer_scale_chip_system",
+    "use_case": "ai_training_inference",
+    "innovation_traits": [
+      "new_form_factor"
+    ],
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "$1B (Series H, total undisclosed)",
+    "price": "unknown",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "form_innovation",
+      "funding_100M_plus"
+    ],
+    "why_matters": "Largest AI chip ever built, 19x more transistors than Nvidia B200, powers OpenAI's high-speed inference at 750MW scale.",
+    "latest_news": "2026-02: Raised $1B at $23B valuation, partnered with OpenAI for massive deployment.",
+    "source": "Cerebras press release, SiliconANGLE",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-07",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI半導体 スタートアップ 資金調達"
+  },
+  {
+    "name": "Agnes AI",
+    "website": "https://agnes.ai",
+    "description": "新加坡Agnes AI是东南亚专属AI平台，支持本地语言，提供深度研究、PPT生成和实时群聊等生产力工具，成本仅为ChatGPT的1/20。",
+    "category": "agent",
+    "region": "🇸🇬",
+    "funding_total": "$100M valuation",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "growth_anomaly",
+      "funding_signal"
+    ],
+    "why_matters": "2025年7月推出后6个月内注册用户超500万，日活20万，在新加坡、菲律宾、越南、印尼Google Play生产力App前10；自研8B参数SeaLLM模型开源，支持东南亚少数语言，推理准确率高20%，专为新兴市场优化成本和文化本地化。",
+    "latest_news": "2026-01: 推出CoVibe群聊和AI滤镜，强化社交生产力融合",
+    "source": "Mission Media",
+    "source_url": "https://missionmedia.asia/agnes-ai-200k-daily-users-southeast-asia-growth/",
+    "confidence": 0.95,
+    "discovered_at": "2026-02-07",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Southeast Asia AI company"
+  }
+]

@@ -1,0 +1,1079 @@
+[
+  {
+    "name": "华米科技 AI 智能眼镜",
+    "website": "https://www.zepp.com",
+    "description": "华米科技推出的 AI 智能眼镜，已进入量产阶段。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "health",
+    "innovation_traits": [
+      "wearable",
+      "health"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "智能穿戴设备厂商向 AI 眼镜领域拓展，结合健康监测功能。",
+    "latest_news": "2026年CES展推出，目前已进入量产阶段。",
+    "source": "经济观察网",
+    "source_url": "https://www.sohu.com/a/987220940_122014422",
+    "confidence": 0.8,
+    "is_hardware": true,
+    "discovered_at": "2026-02-16",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI智能眼镜 创业公司",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-16T19:08:55.784485Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Live Story",
+    "website": "https://livestory.io",
+    "description": "面向营销和内容团队的无代码视觉CMS，支持AI驱动产品开发。",
+    "category": "other",
+    "region": "Unknown",
+    "funding_total": "€2.7M seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "种子轮融资270万欧元，由意大利VC Vertis领投，目标2027年ARR超1000万欧元。",
+    "latest_news": "2025-07-22: Live Story完成270万欧元种子轮。",
+    "source": "MoveTheNeedle",
+    "source_url": "https://www.movetheneedle.news/start-ups/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-19",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A Europe",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-19T00:25:26.403636Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Stanhope AI",
+    "website": "https://stanhope.ai",
+    "description": "脑启发式AI系统，基于自由能原理开发实时世界模型，用于机器人和边缘AI。",
+    "category": "other",
+    "region": "🇬🇧",
+    "funding_total": "$8M Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "由UCL教授创立，获800万美元种子轮，专注国防、工业自动化领域的自适应AI框架。",
+    "latest_news": "2026-02: $8M Seed round led by Frontline Ventures",
+    "source": "The AI Insider",
+    "source_url": "https://theaiinsider.tech/2026/02/18/stanhope-ai-raises-8m-seed-round-to-advance-brain-inspired-artificial-intelligence/",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-19",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "country_flag": "🇬🇧",
+    "country_display": "🇬🇧 United Kingdom",
+    "country_source": "region:legacy",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-19T00:25:39.587710Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "SYLO",
+    "website": "https://www.sylodigital.com",
+    "description": "柏林AI初创公司，开发自适应心理韧性技术，帮助用户通过10-15分钟的会话获得情绪缓解",
+    "category": "healthcare",
+    "region": "🇩🇪",
+    "funding_total": "€270K Pre-Seed",
+    "dark_horse_index": 2,
+    "criteria_met": [],
+    "why_matters": "76%用户在首次会话后报告明显情绪缓解，月环比用户增长两位数，企业端获得来自寻求预防性心理健康工具的雇主的持续关注",
+    "latest_news": "2026-02-17: Closed €270K pre-seed round led by SaaS King Ventures",
+    "source": "FinanceWire",
+    "source_url": "https://markets.businessinsider.com/news/currencies/berlin-ai-startup-sylo-raises-270k-pre-seed-for-european-expansion-1035836548",
+    "confidence": 0.75,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-19",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "country_flag": "🇩🇪",
+    "country_display": "🇩🇪 Germany",
+    "country_source": "region:legacy",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-19T02:40:11.417624Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "安安 AI 熊猫机器人",
+    "website": "https://web.wxbionics.com/",
+    "description": "仿生情感陪伴 AI 宠物，结合熊猫可爱外形与老年人护理，提供个性化服务",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "plush_robot",
+    "use_case": "elderly_care_companion",
+    "innovation_traits": [
+      "non_traditional_form",
+      "companion",
+      "proactive_ai"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "无芯科技专注仿生康复疗愈，AI 宠物形态创新，CES 2026 展出，针对老年人护理场景",
+    "latest_news": "2026-01: CES 2026 展出，获创新奖关注",
+    "source": "凤凰网科技",
+    "source_url": "https://tech.ifeng.com/c/8pp7HxnFx8k",
+    "confidence": 0.8,
+    "is_hardware": true,
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-19",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "robotics company Southeast Asia",
+    "country_code": "CN",
+    "country_name": "China",
+    "country_flag": "🇨🇳",
+    "country_display": "🇨🇳 China",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-19T03:17:22.653226Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Kana",
+    "website": "https://kana.ai",
+    "description": "为营销人员构建灵活可定制的AI代理，支持数据分析、受众定位、活动管理和优化。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$15M seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Mayfield领投1500万美元种子轮，从隐身模式推出，提供‘松耦合’AI代理可实时定制集成遗留系统，比大公司更快实现营销活动自动化。",
+    "latest_news": "2026-02: 隐身模式推出并完成1500万美元种子轮",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/18/kana-emerges-from-stealth-with-15m-to-build-flexible-ai-agents-for-marketers/",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-19",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "region:search_fallback"
+  },
+  {
+    "name": "C2i Semiconductors",
+    "website": "https://c2i.ai",
+    "description": "开发即插即用系统级电源解决方案，减少AI数据中心能源损耗10%。",
+    "category": "hardware",
+    "region": "🇮🇳",
+    "funding_total": "$19M total ($15M Series A)",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Peak XV领投1500万美元A轮，总融1900万美元，前Texas Instruments高管创立，grid-to-GPU电源系统每兆瓦节省10万瓦，解决AI数据中心电力瓶颈。",
+    "latest_news": "2026-02: 完成1500万美元A轮，首批芯片4-6月回片",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/15/as-ai-data-centers-hit-power-limits-peak-xv-backs-indian-startup-c2i-to-fix-the-bottleneck/",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-19",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding",
+    "country_code": "IN",
+    "country_name": "India",
+    "country_flag": "🇮🇳",
+    "country_display": "🇮🇳 India",
+    "country_source": "region:legacy"
+  },
+  {
+    "name": "Veli",
+    "website": "https://veli.ai",
+    "description": "为服务式居住和辅助居住提供基于AI的安全解决方案。",
+    "category": "other",
+    "region": "Unknown",
+    "funding_total": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "strong_local_traction"
+    ],
+    "why_matters": "AI Startup Rising标志性校友startup，已实现市场化落地，该项目通过孵化器和加速器帮助200+ KI团队募集超6000万欧元投资。",
+    "latest_news": "2026-02: 联邦政府延长AI Startup Rising资助至2027年",
+    "source": "Starthub Hessen",
+    "source_url": "https://www.starthub-hessen.de/de/aktuelles/f%C3%B6rderung-von-ai-startup-rising-wird-fortgesetzt/",
+    "confidence": 0.8,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-19",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "KI Startup Finanzierung",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-19T19:07:33.092798Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 3,
+          "top_story_id": "47075823",
+          "points": 9,
+          "comments": 1,
+          "engagement_depth_ratio": 0.1111,
+          "is_controversial": false,
+          "top_comments_sample": [
+            "looks interesting, going to give a try later tonight"
+          ],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0434,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "社区重点讨论了产品价值与落地细节。评论情绪整体偏中性分歧，并反复提及可用性与真实场景。这类反馈可用于判断短期需求强度是否能转化为持续增长。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "neutral",
+      "confidence": 0.45
+    }
+  },
+  {
+    "name": "Feedloop AI",
+    "website": "https://feedloop.ai",
+    "description": "Feedloop AI 是印尼领先的企业级生成式 AI 平台，帮助组织自动化工作流程，从非结构化数据中提取洞察，并通过代理式 AI 加速决策。",
+    "category": "agent",
+    "region": "Unknown",
+    "funding_total": "Pre-Series A (2021) + Series A 募资中",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "growth_anomaly",
+      "funding_signal"
+    ],
+    "why_matters": "2021 年完成 Pre-Series A 融资（Telkomsel Mitra Inovasi、Aksara Ventures、East Ventures 参与），现进行 Series A 募资；团队扩至 90+ 人，服务 60+ 企业客户；采用 IBM watsonx 治理并推出印尼首款本土 LLM FL1，专注合规与本地数据主权，在监管行业获 PT Pegadaian 等大客户验证。",
+    "latest_news": "2024-07: 与 IBM watsonx 集成，提供企业级 AI 治理工具",
+    "source": "WOWS Global & IBM Newsroom",
+    "source_url": "https://wowsglobal.com/resources/blogs-insights/feedloop-and-the-enterprise-ai-race-in-indonesia-built-for-compliance-built-for-scale/",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-19",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI startup Indonesia Vietnam",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-19T20:47:44.355063Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "AiMOON星座AI守护精灵",
+    "website": "https://lingxiai.com",
+    "description": "AI守护精灵，桌面或家居形态智能交互产品。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "desktop_elf",
+    "use_case": "companion",
+    "innovation_traits": [
+      "new_form_factor",
+      "ambient",
+      "companion"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "守护精灵新形态，CES 2026首秀，重磅产品。",
+    "latest_news": "CES 2026首次亮相。",
+    "source": "凤凰网财经",
+    "source_url": "https://finance.ifeng.com/c/8peur15I1r6",
+    "confidence": 0.7,
+    "is_hardware": true,
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-20",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI wearable device startup Asia 2026",
+    "country_code": "CN",
+    "country_name": "China",
+    "country_flag": "🇨🇳",
+    "country_display": "🇨🇳 China",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-20T03:16:38.579146Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Refined Robotics",
+    "website": "https://refinedrobotics.com",
+    "description": "开发轮腿混合技术的最后一英里配送机器人，能量效率提升25倍。",
+    "category": "hardware",
+    "region": "🇯🇵",
+    "funding_total": "$1.55M Pre-Seed (Antler投资)",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Antler日本获选10家之一，每家2400万日元pre-seed，专注复杂地形配送机器人，Antler承诺后续追加至40万美元。",
+    "latest_news": "2025: ¥24M Pre-Seed from Antler",
+    "source": "Technode Global",
+    "source_url": "https://technode.global/2026/01/27/antler-announces-1-55m-investment-across-ten-japanese-startups/",
+    "confidence": 0.85,
+    "needs_verification": true,
+    "is_hardware": true,
+    "source_region": "🇯🇵🇰🇷",
+    "discovered_at": "2026-02-20",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Japan AI startup funding",
+    "country_code": "JP",
+    "country_name": "Japan",
+    "country_flag": "🇯🇵",
+    "country_display": "🇯🇵 Japan",
+    "country_source": "region:legacy",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-20T19:13:57.095351Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "fxis.ai",
+    "website": "https://fxis.ai",
+    "description": "印尼AI驱动解决方案公司，专注内容创作、自动化、数据工程及AI软件开发，获64条评论4.9高分。",
+    "category": "other",
+    "region": "Unknown",
+    "funding_total": "unknown",
+    "dark_horse_index": 1,
+    "criteria_met": [],
+    "why_matters": "90%以上客户赞扬准时交付、适应业务需求，提供实用解决方案，项目成本1-4.9万美元，擅长IT、汽车、食品饮料等行业AI自动化提升效率。",
+    "latest_news": "unknown",
+    "source": "Clutch.co",
+    "source_url": "https://clutch.co/id/developers/artificial-intelligence",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-21",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Southeast Asia AI company",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-21T19:01:01.565575Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Apptronik Apollo",
+    "website": "https://apptronik.com/apollo",
+    "description": "Humanoid robot designed for industrial tasks like logistics and warehousing, with human-like size, force-controlled actuators for safety, and AI integration.",
+    "category": "hardware",
+    "hardware_type": "traditional",
+    "form_factor": "humanoid_robot",
+    "use_case": "industrial_automation",
+    "innovation_traits": [
+      "new_form_factor"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "$935M",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "use_case_clear",
+      "has_demo"
+    ],
+    "why_matters": "Massive $520M funding from Google and Mercedes-Benz signals industrial-scale humanoid deployment, with advanced safety features for human collaboration.",
+    "latest_news": "Feb 2026: $520M Series A extension, total $935M raised.",
+    "source": "saiwa.ai, perplexityaimagazine.com",
+    "source_url": "https://saiwa.ai/news/apptronik-humanoid-funding/",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-21",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "humanoid robot company funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-21T22:54:13.034565Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "error",
+          "window_days": 7,
+          "error": "hn_search_failed:HTTPSConnectionPool(host='hn.algolia.com', port=443): Read timed out. (read timeout=12)"
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Choco Up",
+    "website": "https://chocoup.com",
+    "description": "新加坡本土增长融资平台，已支持超过400家本地中小企业采用AI转型。",
+    "category": "finance",
+    "region": "Unknown",
+    "funding_total": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "strong_local_traction"
+    ],
+    "why_matters": "已支持超过400家新加坡中小企业，已有AI采用案例，Budget 2026国家AI使命将加速其在金融领域推广，填补中小企业AI融资缺口。",
+    "latest_news": "2026-02: CEO Percy Hung评论Budget 2026 AI措施，支持中小企业AI试点与扩展。",
+    "source": "Channel News Asia",
+    "source_url": "https://www.channelnewsasia.com/singapore/ai-missions-healthcare-finance-sectors-sme-budget-2026-5929931",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-21",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Singapore AI startup funding 2026",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-21T22:54:34.548235Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Unicity Labs",
+    "website": "https://unicitylabs.com",
+    "description": "瑞士协议初创，为AI代理开发点对点加密架构。",
+    "category": "agent",
+    "region": "Unknown",
+    "funding_total": "€2.5M Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "完成250万欧元种子轮，开发AI代理的P2P加密架构，在去中心化AI领域具创新性。",
+    "latest_news": "2026-02: 完成250万欧元种子轮融资",
+    "source": "EU Tech Future",
+    "source_url": "https://eutechfuture.com",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-22",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-22T00:10:07.200374Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "HeyCharge",
+    "website": "https://heycharge.com",
+    "description": "慕尼黑EV充电技术公司，为公寓楼提供智能充电解决方案。",
+    "category": "hardware",
+    "region": "Unknown",
+    "funding_total": "€2.5M EIC grant",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "获得欧洲创新委员会250万欧元资助，加速公寓楼EV充电解决方案部署。",
+    "latest_news": "2026-02: 获得250万欧元EIC资助",
+    "source": "EU Tech Future",
+    "source_url": "https://eutechfuture.com",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-22",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-22T00:10:08.051658Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  }
+]

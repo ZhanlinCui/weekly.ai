@@ -1,0 +1,150 @@
+[
+  {
+    "name": "Xross Road",
+    "website": "https://hanasee.ai",
+    "description": "AIマンガ制作ツール「HANASEE」で、小説や脚本からキャラクター一貫性を保った長編マンガを自動生成し、クリエイターの作画負担を劇的に軽減。",
+    "category": "image",
+    "region": "🇯🇵",
+    "funding_total": "$1.5M Pre-seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "プレシードで150万ドル（約2.3億円）をArbitrum Gaming Ventures等から調達、AIによるマンガ自動生成というニッチ領域でクリエイティブ産業の生産性革命を起こす可能性。",
+    "latest_news": "2026-02-09: プレシードラウンドで150万ドル調達",
+    "source": "Zaimo",
+    "source_url": "https://note.com/zaimo_ai/n/nee120a5eef11",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇯🇵🇰🇷",
+    "discovered_at": "2026-02-22",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI スタートアップ 資金調達 2026",
+    "country_code": "JP",
+    "country_name": "Japan",
+    "country_flag": "🇯🇵",
+    "country_display": "🇯🇵 Japan",
+    "country_source": "region:legacy",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-22T21:06:57.441117Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "夸克 AI 眼镜S1",
+    "website": "https://aiglass.quark.alibaba.com",
+    "description": "阿里巴巴自研首款AI眼镜，集成多模态AI功能。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "smart_glasses",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "wearable",
+      "non_traditional_form"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation"
+    ],
+    "why_matters": "大厂自研AI眼镜，推动眼镜市场规模化。",
+    "latest_news": "CES 2026亮相。",
+    "source": "东财网",
+    "source_url": "https://biz.eastmoney.com/a/202601053608853826.html",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-22",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI hardware startup Singapore",
+    "country_code": "CN",
+    "country_name": "China",
+    "country_flag": "🇨🇳",
+    "country_display": "🇨🇳 China",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-22T21:50:46.892237Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  }
+]

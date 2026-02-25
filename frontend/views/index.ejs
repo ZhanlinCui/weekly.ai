@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeeklyAI - 发现本周最热门的AI产品</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+    <!-- 背景装饰 -->
+    <div class="bg-decoration">
+        <div class="bg-gradient-1"></div>
+        <div class="bg-gradient-2"></div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon"><i data-lucide="sparkles"></i></span>
+                <span class="logo-text">WeeklyAI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-section="trending"><span class="nav-icon"><i
+                            data-lucide="flame"></i></span>黑马推荐</a>
+                <a href="#" class="nav-link" data-section="weekly"><span class="nav-icon"><i
+                            data-lucide="trending-up"></i></span>本周榜单</a>
+                <a href="#" class="nav-link" data-section="leaders"><span class="nav-icon"><i
+                            data-lucide="trophy"></i></span>行业领军</a>
+                <a href="#" class="nav-link" data-section="blogs"><span class="nav-icon"><i
+                            data-lucide="newspaper"></i></span>博客动态</a>
+                <a href="#" class="nav-link" data-section="search"><span class="nav-icon"><i
+                            data-lucide="search"></i></span>搜索</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" title="切换主题" aria-label="切换深色/浅色模式">
+                <i data-lucide="sun" class="theme-icon-light"></i>
+                <i data-lucide="moon" class="theme-icon-dark" style="display: none;"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <!-- Hero 区域 -->
+        <section class="hero">
+            <div class="hero-art" aria-hidden="true">
+                <div id="hero-canvas"></div>
+            </div>
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <div class="hero-kicker">本周精选 · AI 生态热度图</div>
+                    <h1 class="hero-title">
+                        发现全球最火的
+                        <span class="gradient-text">AI 产品</span>
+                    </h1>
+                    <p class="hero-subtitle">每周更新 · 软件 & 硬件 · 专业筛选</p>
+                    <div class="data-freshness" id="dataFreshness" aria-live="polite">📡 数据更新中...</div>
+                    <!-- 搜索框 -->
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="search" id="searchInput" placeholder="搜索 AI 产品..." aria-label="搜索 AI 产品">
+                            <button class="search-btn" id="searchBtn">
+                                <span>搜索</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 上：本周黑马 (4-5分精选) ========== -->
+        <section class="section darkhorse-section" id="darkhorseSection">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i data-lucide="flame"></i></span>
+                    本周黑马
+                    <span class="score-badge score-badge--5">4-5分</span>
+                </h2>
+                <p class="section-desc">本周最值得关注的高潜力 AI 产品</p>
+            </div>
+            <!-- 硬件/软件筛选 -->
+            <div class="darkhorse-filters" id="darkhorseFilters">
+                <button class="filter-btn active" data-type="all">全部</button>
+                <button class="filter-btn" data-type="hardware"><span class="nav-icon"><i
+                            data-lucide="cpu"></i></span>硬件</button>
+                <button class="filter-btn" data-type="software"><span class="nav-icon"><i
+                            data-lucide="code"></i></span>软件</button>
+            </div>
+            <div class="darkhorse-grid" id="darkhorseProducts">
+                <!-- 黑马产品将通过 JS 动态加载 -->
+                <div class="loading-skeleton">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 中：快速发现 (分类筛选) ========== -->
+        <section class="section discovery-section" id="discoverSection">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i data-lucide="zap"></i></span>
+                    快速发现
+                </h2>
+                <p class="section-desc">向右收藏 · 向左跳过 · 推荐会自然收敛</p>
+            </div>
+            <!-- 分类筛选标签 -->
+            <div class="discover-filters" id="discoverFilters">
+                <button class="discover-filter-btn active" data-category="all">全部</button>
+                <button class="discover-filter-btn" data-category="hardware"><span class="nav-icon"><i
+                            data-lucide="cpu"></i></span>硬件</button>
+                <button class="discover-filter-btn" data-category="coding"><span class="nav-icon"><i
+                            data-lucide="code"></i></span>编程</button>
+                <button class="discover-filter-btn" data-category="agent"><span class="nav-icon"><i
+                            data-lucide="bot"></i></span>Agent</button>
+                <button class="discover-filter-btn" data-category="image"><span class="nav-icon"><i
+                            data-lucide="image"></i></span>图像</button>
+                <button class="discover-filter-btn" data-category="video"><span class="nav-icon"><i
+                            data-lucide="film"></i></span>视频</button>
+                <button class="discover-filter-btn" data-category="voice"><span class="nav-icon"><i
+                            data-lucide="mic"></i></span>语音</button>
+            </div>
+            <div class="discover-shell">
+                <div class="swipe-stack" id="swipeStack" aria-live="polite"></div>
+                <div class="swipe-actions">
+                    <button class="swipe-btn swipe-btn--nope" id="swipeNope">跳过</button>
+                    <button class="swipe-btn swipe-btn--like" id="swipeLike">收藏</button>
+                </div>
+                <div class="swipe-status" id="swipeStatus">已收藏 0 · 已跳过 0</div>
+            </div>
+        </section>
+
+        <!-- ========== 下：更多推荐 (黑马 + 潜力股) ========== -->
+        <section class="section trending-section" id="trendingSection">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i data-lucide="trending-up"></i></span>
+                    更多推荐
+                </h2>
+                <p class="section-desc">黑马 (4-5分) + 潜力股 (2-3分)</p>
+            </div>
+            <!-- Sort/Filter Controls -->
+            <div class="list-controls" id="trendingControls">
+                <div class="tier-tabs" id="tierTabs">
+                    <button class="tier-tab active" data-tier="all">全部</button>
+                    <button class="tier-tab" data-tier="darkhorse"><span class="nav-icon"><i
+                                data-lucide="flame"></i></span>黑马 (4-5分)</button>
+                    <button class="tier-tab" data-tier="rising"><span class="nav-icon"><i
+                                data-lucide="star"></i></span>潜力股 (2-3分)</button>
+                </div>
+                <div class="controls-right">
+                    <div class="sort-control">
+                        <label for="sortBy">排序:</label>
+                        <select id="sortBy" class="sort-select">
+                            <option value="score">🔥 热度</option>
+                            <option value="date">🕐 时间线</option>
+                            <option value="funding">💰 融资</option>
+                        </select>
+                    </div>
+                    <div class="filter-control">
+                        <label for="typeFilter">一级:</label>
+                        <select id="typeFilter" class="filter-select">
+                            <option value="all">全部</option>
+                            <option value="software">💻 软件</option>
+                            <option value="hardware">🔧 硬件</option>
+                        </select>
+                    </div>
+                    <div class="filter-control">
+                        <label for="directionFilter">方向:</label>
+                        <select id="directionFilter" class="filter-select filter-select--wide">
+                            <option value="all">全部方向</option>
+                            <option value="voice">🎤 语音</option>
+                            <option value="vision">👁️ 视觉</option>
+                            <option value="driving">🚗 驾驶</option>
+                        </select>
+                    </div>
+                    <button class="favorites-toggle" id="showFavoritesBtn" title="显示收藏">
+                        <span class="favorites-icon">❤️</span>
+                        <span class="favorites-count" id="favoritesCount">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="products-grid" id="trendingProducts">
+                <!-- 产品卡片将通过 JS 动态加载 -->
+                <div class="loading-skeleton">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+            </div>
+            <!-- 加载更多 -->
+            <div class="load-more-container" id="loadMoreContainer">
+                <button class="load-more-btn" id="loadMoreBtn">加载更多</button>
+            </div>
+        </section>
+
+        <!-- 本周榜单区 -->
+        <section class="section weekly-section" id="weeklySection" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i data-lucide="trending-up"></i></span>
+                    本周 Top 15
+                </h2>
+                <p class="section-desc">本周最受欢迎的 AI 产品榜单</p>
+            </div>
+            <div class="products-list" id="weeklyProducts">
+                <!-- 产品列表将通过 JS 动态加载 -->
+            </div>
+        </section>
+
+        <!-- 博客动态区 -->
+        <section class="section blogs-section" id="blogsSection" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i data-lucide="newspaper"></i></span>
+                    博客 & 动态
+                </h2>
+                <p class="section-desc">来自 Hacker News、Reddit、Tech News、YouTube、X 的 AI 讨论和一手动态</p>
+            </div>
+            <div class="blog-filters" id="blogFilters">
+                <button class="blog-filter-btn active" data-source="">全部</button>
+                <button class="blog-filter-btn" data-source="hackernews">🔶 Hacker News</button>
+                <button class="blog-filter-btn" data-source="tech_news">📰 Tech News</button>
+                <button class="blog-filter-btn" data-source="youtube">📺 YouTube</button>
+                <button class="blog-filter-btn" data-source="x">𝕏 X</button>
+                <button class="blog-filter-btn" data-source="reddit">🔴 Reddit</button>
+            </div>
+            <div class="blogs-list" id="blogsList">
+                <!-- 博客列表将通过 JS 动态加载 -->
+            </div>
+        </section>
+
+        <!-- 行业领军区 -->
+        <section class="section leaders-section" id="leadersSection" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i data-lucide="trophy"></i></span>
+                    行业领军
+                </h2>
+                <p class="section-desc">已经广为人知的成熟 AI 产品，供不熟悉 AI 领域的人参考学习</p>
+            </div>
+            <div class="leaders-note">
+                <span class="note-icon">💡</span>
+                <span>这些产品不会出现在黑马/潜力股列表中，但了解它们有助于理解 AI 行业格局</span>
+            </div>
+            <div class="leaders-filters" id="leadersFilters">
+                <!-- 行业领军筛选项将通过 JS 动态加载 -->
+            </div>
+            <div class="leaders-categories" id="leadersCategories">
+                <!-- 行业领军分类将通过 JS 动态加载 -->
+                <div class="loading-skeleton">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 搜索结果区 -->
+        <section class="section search-section" id="searchSection" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i data-lucide="search"></i></span>
+                    搜索结果
+                </h2>
+                <p class="section-desc" id="searchResultInfo">找到 0 个相关产品</p>
+            </div>
+            <div class="products-grid" id="searchResults">
+                <!-- 搜索结果将通过 JS 动态加载 -->
+            </div>
+        </section>
+
+        <!-- 产品详情区 -->
+        <section class="section product-section" id="productSection" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i data-lucide="compass"></i></span>
+                    产品详情
+                </h2>
+                <p class="section-desc" id="productDetailSubtitle">来自本周精选</p>
+            </div>
+            <div class="product-detail" id="productDetail">
+                <!-- 产品详情将通过 JS 动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 WeeklyAI. 发现更好的 AI 工具.</p>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal-overlay" id="productModal" aria-hidden="true">
+        <div class="modal-container" role="dialog" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalClose" aria-label="关闭">×</button>
+            <div class="modal-content" id="modalContent">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Favorites Panel -->
+    <div class="favorites-panel" id="favoritesPanel" aria-hidden="true">
+        <div class="favorites-header">
+            <h3>❤️ 我的收藏</h3>
+            <button class="favorites-close" id="favoritesClose">×</button>
+        </div>
+        <div class="favorites-controls" id="favoritesControls">
+            <div class="favorites-type-tabs" id="favoritesTypeTabs">
+                <button class="favorites-type-tab active" data-type="all">全部</button>
+                <button class="favorites-type-tab" data-type="product">产品</button>
+                <button class="favorites-type-tab" data-type="blog">博客动态</button>
+            </div>
+            <div class="favorites-subfilters" id="favoritesSubfilters">
+                <!-- 二级筛选由 JS 动态渲染 -->
+            </div>
+        </div>
+        <div class="favorites-list" id="favoritesList">
+            <!-- Favorites loaded dynamically -->
+        </div>
+        <div class="favorites-empty" id="favoritesEmpty">
+            <p>还没有收藏任何内容</p>
+            <p class="favorites-hint">点击产品卡片、快速发现或博客动态上的 ❤️ 按钮添加收藏</p>
+        </div>
+    </div>
+
+    <!-- Using original main.js (modular version in /js/modules/ for future migration) -->
+    <script>
+        window.__API_BASE_URL__ = <%- JSON.stringify(apiBaseUrl || '') %>;
+    </script>
+    <script src="/js/main.js"></script>
+    <!-- Lazy load p5.js and hero animation after page content is ready -->
+    <script>
+        (function() {
+            // Load p5.js only after DOMContentLoaded and requestIdleCallback
+            function loadP5AndHeroArt() {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js';
+                script.onload = function() {
+                    var heroScript = document.createElement('script');
+                    heroScript.src = '/js/hero-art.js';
+                    document.body.appendChild(heroScript);
+                };
+                document.body.appendChild(script);
+            }
+
+            if (document.readyState === 'complete') {
+                if ('requestIdleCallback' in window) {
+                    requestIdleCallback(loadP5AndHeroArt, { timeout: 2000 });
+                } else {
+                    setTimeout(loadP5AndHeroArt, 100);
+                }
+            } else {
+                window.addEventListener('load', function() {
+                    if ('requestIdleCallback' in window) {
+                        requestIdleCallback(loadP5AndHeroArt, { timeout: 2000 });
+                    } else {
+                        setTimeout(loadP5AndHeroArt, 100);
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

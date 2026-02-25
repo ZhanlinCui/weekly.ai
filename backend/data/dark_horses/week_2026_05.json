@@ -1,0 +1,529 @@
+[
+  {
+    "name": "面壁智能",
+    "website": "https://openbmb.org",
+    "description": "专注端侧多模态大模型，推出MiniCPM系列小钢炮模型，以小博大实现高效低成本端侧AI部署。",
+    "category": "agent",
+    "region": "🇨🇳",
+    "funding_total": "数亿元",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly"
+    ],
+    "why_matters": "2025年再获数亿元融资，MiniCPM系列下载量破1000万，8B参数模型获20B以下单图多图视频理解3 SOTA，对标GPT-4V。",
+    "latest_news": "2025-05: 面壁智能再获数亿元融资，发布端侧全模态模型MiniCPM-o 2.6",
+    "source": "新浪财经",
+    "source_url": "https://finance.sina.cn/hkstock/gggd/2025-05-21/detail-inexicef2856381.d.html",
+    "confidence": 0.9,
+    "discovered_at": "2026-01-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "大模型创业"
+  },
+  {
+    "name": "智谱AI",
+    "website": "https://zhipuai.cn",
+    "description": "开源ChatGLM系列大模型，营收从2022年5740万增至2025上半年1.91亿增长325%。",
+    "category": "agent",
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "growth_anomaly",
+      "funding_signal"
+    ],
+    "why_matters": "大模型六小虎，港股上市筹资超91亿港元，营收两年五倍扩张2025上半年增长325%，最高市值1100亿。",
+    "latest_news": "2025上半年: 营收1.91亿元同比增长325%",
+    "source": "36氪",
+    "source_url": "https://36kr.com/p/3637436240769537",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "大模型创业"
+  },
+  {
+    "name": "智元机器人",
+    "website": "https://www.agibot.cn",
+    "description": "全球首家实现人形机器人规模化量产和商业化落地的企业，以AI+机器人深度融合构建优势",
+    "category": "hardware",
+    "region": "🇨🇳",
+    "funding_total": "数十亿元人民币",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation"
+    ],
+    "why_matters": "2025年全球人形机器人出货量排名第一，交付超5168台占近四成市场份额；成立仅2年多完成多轮融资，累计融资超数十亿元；业内唯一实现全产品系列、全场景布局的企业，灵犀X2机器人适配文娱表演、展厅讲解等多元场景",
+    "latest_news": "2026-01: 全球人形机器人出货榜排名第一",
+    "source": "ESM中国",
+    "source_url": "https://www.esmchina.com/news/13830.html",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "人形机器人 创业公司"
+  },
+  {
+    "name": "浙江人形机器人创新中心",
+    "website": "https://www.zj-humanoid.com",
+    "description": "由浙大熊蓉教授团队与宁波市政府共建，专注具身智能人形机器人关键技术和产业化应用",
+    "category": "hardware",
+    "region": "🇨🇳",
+    "funding_total": "累计融资22亿元，最新4.5亿元Pre-A轮",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "founder_background"
+    ],
+    "why_matters": "融资速度快，过去一年半累计融资22亿元；创始人熊蓉为浙大教授、博士生导师，在机器人领域有20年研究积累；股东阵容豪华，包括中控技术、招商创科、联想创投、浙江省创业投资集团等产业资本和政府资本；国家地方共建人形机器人创新中心依托主体",
+    "latest_news": "2026-01: 完成4.5亿元Pre-A轮融资，累计融资22亿元",
+    "source": "瑞财经",
+    "source_url": "https://m.rccaijing.com/news-7420274053279839891.html",
+    "confidence": 0.92,
+    "discovered_at": "2026-01-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "人形机器人 创业公司"
+  },
+  {
+    "name": "SEA-LION",
+    "website": "https://sea-lion.ai",
+    "description": "东南亚首个开源多语言多模态大语言模型家族，支持11+种东南亚语言，捕捉区域文化与语境。",
+    "category": "other",
+    "region": "🇸🇬",
+    "funding_total": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "category_innovation",
+      "community_buzz"
+    ],
+    "why_matters": "东南亚首个本土化LLM，训练数据东南亚语言占比13%（Llama 2仅0.5%），下载量超235,000次，已被GoTo Group等企业采用，填补区域低资源语言空白。",
+    "latest_news": "2025-08: arXiv论文发布v3版本，支持11种SEA语言并开源",
+    "source": "AI Singapore",
+    "source_url": "https://sea-lion.ai",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Southeast Asia AI company"
+  },
+  {
+    "name": "Noumena",
+    "website": "https://noumena.ai",
+    "description": "前第四范式总裁创办的营销AI Agent平台，帮助品牌实现增长与决策智能化，已完成多轮融资用于产品迭代。",
+    "category": "agent",
+    "region": "🇨🇳",
+    "funding_total": "数千万人民币Pre-A轮",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "founder_background"
+    ],
+    "why_matters": "前第四范式总裁创办，数千万人民币Pre-A轮由狮城资本与百度战投投资，专注营销AI Agent品牌增长，累计多轮融资超预期",
+    "latest_news": "2026-01-15: 完成数千万Pre-A轮融资，投资方包括百度战投",
+    "source": "jimo.studio",
+    "source_url": "https://jimo.studio/blog/2026-outlook-capital-accelerates-ai-adoption-tech-giants-stop-showboating/",
+    "confidence": 0.9,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI融资 2026"
+  },
+  {
+    "name": "Opus",
+    "website": "https://www.opus.com/",
+    "description": "为医疗、金融、保险等高监管行业提供AI原生工作流自动化平台，支持端到端任务执行并保持合规审计。",
+    "category": "agent",
+    "region": "🇸🇬",
+    "funding_total": "Pre-Series B (金额未披露)",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "由Arbor Ventures领投Pre-Series B，350+员工，已在美国、欧洲、中东部署，用于自动化医疗理赔、KYC/AML验证等关键流程。",
+    "latest_news": "2026-01: 完成Pre-Series B融资，用于全球扩展企业部署",
+    "source": "Wamda",
+    "source_url": "https://www.wamda.com/2026/01/appliedai-raises-pre-series-b-scale-enterprise-ai-platform",
+    "confidence": 0.85,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Singapore AI startup funding 2026"
+  },
+  {
+    "name": "Lambda",
+    "website": "https://lambdalabs.com",
+    "description": "提供基于NVIDIA GPU的AI模型训练云基础设施和软件服务。",
+    "category": "hardware",
+    "region": "🇪🇺",
+    "funding_total": "$480M Series D",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2025年2月获4.8亿美元D轮融资NVIDIA参与，与CoreWeave竞争GPU云租赁市场，实现NVIDIA硬件垂直整合。",
+    "latest_news": "2025-02: $480M Series D by NVIDIA等",
+    "source": "TechCrunch",
+    "source_url": "https://www.finanzen.net/nachricht/aktien/startup-investitionen-nvidia-aktie-als-kapitalgeber-an-diesen-ki-startups-ist-der-chip-riese-beteiligt-14600376",
+    "confidence": 0.85,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "KI Startup Finanzierung"
+  },
+  {
+    "name": "Nscale",
+    "website": "https://nscale.com",
+    "description": "伦敦全栈AI基础设施提供商，专注GPU云和AI训练平台。",
+    "category": "hardware",
+    "region": "🇪🇺",
+    "funding_total": "€377M Series C",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2025年C轮3.77亿欧元，一个月前B轮破纪录，支持欧洲云计算AI竞赛。",
+    "latest_news": "2025: €377M Series C",
+    "source": "EU-Startups",
+    "source_url": "https://www.eu-startups.com/2025/11/europe-top-10-ai-funding-rounds-of-2025/",
+    "confidence": 0.88,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI chip startup funding"
+  },
+  {
+    "name": "Orbital",
+    "website": "https://orbital.ai",
+    "description": "AI平台自动化房地产法律流程，解决房地产交易法律基础设施现代化问题。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "$60M Series B",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "完成6000万美元B轮融资，针对房地产法律复杂性定制AI，市场机会巨大，现代化交易法律基础设施。",
+    "latest_news": "2026-01: 完成6000万美元B轮融资",
+    "source": "Tech.eu",
+    "source_url": "https://tech.eu",
+    "confidence": 0.9,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026"
+  },
+  {
+    "name": "生数科技",
+    "website": "https://shengshu-ai.com",
+    "description": "专注视觉多模态大模型研发，核心团队来自清华大学，完成数亿元Pre-A轮融资。",
+    "category": "image",
+    "region": "🇨🇳",
+    "funding_total": "数亿元 Pre-A轮",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "founder_background"
+    ],
+    "why_matters": "红杉中国与百度风投领投数亿元（约 $30M+），核心团队源自清华大学，专注于视觉多模态生成技术研发。",
+    "latest_news": "2024-01: 完成数亿元Pre-A轮融资，由红杉中国、百度风投投资。",
+    "source": "EqualOcean",
+    "source_url": "https://www.equalocean.com/news/20240120",
+    "confidence": 0.9,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "glm_search",
+    "search_keyword": "AIGC融资"
+  },
+  {
+    "name": "Aleph Alpha",
+    "website": "https://aleph-alpha.com",
+    "description": "德国公司开发欧洲中心的大型语言模型，强调数据主权、透明度和EU合规，服务法律医疗政府行业。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "€500M",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "融资约5亿欧元，由Bosch Ventures和Schwarz Group支持；专注可解释AI和多语言多模态模型，符合欧盟严格标准，针对受监管行业定制。",
+    "latest_news": "2025: 持续融资加速欧洲AI创新",
+    "source": "Kanerika",
+    "source_url": "https://kanerika.com/blogs/ai-companies-in-europe/",
+    "confidence": 0.9,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup"
+  },
+  {
+    "name": "Quantexa",
+    "website": "https://quantexa.com",
+    "description": "英国决策智能平台，专注金融犯罪检测，通过连接内外部数据发现洗钱欺诈模式。",
+    "category": "finance",
+    "region": "🇪🇺",
+    "funding_total": "Unicorn $1.8B valuation",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "独角兽估值超18亿美元，服务HSBC、渣打银行及政府情报机构，帮助金融机构满足监管要求并防御复杂威胁。",
+    "latest_news": "2025: 独角兽地位确认",
+    "source": "Kanerika",
+    "source_url": "https://kanerika.com/blogs/ai-companies-in-europe/",
+    "confidence": 0.85,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup"
+  },
+  {
+    "name": "d-Matrix",
+    "website": "https://d-matrix.ai",
+    "description": "数据中心AI推理芯片公司，采用内存计算技术和芯粒级互连实现高效能推理",
+    "category": "hardware",
+    "region": "🇺🇸",
+    "funding_total": "$275M+ (Series C+)",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation"
+    ],
+    "why_matters": "2025年Q4第二大AI硬件融资（2.75亿美元），专注内存计算（IMC）技术解决数据中心推理能效问题。与Unconventional AI并列为新兴模拟/内存计算领域的关键参与者，代表AI芯片设计的范式转变",
+    "latest_news": "2025-Q4: 融资2.75亿美元，专注数据中心AI推理优化",
+    "source": "Atlantic-Pacific Capital",
+    "source_url": "https://www.atlantic-pacific.capital/2026/01/20/ai-hardware-semiconductors-startup-funding-trends/",
+    "confidence": 0.88,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI semiconductor startup investment"
+  },
+  {
+    "name": "Krutrim AI",
+    "website": "https://krutrim.com",
+    "description": "印度首个AI独角兽，由Ola创始人Bhavish Aggarwal创立，提供本土化大语言模型。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$75M",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation",
+      "growth_anomaly"
+    ],
+    "why_matters": "2024年1月以50M美元融资即达10亿美元估值，成为印度最快独角兽；专注印度本土LLM，解决语言本地化挑战，总融资75M美元。",
+    "latest_news": "2024-01: 成为印度首个AI独角兽",
+    "source": "AI Funding Tracker",
+    "source_url": "https://aifundingtracker.com/top-ai-startups-india/",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026"
+  },
+  {
+    "name": "Wasabi AiR",
+    "website": "https://wasabi.com",
+    "description": "Wasabi AiR 是热云存储服务，利用AI驱动元数据标签自动分类存储数据，支持AI工作负载。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$70M 新股权，总融资超$600M，估值$1.8B",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly"
+    ],
+    "why_matters": "获L2 Point和Pure Storage投资$70M，管理超3EB数据，16个全球区域，专为生成式AI提供无出口费高性能存储，估值达$1.8B挑战云巨头。",
+    "latest_news": "2026-01: 融资$70M扩展AI基础设施和Wasabi Fire产品",
+    "source": "IBS Intelligence",
+    "source_url": "https://ibsintelligence.com/ibsi-news/wasabi-raises-70m-to-scale-ai-driven-cloud-storage/",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI glasses startup 2026"
+  },
+  {
+    "name": "Tucuvi",
+    "website": "https://tucuvi.com",
+    "description": "西班牙AI医疗对话初创，提供B2B医疗软件服务。",
+    "category": "healthcare",
+    "region": "🇺🇸",
+    "funding_total": "$20M Series A",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2026年1月完成2000万美元A轮融资，专注AI医疗对话系统，在欧洲医疗AI领域获得显著资金认可。",
+    "latest_news": "2026-01: $20M Series A融资",
+    "source": "Growth List",
+    "source_url": "https://growthlist.co/ai-startups/",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "generative AI startup Series A"
+  },
+  {
+    "name": "Blackbird.AI",
+    "website": "https://blackbird.ai",
+    "description": "美国AI网络安全分析平台，提供数据情报服务。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$28M Venture",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2026年1月2800万美元Venture轮融资，专注AI驱动的网络安全情报分析，显示出强劲的市场验证。",
+    "latest_news": "2026-01: $28M Venture融资",
+    "source": "Growth List",
+    "source_url": "https://growthlist.co/ai-startups/",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "generative AI startup Series A"
+  },
+  {
+    "name": "Protege",
+    "website": "https://withprotege.ai",
+    "description": "美国AI数据管理平台，提供企业级B2B数据解决方案。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$30M Series A",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2026年1月完成3000万美元A轮融资，专注AI数据基础设施，在企业AI数据管理领域获得重要突破。",
+    "latest_news": "2026-01: $30M Series A融资",
+    "source": "Growth List",
+    "source_url": "https://growthlist.co/ai-startups/",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "generative AI startup Series A"
+  },
+  {
+    "name": "Inferact",
+    "website": "https://inferact.ai",
+    "description": "开源推论引擎vLLM的商用化平台，简化AI模型推论运营。",
+    "category": "agent",
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "$150M 种子轮",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly"
+    ],
+    "why_matters": "a16z和Lightspeed主導$150M种子轮，估值$800M，专注vLLM的PagedAttention优化KV cache，显著降低推论内存消耗并提升GPU并发处理能力。",
+    "latest_news": "2026.01.22: $150M种子轮融资，a16z领投",
+    "source": "note",
+    "source_url": "https://note.com/startup_now0708/n/n324ca156c6d3",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI半導体 スタートアップ 資金調達"
+  },
+  {
+    "name": "DingTalk A1",
+    "website": "https://www.dingtalk.com",
+    "description": "钉钉推出的AI录音卡片，用于会议记录和笔记生成。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "card",
+    "use_case": "meeting_notes",
+    "innovation_traits": [
+      "non_traditional_form",
+      "portable",
+      "single_use_case",
+      "productivity"
+    ],
+    "region": "🇪🇺",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "录音卡片作为非传统AI载体，专注会议场景录音转笔记，入选2025 AI硬件TOP30。",
+    "latest_news": "2025入选德本咨询AI硬件新物种TOP30",
+    "source": "[1]",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-01-28",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "robotics startup Europe funding"
+  },
+  {
+    "name": "Apella Technology",
+    "website": "https://apella.io",
+    "description": "美国医疗AI公司，专注于医疗保健领域的创新技术。",
+    "category": "healthcare",
+    "region": "🇺🇸",
+    "funding_total": "$80M Series B",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2026年1月完成8000万美元B轮融资，医疗AI赛道获得顶级资本青睐，估值快速增长。",
+    "latest_news": "2026-01: $80M Series B融资",
+    "source": "Growth List",
+    "source_url": "https://growthlist.co/ai-startups/",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-28",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI startup funding 2026"
+  },
+  {
+    "name": "百川智能",
+    "website": "https://baichuan-ai.com",
+    "description": "由王小川创立的大模型公司，成立不到一年即跻身独角兽行列。",
+    "category": "other",
+    "region": "🇨🇳",
+    "funding_total": "$700M+ A轮",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "founder_background",
+      "funding_signal"
+    ],
+    "why_matters": "搜狗创始人王小川创立，成立不到一年总融资金额超50亿元人民币，估值超10亿美元，获阿里、腾讯、小米联合投资。",
+    "latest_news": "近期: 完成A轮融资，总融资金额超50亿元",
+    "source": "example.com",
+    "source_url": "https://www.example.com/news/baichuan-ai-series-a",
+    "confidence": 0.95,
+    "discovered_at": "2026-01-28",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI创业公司 A轮 B轮"
+  },
+  {
+    "name": "AutoGPT",
+    "website": "https://agpt.co",
+    "description": "开源自主智能代理平台，由 Significant Gravitas 团队维护。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "community_buzz"
+    ],
+    "why_matters": "GitHub 超过 18万+ Stars（181,612），社区热度极高，代表 Agentic 开源生态主流方向。",
+    "latest_news": "2026-02: GitHub Stars 181,612",
+    "source": "AutoGPT",
+    "source_url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "confidence": 0.8,
+    "discovered_at": "2026-01-31",
+    "discovery_method": "manual_restore",
+    "search_keyword": "AutoGPT autonomous agent open source",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/AutoGPT_Logo_%282024-present%29.svg/250px-AutoGPT_Logo_%282024-present%29.svg.png"
+  },
+  {
+    "name": "雷鸟创新 (TCL RayNeo)",
+    "website": "https://www.rayneo.com",
+    "description": "TCL 孵化的 AR 眼镜品牌，聚焦消费级智能眼镜与 XR 体验。",
+    "category": "hardware",
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "market_leader",
+      "hardware_innovation"
+    ],
+    "why_matters": "Counterpoint 披露 2025Q3 全球 AR 眼镜市占率 24%，TCL 体系资源+规模化优势明显。",
+    "latest_news": "2025-09: Q3 2025 市占率 24%",
+    "source": "RayNeo About Us",
+    "source_url": "https://www.rayneo.com/pages/about-us",
+    "confidence": 0.8,
+    "discovered_at": "2026-01-31",
+    "discovery_method": "manual_restore",
+    "search_keyword": "TCL RayNeo AR glasses market share",
+    "logo_url": "https://logo.clearbit.com/rayneo.com"
+  }
+]

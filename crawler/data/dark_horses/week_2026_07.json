@@ -1,0 +1,1887 @@
+[
+  {
+    "name": "Dash0",
+    "website": "https://dash0.com",
+    "description": "AI可观测性平台，帮助开发者监控和管理AI模型性能，已有300多家付费客户包括Starling和Porsche。",
+    "category": "agent",
+    "region": "🇪🇺",
+    "funding_total": "$35M Series A",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Cherry Ventures和Accel领投3500万美元A轮，平台已有300+付费客户包括Starling银行和保时捷，专注AI可观测性这一新兴细分领域。",
+    "latest_news": "2025-10: Cherry Ventures和Accel领投$35M Series A",
+    "source": "Sifted",
+    "source_url": "http://sifted.eu",
+    "confidence": 0.9,
+    "discovered_at": "2026-02-08",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding"
+  },
+  {
+    "name": "Even G2",
+    "website": "https://www.evenrealities.com/ja-JP/smart-glasses",
+    "description": "元Apple Watch開発者設計の超薄型AIスマートグラスで、カメラ非搭載の日常使い特化型、3Dディスプレイとリアルタイム会話支援を実現。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "non_traditional_form",
+      "screenless",
+      "proactive_ai",
+      "wearable",
+      "media_coverage"
+    ],
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "media_coverage"
+    ],
+    "why_matters": "「かけていることを忘れる」デザイン思想でAIを日常に溶け込ませ、日本市場本格展開、会話革命を実現。",
+    "latest_news": "2026年1月: Acalieと日本ディストリビューター契約、春頃全国展開開始",
+    "source": "Acalieプレスリリース",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AIメガネ デバイス 日本"
+  },
+  {
+    "name": "Duna",
+    "website": "https://duna.com",
+    "description": "由前Stripe高管创立的AI原生商业身份平台，构建互联网缺失的B2B身份层。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "€30M Series A",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "前Stripe高管创办，€30M A轮融资，打造互联网商业身份基础设施，具有颠覆性潜力。",
+    "latest_news": "2026-02: 完成€30M Series A融资",
+    "source": "EU Tech Future",
+    "source_url": "https://eutechfuture.com",
+    "confidence": 0.9,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup"
+  },
+  {
+    "name": "Statusphere",
+    "website": "https://statusphere.com",
+    "description": "企业级AI驱动的影响者营销平台，自动化创作者招募、履约、合规和报告，Express等品牌客户。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$27M ($18M Series A)",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Volition Capital领投1800万美元A轮，总融2700万，服务Express、Kendo Brands等企业客户，1小时内完成大规模影响者项目设置。",
+    "latest_news": "2026-01-21: 1800万美元A轮融资",
+    "source": "The Fashion Law",
+    "source_url": "https://www.thefashionlaw.com/generative-ai-investment-and-ma-tracker/",
+    "confidence": 0.92,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026"
+  },
+  {
+    "name": "安克 AI 录音豆",
+    "website": "https://anker.com",
+    "description": "安克与飞书联合的AI录音设备，专注音频记录与转录。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "bean_recorder",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "non_traditional_form",
+      "portable",
+      "single_use_case",
+      "voice_first"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "豆状小型录音硬件，集成AI转录，针对会议笔记等生产力场景。",
+    "latest_news": "2026-01: 安克创新与飞书发布首款AI硬件。",
+    "source": "字节跳动合作报道",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI pendant necklace wearable 2026"
+  },
+  {
+    "name": "Gather AI",
+    "website": "https://gather.ai",
+    "description": "提供仓库摄像头和无人机AI平台，使用好奇AI检测库存、条码和安全问题。",
+    "category": "hardware",
+    "region": "🇺🇸",
+    "funding_total": "$74M total ($40M Series B)",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "获Smith Point Capital（前Salesforce联席CEO Keith Block创立）领投4000万美元B轮，总融7400万美元，卡内基梅隆大学博士创始人开发经典贝叶斯+神经网络视觉AI，避免LLM幻觉问题，应用于冷库等恶劣环境，客户包括Kwik Trip和GEODIS。",
+    "latest_news": "2026-02-09: $40M Series B by Smith Point Capital",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/09/gather-ai-maker-of-curious-warehouse-drones-lands-40m-led-by-keith-blocks-firm/",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding"
+  },
+  {
+    "name": "Cohere",
+    "website": "https://cohere.com",
+    "description": "企业级大语言模型平台，专注主权AI和安全部署",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$1.64B (Sep 2025)",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "founder_background",
+      "funding_signal"
+    ],
+    "why_matters": "由Google Brain校友创立，2025年达到$1亿ARR，估值$7B，专注企业和主权AI而非消费者聊天机器人，加拿大AI独角兽代表，获微软、Nvidia等战略投资",
+    "latest_news": "2025-09: $7B估值，$100M ARR里程碑",
+    "source": "Wellows",
+    "source_url": "https://wellows.com/blog/ai-startups/",
+    "confidence": 0.87,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026"
+  },
+  {
+    "name": "RobCo Modular AI Robots",
+    "website": "https://www.rob.co",
+    "description": "Modular AI-powered robotic arms for industrial automation, using physical AI to learn tasks through demonstration and digital twins.",
+    "category": "hardware",
+    "hardware_type": "traditional",
+    "form_factor": "modular_robotic_arm",
+    "use_case": "industrial_automation",
+    "innovation_traits": [
+      "physical_ai",
+      "modular_hardware",
+      "autonomous_learning",
+      "media_coverage"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "$142.5M",
+    "price": "unknown",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_over_100M",
+      "physical_ai",
+      "us_expansion"
+    ],
+    "why_matters": "Physical AI robotics platform with modular hardware kits for SME manufacturing, raised $100M for US scaling, customers include BMW.",
+    "latest_news": "Jan 29, 2026: Raised $100M Series C led by Lightspeed and Lingotto for US expansion.",
+    "source": "RobCo Press[1], Sky Star News[original]",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "robotics AI company raised funding"
+  },
+  {
+    "name": "J-STYLE Smart Rings",
+    "website": "https://www.jointcorp.com",
+    "description": "AI-powered screenless smart rings for continuous multi-dimensional health tracking and predictive health insights.",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "smart_ring",
+    "use_case": "health_monitoring",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "screenless",
+      "single_use_case",
+      "health",
+      "media_coverage"
+    ],
+    "region": "🇸🇬",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "media_coverage"
+    ],
+    "why_matters": "Screenless smart ring with ECG, non-invasive glucose risk assessment, and AI predictive health for preventive wellness.",
+    "latest_news": "Showcased at WHX DUBAI 2026, Feb 9-12.",
+    "source": "J-STYLE WHX DUBAI announcement[2]",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI wearable device startup Asia 2026"
+  },
+  {
+    "name": "安克 AI 录音豆",
+    "website": "https://www.anker.com",
+    "description": "安克与飞书联合的AI录音设备，小豆形态用于会议记录。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "bean_portable",
+    "use_case": "meeting_notes",
+    "innovation_traits": [
+      "non_traditional_form",
+      "portable",
+      "single_use_case"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "media_coverage"
+    ],
+    "why_matters": "豆状便携录音AI硬件，巨头合作针对办公场景。",
+    "latest_news": "2026-01: 安克创新与飞书发布",
+    "source": "Sina[2]",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI companion device startup"
+  },
+  {
+    "name": "Distyl AI",
+    "website": "https://distyl.ai",
+    "description": "企业级AI技术初创公司，专注于AI驱动的企业解决方案。",
+    "category": "enterprise",
+    "region": "🇺🇸",
+    "funding_total": "未知",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2025年9月达到18亿美元估值，由Khosla Ventures投资，位于旧金山的企业科技独角兽，显示出快速增长势头。",
+    "latest_news": "2025-09: 估值达$1.8B",
+    "source": "CB Insights",
+    "source_url": "https://www.cbinsights.com/research-unicorn-companies",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026"
+  },
+  {
+    "name": "Andercore",
+    "website": "https://andercore.com",
+    "description": "工业供应链AI初创公司，获Atomico和Project A支持进行欧洲扩张。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "$40M Series B",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2026年2月完成4000万美元B轮融资，由顶级VC Atomico领投，结合债务股权推动欧洲扩张。",
+    "latest_news": "2026-02-11: $40M Series B融资",
+    "source": "Sifted",
+    "source_url": "https://sifted.eu",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-11",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup"
+  },
+  {
+    "name": "Harmattan AI",
+    "website": "https://harmattan.ai",
+    "description": "法国国防科技公司，专注自主防御飞机，已获国防部合同。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "$200M Series B",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly"
+    ],
+    "why_matters": "2024年创立即获2亿美元B轮，估值14亿美元，由Dassault Aviation领投，并与法国/英国国防部及乌克兰无人机公司签约。",
+    "latest_news": "2026-01: 达到独角兽估值",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/01/31/meet-the-new-european-unicorns-of-2026/",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-11",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup"
+  },
+  {
+    "name": "Cast AI",
+    "website": "https://cast.ai",
+    "description": "云优化平台，推出OMNI Compute for AI，帮助AI工作负载更高效部署。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "$108M Series C+",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "战略投资后估值超10亿美元，此前1.08亿美元C轮，立陶宛根基，现推出AI计算优化产品。",
+    "latest_news": "2026-01: 立陶宛第五独角兽",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/01/31/meet-the-new-european-unicorns-of-2026/",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-11",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup"
+  },
+  {
+    "name": "MindOne",
+    "website": "https://ikko.com/en-jp/products/mind-one-phone",
+    "description": "众筹百万美金的AI卡片手机，主打小屏幕便携形态。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "card_phone",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "new_form_factor",
+      "portable",
+      "crowdfunding",
+      "affordable"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$1.48M",
+    "price": "$299",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "crowdfunding_success"
+    ],
+    "why_matters": "在CES 2026备受关注，以卡片手机的新形态在Kickstarter获得148万美金众筹，验证了非主流手机形态的市场需求。",
+    "latest_news": "CES 2026备受关注，Kickstarter上线30天斩获约148万美金。",
+    "source": "Kickstarter",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "needs_verification": true,
+    "discovered_at": "2026-02-11",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI硬件 众筹 创新",
+    "logo_url": "https://logo.clearbit.com/ikko.com"
+  },
+  {
+    "name": "Sesame AI Smart Glasses",
+    "website": "https://www.sesame.com/",
+    "description": "Lightweight AI-powered smart glasses with voice-first conversational AI companion that observes the world alongside you",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "ai_companion, ambient_interface, life_logging",
+    "innovation_traits": [
+      "non_traditional_form",
+      "voice_first",
+      "always_on",
+      "proactive_ai",
+      "screenless",
+      "fashion_forward"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "$307.6M",
+    "price": "unknown",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "major_funding",
+      "social_buzz",
+      "strategic_team"
+    ],
+    "why_matters": "由 Oculus 创始人 Brendan Iribe 领导，融资 $250M Series B，采用语音优先交互范式，超 100 万用户测试，500 万分钟对话记录。与 Meta Vision Pro ($3,500) 和 Apple 高端路线形成差异化竞争——轻量级、日常可穿戴、自然语音交互。团队汇聚 Oculus/Meta 硬件专家，解决了 Echo Frames 等产品失败的可穿戴性问题。",
+    "latest_news": "2026年预计发布；iOS 应用 beta 已开放，AI 助手 Maya 和 Miles 获得 The Verge 'genuinely fun' 评价",
+    "source": "TechCrunch, Sequoia Capital, Road to VR",
+    "confidence": 0.95,
+    "needs_verification": true,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI glasses startup 2026",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T05:29:18.922756Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "logo_url": "https://logo.clearbit.com/sesame.com"
+  },
+  {
+    "name": "Modal Labs",
+    "website": "https://modal.com",
+    "description": "专注AI推理基础设施优化，降低计算成本并加速模型响应时间。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$50M ARR，正在谈25亿美元估值新轮",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "growth_anomaly",
+      "funding_signal"
+    ],
+    "why_matters": "ARR达5000万美元，5个月内估值从11亿美元翻倍至25亿美元，General Catalyst拟领投，CEO前Spotify/Better.com数据高管，在AI推理赛道竞争Baseten（50亿估值）和Fireworks AI（40亿估值）。",
+    "latest_news": "2026-02-11: 谈判25亿美元估值融资",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/11/ai-inference-startup-modal-labs-in-talks-to-raise-at-2-5b-valuation-sources-say/",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T05:29:29.281992Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Monaco",
+    "website": "https://monaco.ai",
+    "description": "AI原生销售平台，包括CRM系统、潜在客户数据库和自动化邮件代理，针对种子/A轮初创。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$35M ($10M seed + $25M Series A)",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "demand_signal_hn"
+    ],
+    "why_matters": "前Founders Fund VC Sam Blond创办，Founders Fund领投2500万美元A轮，公开测试版挑战Salesforce/HubSpot，提供ZoomInfo式数据库和AI代理执行邮件活动。",
+    "latest_news": "2026-02-11: 公开Beta上线，完成3500万美元融资",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/11/former-founders-fund-vc-sam-blond-launches-ai-sales-startup-to-upend-salesforce/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T05:29:29.571141Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 1,
+          "top_story_id": "46898397",
+          "points": 3,
+          "comments": 5,
+          "engagement_depth_ratio": 1.6667,
+          "is_controversial": false,
+          "top_comments_sample": [
+            "This looks really promising. I understand the rationale behind BYOS, but I think there's a segment of builders who'd prefer a managed service over provisioning/securing their own machine.",
+            "Thanks! You're absolutely right. Managed hosting is actually on the roadmap. The plan is to offer on-demand containers (likely Azure Container Apps or Fly.io) where users can spin up an environment without provisioning their own server. For privacy-conscious users, even the managed option would use encrypted volumes with user-controlled keys - so we (CloudForge) couldn't access their code either. BYOS came first because that's what I personally needed, but managed is definitely coming for those who prefer the convenience. Would you prefer pay-per-hour or a monthly allocation (like \"50 hours/month included\")?",
+            "My policy as a CTO is to always prefer things which are capped, so I'd go with 50 hours/month.",
+            "Yep, agreed — BYOS is great for folks who already have a box, but “managed” removes the biggest friction for trying it. Managed is on the roadmap. For that, I’m leaning toward on-demand containers (Azure Container Apps / Fly.io-style) with: - ephemeral compute (spin up, work, tear down) - encrypted workspace (ideally user-controlled keys) - optional bring-your-own repo/storage so CloudForge never needs plaintext access to your code Curious: would “managed” feel acceptable if it were BYOC (runs in your cloud account), vs CloudForge-managed infra? And what matters most: one-click setup, predictable monthly cap, or sessions surviving network switches/sleep?",
+            "I've implemented Managed Server!"
+          ],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.5667,
+        "demand_tier": "medium",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "评论者认为CloudForge的BYOS模式有前景，但更希望有托管服务以减少配置服务器的摩擦。开发者确认托管服务已在路线图上，将使用按需容器如Azure Container Apps或Fly.io，并强调加密卷和用户控制密钥以保护隐私。一位用户表示已实现托管服务器，并偏好每月50小时的固定上限。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "positive",
+      "confidence": 0.95
+    }
+  },
+  {
+    "name": "Friend",
+    "website": "https://moge.ai/product/friend",
+    "description": "AI-powered wearable pendant that provides real-time conversational companionship and emotional support without subscriptions.",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "pendant",
+    "use_case": "emotional_companion",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "voice_first",
+      "screenless",
+      "always_on",
+      "affordable",
+      "no_subscription",
+      "single_use_case"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "unknown",
+    "price": "$99",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "affordable"
+    ],
+    "why_matters": "轻量级吊坠形态，提供无判断AI陪伴，专注孤独感缓解，$99一次性购买无订阅，已支持iOS并计划Android。",
+    "latest_news": "目前在美国和加拿大可用，有媒体评论和网站分析显示用户兴趣。",
+    "source": "moge.ai",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI pin badge wearable assistant",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T05:29:58.524482Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 28,
+          "top_story_id": "46962871",
+          "points": 74,
+          "comments": 29,
+          "engagement_depth_ratio": 0.3919,
+          "is_controversial": false,
+          "top_comments_sample": [
+            "Hi HN! My name is Marv and I made paperboat.website, a friendly platform for personal websites and blogs. I wanted to create a place for sharing interesting things with your friends and everyone else, without all the annoyances most of the world wide web comes with these days. The sites are simple and easy to set up. Feel free to give it a try and let me know what you think!",
+            "I haven't gone through and created a paperboat site (as I'm kind of drowning in channels at the moment), but I love the aesthetic and the spirit of a stripped down social space. Congratulations on the launch and best of luck!",
+            "Congrats on the launch! Love to see more minimal, single-purpose sites like this popping up. The no-JS, no-ads approach is refreshing. Two quick questions. On data ownership: do the ToS allow you (or a future acquirer) to sell or commercially use the content people publish on their blogs? And is there a way to export blog posts, say as Markdown? Portability is a big deal for me before committing to a platform. Will definitely subscribe either way. Nice work.",
+            "This reminds me of bearblog.dev, in a very positive way. One thing I adore about Bear is their discover page. Have you considered adding one?",
+            "Congratulations on your launch! Like others have mentioned Bearblog, I'd also like to mention fika.bar, which is a service similar to yours. I wish success to all of you!",
+            "10-20 years ago running a social network platform was viable for individuals. Today, in the era of information warfare, SEO, trolling and in general magnitudes more bad actors, it's almost impossible. Friend has encountered things like people uploading illegal content and then reporting to hosting provider or various terrorist or political organisations publishing their manifestos and vile content then making death threats for taking it down and so on. Also no ads, means how the platform is going to survive once provider runs out of money or figures out it is not as easy as it looks like?",
+            "Lots of mentions of bearblog.dev, I want to mention https://mataroa.blog which is even more similar.",
+            "Whenever I hear the words \"paper boat\" I'm put in mind of a certain [1] vtuber [2]. [1] https://youtu.be/pYVEIX7nSEs?t=769 [2] For those unfamiliar with the vtuber scene: This video is not AI generated. She's a legitimate content creator; the views and subs on that video are real and organic. She's a real human with a video camera and face tracking that maps her real human face's expressions and movements onto an anime character model in real time, broadcast on a livestream. There's a whole ecosystem of supporting software, specialized model artists and riggers, agencies that provide all sorts of support to individual creators in exchange for a cut of ad / superchat / sub / merch / event rev",
+            "I am not putting you down - this is a very cool project. But I don't think it's really that impressive after I've seen hundreds of similar projects on HN. Does anyone feel the same? It's very simple to code (or vibe code) this in a week. Kinda uninteresting.",
+            "Congrats on the launch! I find the name really nice and i think it has lot of potential for marketability. Is the goal to have your website/blog only for friends or also for strangers? If its the second I think it would be nice to display \"Random site of the day\", \"Most visited post of the month\" and \"Most visited page of the month\". This because i think there is people like me who dont write much but likes to read other peoples blogs and would be great for discovery"
+          ],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.2096,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "社区重点讨论了产品价值与落地细节。评论情绪整体偏中性分歧，并反复提及可用性与真实场景。这类反馈可用于判断短期需求强度是否能转化为持续增长。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "mixed",
+      "confidence": 0.6
+    }
+  },
+  {
+    "name": "MindOne",
+    "website": "https://ikko.com/en-jp/products/mind-one-phone",
+    "description": "众筹百万美金的AI卡片手机，主打小屏幕便携形态。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "card_phone",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "new_form_factor",
+      "portable",
+      "crowdfunding",
+      "media_coverage"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$1.48M",
+    "price": "$299",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "crowdfunding_success"
+    ],
+    "why_matters": "卡片手机形态，在Kickstarter众筹148万美金，验证了非主流手机形态的市场需求。",
+    "latest_news": "CES2026备受关注，去年7月众筹成功。",
+    "source": "Kickstarter News",
+    "confidence": 0.9,
+    "source_title": "众筹百万美金的AI手机进入中国，小屏幕能否撕开内卷缺口？",
+    "is_hardware": true,
+    "needs_verification": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI硬件 众筹 创新",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T06:40:32.750342Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "logo_url": "https://logo.clearbit.com/ikko.com"
+  },
+  {
+    "name": "XbotGo Falcon AI",
+    "website": "https://xbotgo.com/pages/xbotgo-falcon",
+    "description": "具备智能运动识别与自动拍摄功能的AI智能摄像机。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "smart_camera",
+    "use_case": "sports_recording",
+    "innovation_traits": [
+      "single_use_case",
+      "portable",
+      "crowdfunding",
+      "media_coverage"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$1.42M",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "crowdfunding_success"
+    ],
+    "why_matters": "专注于运动场景的AI自动跟拍摄像机，众筹142万美元，解决了特定场景的拍摄痛点。",
+    "latest_news": "美国智能摄像机众筹142万美元，AI+硬件赛道火热。",
+    "source": "Crowdfunding News",
+    "confidence": 0.85,
+    "source_title": "美国智能摄像机众筹142万美元，AI+硬件赛道火热！",
+    "is_hardware": true,
+    "needs_verification": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI硬件 众筹 创新",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T06:40:33.137120Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "logo_url": "https://logo.clearbit.com/xbotgo.com"
+  },
+  {
+    "name": "CoMind",
+    "website": "https://comind.io",
+    "description": "开发非侵入式脑部监测设备，实时测量脑血流和压力。",
+    "category": "healthcare",
+    "region": "🇪🇺",
+    "funding_total": "$60M",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Plural领投6000万美元，伦敦健康科技初创专注脑部非侵入监测，填补医疗设备创新空白。",
+    "latest_news": "2025-10: Plural领投$60M融资轮",
+    "source": "Sifted",
+    "source_url": "http://sifted.eu",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T07:36:33.226650Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Tandem Health",
+    "website": "https://tandemhealth.ai",
+    "description": "AI医疗协作者，提供医生和患者的智能辅助工具。",
+    "category": "healthcare",
+    "region": "🇪🇺",
+    "funding_total": "$50M",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "独家报道5000万美元融资，专注医疗AI协作者，帮助提升临床决策效率。",
+    "latest_news": "2025-06: 独家报道筹资$50M用于医疗协作者",
+    "source": "Sifted",
+    "source_url": "http://sifted.eu",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T07:36:33.510431Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Satellai AI Pet Collar",
+    "website": "https://satellai.com/",
+    "description": "AI宠物项圈，追踪定位并用AI分析宠物行为和健康数据。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "pet_collar",
+    "use_case": "pet_health",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "single_use_case",
+      "health"
+    ],
+    "region": "🇸🇬",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "宠物专用AI项圈，提供行为追踪和健康监测，针对宠物主人的具体痛点。",
+    "latest_news": "CES 2026: 展示AI宠物追踪与健康分析项圈。",
+    "source": "[2]",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "needs_verification": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI hardware startup Singapore",
+    "logo_url": "https://logo.clearbit.com/satellai.com"
+  },
+  {
+    "name": "Electric Twin",
+    "website": "https://electrictwin.ai",
+    "description": "合成受众和人类行为预测引擎，由Marc Andreessen支持的AI初创公司",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "$10M融资（2026年2月）",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "founder_background"
+    ],
+    "why_matters": "获得Marc Andreessen支持的$10M融资，投资者包括Palantir、Slack和Entrepreneurs First的天使，源自疫情期间的创新项目，代表人类行为预测AI的新兴类别，融资背景强劲",
+    "latest_news": "2026-02-12: Marc Andreessen支持$10M融资轮，Palantir和Slack天使投资者参与",
+    "source": "Sifted",
+    "source_url": "https://sifted.eu",
+    "confidence": 0.82,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T19:38:51.748686Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "error",
+          "window_days": 7,
+          "error": "hn_search_failed:HTTPSConnectionPool(host='hn.algolia.com', port=443): Read timed out. (read timeout=12)"
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Speak",
+    "website": "https://www.speak.com",
+    "description": "通过AI对话提供个性化语言学习体验，帮助用户快速掌握口语技能。",
+    "category": "education",
+    "region": "🇺🇸",
+    "funding_total": "$165.8M",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "demand_signal_hn"
+    ],
+    "why_matters": "2024年12月达到10亿美元估值，总融资1.658亿美元，获OpenAI Startup Fund和Y Combinator投资，是对话式AI语言学习的领先者。",
+    "latest_news": "2024-12: 达到10亿美元估值",
+    "source": "TechCrunch",
+    "source_url": "https://wellows.com/blog/ai-startups/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T19:41:01.319494Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 14,
+          "top_story_id": "46991591",
+          "points": 52,
+          "comments": 71,
+          "engagement_depth_ratio": 1.3654,
+          "is_controversial": true,
+          "top_comments_sample": [
+            "I have been hungry to do more work from my cell phone. It's ridiculous to be forced to sit in front of a computer to work with AI. My current solution is to have claude (--dangerously-skip-permissions) listen for messages in my slack DMs to myself and take action in response to those messages. I would happily switch to something better. Why is Omnara better?",
+            "OpenCode is free and has an excellent front end for this kind of work",
+            "OpenChamber is a good option you use opencode",
+            "sounds really close to fart, in japanese.",
+            "I don't quite see the appeal, because Claude Code already supports something similar. They spin up container to make the changes in and then open a PR. I can just use the Claude iOS app to do this. My computer doesn't need to be running or exposed to the internet.",
+            "I think someone should also mention Happy ( https://happy.engineering ), which has decent mobile clients and is currently MIT-licensed. Although I must say that Omnara's UI looks absolutely fantastic. Well done!",
+            "So you're just a Claude Code wrapper? Question to YC: how did this get funded?",
+            "There's certainly something to the \"mass delegation\" trend. My best rn is on email: https://ai-chat.email",
+            "Another option that does all this and more for open code: https://github.com/btriapitsyn/openchamber Not affiliated with that project, but have been using it for a few weeks and it blows every other 'GUI for the CLI agents' I've tried out of the water in terms of both features and just working snappily/consistently. Also totally free, and actively being improved by the solo maintainer and an active community of contributors. Omnara providing a tunnel for you is nice, but considering Tailscale is dead simple and free, feels hard to justify $20 a month for what looks like considerably less features than openchamber",
+            "Woah, I had this exact idea, down to the tunneling and local machine! I basically just coded up a Tailscale + caffeinate harness for my agents and it's been working super well. Your UI looks great though, glad to see more players in this space!"
+          ],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.6635,
+        "demand_tier": "medium",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "评论者认可Omnara的UI设计出色，并欣赏其支持从手机等设备访问AI代理的功能。多个用户提到OpenCode、OpenChamber和Happy等免费替代品，认为Omnara的功能可以通过Tailscale等工具实现，且收费20美元每月难以 оправдать。有些人质疑Omnara是否只是Claude Code的包装，并指出Claude iOS app已支持类似移动操作。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "mixed",
+      "confidence": 0.9
+    }
+  },
+  {
+    "name": "Electric Twin",
+    "website": "https://electrictwin.ai",
+    "description": "开发合成观众模型的AI平台，用于模拟真实用户行为以优化内容测试和营销策略。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "$14M",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "完成1400万美元融资扩展AI观众平台，专注合成模型模拟真实受众，为内容创作者提供首创性测试解决方案，填补市场空白。",
+    "latest_news": "2026-02: 完成$14M融资扩展AI观众平台",
+    "source": "Tech.eu",
+    "source_url": "https://tech.eu",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T19:52:50.703401Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 1,
+          "top_story_id": "46986655",
+          "points": 7,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "HN 暂无足够评论样本用于形成社区结论。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "neutral",
+      "confidence": 0.3
+    }
+  },
+  {
+    "name": "Reflow",
+    "website": "https://reflow.ai",
+    "description": "为企业提供运营可见性AI平台，帮助实时监控和优化业务流程。",
+    "category": "agent",
+    "region": "🇪🇺",
+    "funding_total": "$15M+ seed",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "完成超过1500万美元种子轮融资，专注企业运营AI可见性工具，提供实时数据洞察，支持大规模部署。",
+    "latest_news": "2026-02-11: 完成$15M+种子轮推出运营可见性平台",
+    "source": "Tech.eu",
+    "source_url": "https://tech.eu",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T19:52:50.988322Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "HP EliteBoard G1a Next Gen AI PC",
+    "website": "https://www.hp.com",
+    "description": "世界上首款内置完整AI PC的键盘，将AI计算集成到键盘形态中。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "keyboard",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "non_traditional_form",
+      "new_form_factor",
+      "single_use_case",
+      "media_coverage"
+    ],
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "键盘作为全新AI载体形态，摆脱传统电脑设备限制，专注生产力场景，获CES 2026创新奖。",
+    "latest_news": "CES 2026: 获CES Innovation Award，成为首款键盘内置AI PC。",
+    "source": "Windows Blog",
+    "source_url": "https://blogs.windows.com/windowsexperience/2026/01/13/ces-2026-showcasing-new-windows-11-pc-innovations-across-the-ecosystem/",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "ロボット AI企業 日本",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T03:58:34.965588Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "OPAQUE",
+    "website": "https://opaque.ai",
+    "description": "企业级机密AI平台，作为信任与安全层，支持隐私保护的AI部署。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$55.5M total ($24M Series B)",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "demand_signal_hn"
+    ],
+    "why_matters": "Walden Catalyst领投2400万美元B轮，估值达3亿美元，总融5500万美元，ATRC等战略投资加入，专注企业AI安全层创新。",
+    "latest_news": "2026-02: 完成2400万美元Series B融资",
+    "source": "Pulse 2.0",
+    "source_url": "https://pulse2.com/artificial-intelligence/",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "artificial intelligence company raised funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:00:32.304164Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 4,
+          "top_story_id": "46910612",
+          "points": 2,
+          "comments": 4,
+          "engagement_depth_ratio": 2.0,
+          "is_controversial": false,
+          "top_comments_sample": [
+            "I've been doing exactly the same thing as you and i've found it to be the most reliable.",
+            "I prefer flat files too. I'd rather have mostly manual control of context.",
+            "I am more accustomed to letting AI summarize key points every once in a while, and then supplementing myself.",
+            "I experienced this as well. The built-in memory features are a black-box. Can't see what's stored, can't control when it's recalled and takes random irrelevant examples from past conversations into unrelated conversations. Also, I am into using multiple models, so it was frustrating they can't talk to each other. The .md file approach is cool but like you mentioned, it is an overhead and doesn't scale well. I have been building something in this space (Maximem Vity [ https://maximem.ai ]) that tries to solve this more systematically: a cross-LLM, cross-app memory layer that sits in a secure cloud vault. The idea is you control what gets stored and you can summon specific pieces of it into an"
+          ],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.5644,
+        "demand_tier": "medium",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "评论者分享了对AI内置记忆功能的负面经历，认为其黑箱且不可控，无法跨模型共享。许多人偏好平坦文件或手动控制上下文的方法，认为更可靠且可控。尽管.md文件方法有开销且不利于扩展，但被视为实用替代。一些人提到正在构建跨LLM的系统性记忆解决方案。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "mixed",
+      "confidence": 0.9
+    }
+  },
+  {
+    "name": "Lema AI",
+    "website": "https://lema.ai",
+    "description": "专注于企业供应链和第三方风险的代理AI安全平台，从隐身模式推出。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$24M Series A",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Team8领投2400万美元A轮，Salesforce Ventures参与，专注第三方风险现代化，种子轮由F2 Venture Capital领投。",
+    "latest_news": "2026-02: 从隐身推出并完成2400万美元A轮",
+    "source": "Pulse 2.0",
+    "source_url": "https://pulse2.com/artificial-intelligence/",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "artificial intelligence company raised funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:00:36.889468Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "LayerX",
+    "website": "https://layerx.ai",
+    "description": "日本企业AI平台自动化处理费用管理、发票处理和合规工作流，服务超15,000家企业。",
+    "category": "agent",
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "$192.2M Series B",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly"
+    ],
+    "why_matters": "获1亿美元B轮融资，总额达1.922亿美元，由TCV领投，日本7岁初创B轮最大之一；客户从2024年2月的1万增至2025年4月的1.5万，员工翻倍至430人，针对日本纸质办公痛点。",
+    "latest_news": "2025-10: $100M Series B by Technology Cross Ventures",
+    "source": "TechBuzz",
+    "source_url": "https://www.techbuzz.ai/articles/layerx-scores-100m-series-b-to-automate-japan-s-paper-heavy-offices",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-14",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Japan AI startup funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-14T04:56:32.028061Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Stark Defence",
+    "website": "https://stark.ai",
+    "description": "德国防御科技初创公司，专门开发自杀式无人机和军事AI系统，获得德国联邦国防军大额订单",
+    "category": "hardware",
+    "region": "🇪🇺",
+    "funding_total": ">€1B valuation, Peter Thiel's Founders Fund contribution",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation"
+    ],
+    "why_matters": "€2.86B潜在合同价值（包括期权），Virtus无人机首次获得德国国防部大规模采购；Peter Thiel支持的防御科技独角兽，融资后估值超€10亿；与AeroMass Technologies战略并购扩大产能",
+    "latest_news": "2026-02: 获得€269M初始合同，潜在价值€2.86B，融资后估值突破€10亿",
+    "source": "Manager Magazin / Reuters",
+    "source_url": "https://www.thestar.com.my/tech/tech-news/2026/02/13/germany039s-stark-valued-at-more-than-1-billion-euros-in-funding-round-says-manager-magazin",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-14",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-14T08:18:58.197644Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Ray-Ban Meta",
+    "website": "https://www.meta.com",
+    "description": "Meta 与雷朋合作的 AI 智能眼镜，支持语音交互、拍照及多模态 AI 功能。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "lifestyle",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "voice_first",
+      "media_coverage"
+    ],
+    "region": "🇺🇸",
+    "company_country": "US",
+    "company_country_confidence": 0.95,
+    "funding_total": "unknown",
+    "price": "$299",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "media_coverage"
+    ],
+    "why_matters": "年销量突破 700 万副，同比增长 250%，成为 AI 眼镜领域的标杆产品，验证了智能眼镜作为 AI 载体的商业可行性。",
+    "latest_news": "2025-02: 2025年销量超700万副，同比增长超两倍",
+    "source": "VR陀螺",
+    "source_url": "https://www.sohu.com/a/986743072_549351",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-14",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI智能眼镜 创业公司",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-14T19:02:41.134919Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Oakley AI 智能眼镜",
+    "website": "https://www.oakley.com",
+    "description": "Meta 与 Oakley 合作的面向运动员的 AI 智能眼镜系列。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "sports",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "single_use_case"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "将 AI 眼镜形态拓展至专业运动场景，针对运动员需求设计，丰富了 AI 眼镜的应用生态。",
+    "latest_news": "2024-06: Oakley 系列正式面世",
+    "source": "VR陀螺",
+    "source_url": "https://www.sohu.com/a/986743072_549351",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "discovered_at": "2026-02-14",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI智能眼镜 创业公司",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-14T19:02:42.755151Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Databricks",
+    "website": "https://www.databricks.com",
+    "description": "全球数据科学与机器学习领域的标杆企业，提供融合数据湖与数据仓库的一体化平台及AI模型训练部署服务。",
+    "category": "other",
+    "region": "🇺🇸",
+    "company_country": "US",
+    "company_country_confidence": 0.95,
+    "funding_total": "$5B J轮",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "growth_anomaly",
+      "funding_signal"
+    ],
+    "why_matters": "完成50亿美元股权融资，估值1340亿美元；年化营收54亿美元，同比增长65%，其中AI产品年化营收达14亿美元。",
+    "latest_news": "2026-02-09: 完成50亿美元股权融资，估值1340亿美元，年化营收54亿美元。",
+    "source": "163.com",
+    "source_url": "https://www.163.com/dy/article/KLEG4DFN053469RG.html",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-14",
+    "discovery_method": "glm_search",
+    "search_keyword": "人工智能 独角兽 估值",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-14T19:36:51.358723Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "error",
+          "window_days": 7,
+          "error": "hn_search_failed:HTTPSConnectionPool(host='hn.algolia.com', port=443): Read timed out. (read timeout=12)"
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  }
+]

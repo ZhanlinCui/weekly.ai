@@ -1,0 +1,761 @@
+[
+  {
+    "name": "INMO GO3",
+    "website": "https://inmoglasses.com",
+    "description": "一体式AI+AR智能眼镜，提供沉浸式AR体验和AI助手功能。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "smart_glasses",
+    "use_case": "augmented_reality_assistant",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "proactive_ai"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "一体式设计融合AI与AR，轻量化眼镜形态革新日常增强现实交互",
+    "latest_news": "CES 2026携INMO GO3与AIR3亮相",
+    "source": "东财网",
+    "source_url": "https://biz.eastmoney.com/a/202601053608853826.html",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-23",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI hardware startup Singapore",
+    "country_code": "CN",
+    "country_name": "China",
+    "country_flag": "🇨🇳",
+    "country_display": "🇨🇳 China",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-23T19:59:06.048978Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "mea Platform",
+    "website": "https://mea-platform.com",
+    "description": "AI原生保险技术公司，四年连续盈利后获增长股权投资。",
+    "category": "finance",
+    "region": "🇬🇧",
+    "funding_total": "$50M Growth Equity",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "SEP投资5000万美元少数股权，四年自力更生盈利，证明AI保险科技商业模式成熟。",
+    "latest_news": "2026-02-17: $50M Growth Equity",
+    "source": "Raising Europe",
+    "source_url": "https://raisingeurope.substack.com/p/european-tech-dealflow-highlights-c02",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-23",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "country_flag": "🇬🇧",
+    "country_display": "🇬🇧 United Kingdom",
+    "country_source": "region:legacy",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-23T20:00:57.933577Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "ICEYE",
+    "website": "https://www.iceye.com",
+    "description": "卫星成像和地球观测AI平台，融资超4.3亿美元，专注于SpaceTech和DeepTech领域",
+    "category": "hardware",
+    "region": "Unknown",
+    "funding_total": "$430M+",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation"
+    ],
+    "why_matters": "融资$430M+，建立了首个商业化合成孔径雷达卫星星座，在SpaceTech领域创造了新的应用类别，已成为欧洲最有价值的深科技公司之一",
+    "latest_news": "2026-02: 被评为波兰顶级初创企业，融资规模领先",
+    "source": "digest.pro",
+    "source_url": "https://www.digest.pro/news/top-startup-in-poland/",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-23",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-23T20:01:19.023393Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Fundamental",
+    "website": "https://fundamental.ai",
+    "description": "AI研究公司，开发基础AI技术解决方案。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$255M Series A",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly",
+      "demand_signal_hn"
+    ],
+    "why_matters": "Oak HC/FT等投资2.55亿美元A轮，2月5日公布，估值14亿美元，Salesforce Ventures参与显示企业认可。",
+    "latest_news": "2026-02-05: $255M Series A，估值$1.4B",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/17/here-are-the-17-us-based-ai-companies-that-have-raised-100m-or-more-in-2026/",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-23",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-23T20:04:51.900295Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 19,
+          "top_story_id": "47098852",
+          "points": 4,
+          "comments": 16,
+          "engagement_depth_ratio": 4.0,
+          "is_controversial": false,
+          "top_comments_sample": [
+            "> engineers who've worked with them (or reviewed their OSS contributions) could validate or challenge that [skill] I like your idea of verifiable skills but I don’t think the proposal is solid. We need a trusted third-party as a validator so everyone is happy. Otherwise, we bring bias and corruption into this. The problem is currently solved by professional certification — yes it could be gamed but it provides an official confirmation from a reputable source rather than someone’s word that you’re good. Please keep iterating! We need better tools!",
+            "As a hiring manager know what you want and be careful what you communicate to determine your desired audience. Secondly, skill verification is a form of leaky abstraction and may not be what hiring managers want. It’s most often not about finding the most skilled candidate but rather the most compatible candidate. This can commonly mean finding the least sucky person from a pool of sucky people. Hiring managers can game that by setting requirements criteria for a job. If you want extremely skilled people then get down to the metal and find candidates that like to work without tools or abstractions. If you super versatile candidates find people with experience in a bazillion different tools. ",
+            "The idea is great, but everything else is not. A few points: - You say \"engineering\" verification, I checked and it's all computer science, monkey coding, full stack whatever, not only is that NOT engineering, it wasn't before generative AI, and it's definitely not now. This is programming. Programming is writing, and with AI it's more of storytelling rather than engineering. - How would this platform measure real engineering skills? Critical thinking, problem solving, etc.? What about Electrical Engineering? Civil Engineering? Robotics design? Etc. - I didn't open an account, but on the first page it asks for LinkedIn.. really? I don't trust most of what I read there. GitHub? Not only does ",
+            "The model gets interesting if reviewer credibility is scored by calibration over time, not follower count. Without that, it will drift toward reciprocal endorsements and people gaming each other’s profiles.",
+            "Congratulations, you have just reinvented a feature that LinkedIn has had for years and not solved how easily it can be gamed. And honestly, validating skills like that is strictly something a mid level (no matter what your title is) “engineer” would do. Every interview I have had since 2014 - and I have had 5 since then including three as a strategic hire (still hands on keyboard) by a new to the company director/CTO and one at BigTech and now full time staff consultant (cloud + app dev) has been behavioral where I had to convince then that I was “smart and gets things done”. No matter what generic set of skills you have Kubernetes, AWS, etc, everyone and their dog have those skills - or at",
+            "Thank you for the feedback, I appriciate it. The idea is to avoid the corruption and bias by hand picking a starter deck of super trusted few professionals who would be able to verify others. For example to prove someone is an senior engineer from google I can ask for a pay slip and references and yes certifications, so we would become that rusted partner. Still working on the proposal and iterations, I wanna talk to much engineers, hiring manages as possible since this is going to be for everyone, to navigate this wild job market. We definitely need better tools, at the moment it is wild that it takes 1000 of applications to just get an answer from any company, this not right at all",
+            "This is a real insight \"finding the most skilled candidate but rather the most compatible candidate\", thank you very much, this is the kind of feedback I am looking for from engineers. I never looked at it from this perspective. I talked to hiring managers and most of them say skills is good but what we want is a personality because skills can be taught and personality cannot be. Personality I have experienced that, very skilled teammate exceptional, but personality was not a fit, so the management was not happy. \"The best way to determine the right candidate is to ignore the nonsense on their resume and just talk to people.\", that is true and this I have tried with when I was playing the ro",
+            "Thank you for the feedback. It is meant to be all kinds of engineering, the vision is to have all type of engineers from software engineers(which you are correct it is focused full on that). > How would this platform measure real engineering skills? Critical thinking, problem solving, etc.? What about Electrical Engineering? Civil Engineering? Robotics design? Etc - This will be all up to the hand picked person to measure your skills, for example the verifier will be assessing everything required to determine if someone is really good or not, that includes critical thinking, problem solving so on. Let's say this verifier they work/ed for Google, they will bring Google's interview framework t",
+            "Endorsements are good way, but limited and they can be bought and can be faked easily, which does not bring much credibility.Do you think there is a way to improve the endorsement system from LinkedIn into something that will be taken more seriously? Yes that is the main assumption, seniors would not be interested in getting their skill verified they will be doing the verifying to a junior or whatever entry title there is, in order to help them gain their credibility even mentor them, so it would be easier for them to stand out. That is a fair point, also that is going to be part of the verification process, engineers would be able to get badges verified for their projects, atm I can AI gene",
+            "> I talked to hiring managers and most of them say skills is good but what we want is a personality because skills can be taught and personality cannot be. That is correct, but its an extreme over simplification. What they mean by personality is among these: * excellent soft skills - can listen and emotionally bond with others * excellent written communication - the ability to put into writing high precision content with minimal revision that is well structured. It should not take advanced effort to turn meeting notes into a formal written recommendation. * discipline / conscientiousness - this is awareness of the space outside yourself. It is the ability to balance 6 things at once with end"
+          ],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.5911,
+        "demand_tier": "medium",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "社区重点讨论了产品价值与落地细节。评论情绪整体偏中性分歧，并反复提及可用性与真实场景。这类反馈可用于判断短期需求强度是否能转化为持续增长。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "mixed",
+      "confidence": 0.6
+    }
+  },
+  {
+    "name": "Apptronik Apollo",
+    "website": "https://apptronik.com/apollo",
+    "description": "Human-scale humanoid robot designed for logistics, warehousing, and industrial tasks alongside humans.",
+    "category": "hardware",
+    "hardware_type": "traditional",
+    "form_factor": "humanoid_robot",
+    "use_case": "logistics_warehousing",
+    "innovation_traits": [
+      "single_use_case",
+      "productivity",
+      "media_coverage"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "$520M",
+    "price": "unknown",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "use_case_clear",
+      "funding_over_100M"
+    ],
+    "why_matters": "Humanoid robot with $520M funding for scaled production, advanced actuators, NVIDIA GR00T AI, and human-safe design for industrial automation.",
+    "latest_news": "2026-02: Raised $520M to scale Apollo production",
+    "source": "MachineLearn.com",
+    "source_url": "http://www.machinelearn.com/2026/02/machinelearncom-apptronik-raises-520m.html",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-23",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "humanoid robot company funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-23T20:05:09.558627Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "ViXion01S",
+    "website": "https://vixion.jp/vixion01s/",
+    "description": "センサーで距離を測定し液体レンズを自動調整するオートフォーカスアイウェアで、近くも遠くもクリアな視界を提供。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "vision_correction",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "single_use_case",
+      "proactive_ai",
+      "crowdfunding"
+    ],
+    "region": "🇯🇵",
+    "funding_total": "4億円超",
+    "price": "¥88,000",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "crowdfunding"
+    ],
+    "why_matters": "世界初のオートフォーカスアイウェアで累進レンズを超える視界体験を提供、乱視対応カスタマイズ可能で軽量33g、一般販売開始。",
+    "latest_news": "全国展開開始、軽量化と15時間連続使用を実現",
+    "source": "ViXion公式 / PRTimes",
+    "source_url": "https://vixion.jp/vixion01s/",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "source_region": "🇯🇵🇰🇷",
+    "discovered_at": "2026-02-24",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AIメガネ デバイス 日本",
+    "country_code": "JP",
+    "country_name": "Japan",
+    "country_flag": "🇯🇵",
+    "country_display": "🇯🇵 Japan",
+    "country_source": "region:legacy",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-24T19:49:32.480323Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Fanvue",
+    "website": "https://fanvue.com",
+    "description": "AI驱动的创作者平台，支持直达粉丝变现，已达年化收入超1亿美元。",
+    "category": "other",
+    "region": "Unknown",
+    "funding_total": "$22M Series A",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly"
+    ],
+    "why_matters": "2200万美元A轮融资，年化收入超1亿美元，定义‘创作者AI经济’，计划国际扩张并深化AI产品开发。",
+    "latest_news": "2026-01: $22M Series A，ARR超$100M",
+    "source": "MoveTheNeedle",
+    "source_url": "https://www.movetheneedle.news/start-ups/",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-24",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A Europe",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-24T19:51:21.656304Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Multiverse Computing",
+    "website": "https://multiversecomputing.com",
+    "description": "西班牙初创公司开发量子启发算法，可将AI模型压缩至原大小10%，大幅降低能耗并支持离线设备运行。",
+    "category": "other",
+    "region": "Unknown",
+    "funding_total": "$67M 政府投资",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation"
+    ],
+    "why_matters": "入选CB Insights 2025 AI 100全球最具潜力公司（仅西班牙唯一），估值1.08亿美元，量子算法首创AI模型高效压缩技术，获西班牙政府6700万欧元投资视为独角兽候选。",
+    "latest_news": "2025: CB Insights AI 100榜单入选",
+    "source": "Expansión",
+    "source_url": "https://multiversecomputing.com/resources/the-new-european-promises-in-artificial-intelligence",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-24",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-24T19:51:44.833218Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "EliseAI",
+    "website": "https://www.elise.ai",
+    "description": "AI房产管理助手，处理租户沟通、预约看房、租赁审计和维护协调，支持数百万公寓单元。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$250M (2025年8月)",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly"
+    ],
+    "why_matters": "2025年8月融资2.5亿美元达到22亿美元估值，支持600多家多户住宅业主如AvalonBay，管理数百万公寓单元沟通，是首家AI驱动物业管理的独角兽。",
+    "latest_news": "2025-08: 融资2.5亿美元，估值达22亿美元",
+    "source": "The AI Consulting Network",
+    "source_url": "https://www.theaiconsultingnetwork.com/blog/proptech-ai-unicorns-2026-cre-investment-surge",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-24",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-24T19:54:34.221687Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Bedrock Robotics",
+    "website": "https://bedrockrobotics.com",
+    "description": "自主AI建筑车辆，使用激光脉冲测绘和卫星图像进行实时3D工地测绘和自动土方作业。",
+    "category": "hardware",
+    "region": "🇺🇸",
+    "funding_total": "$270M (2026年2月)",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "growth_anomaly",
+      "founder_background"
+    ],
+    "why_matters": "2024年由前Waymo高管创立，2026年2月融资2.7亿美元（CapitalG领投）达17.5亿美元估值，两年内成独角兽，针对建筑劳动力短缺压缩开发周期。",
+    "latest_news": "2026-02: 融资2.7亿美元，估值达17.5亿美元",
+    "source": "The AI Consulting Network",
+    "source_url": "https://www.theaiconsultingnetwork.com/blog/proptech-ai-unicorns-2026-cre-investment-surge",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-24",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-24T19:54:34.446293Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  }
+]

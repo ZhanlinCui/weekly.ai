@@ -1,0 +1,257 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import { SmartLogo } from "@/components/common/smart-logo";
+import { FavoriteButton } from "@/components/favorites/favorite-button";
+import {
+  cleanDescription,
+  getFreshnessLabel,
+  isValidWebsite,
+  normalizeWebsite,
+} from "@/lib/product-utils";
+import type { BlogPost } from "@/types/api";
+import { useLocale } from "@/i18n";
+
+const SOURCE_ORDER = ["cn_news", "cn_news_glm", "hackernews", "reddit", "tech_news", "producthunt", "youtube", "x"] as const;
+
+const US_SOURCES = new Set(["hackernews", "producthunt", "youtube", "x", "reddit", "tech_news"]);
+const SOURCE_ALIASES: Record<string, string[]> = {
+  youtube: ["youtube", "youtube_rss", "yt"],
+  x: ["x", "twitter"],
+  reddit: ["reddit"],
+};
+
+function normalizeSource(value: string | undefined): string {
+  return String(value || "").trim().toLowerCase();
+}
+
+function matchesSource(item: BlogPost, selectedSource: string): boolean {
+  const target = normalizeSource(selectedSource);
+  if (!target) return true;
+
+  const source = normalizeSource(item.source);
+  if (source === target) return true;
+
+  const aliases = SOURCE_ALIASES[target];
+  if (aliases && aliases.includes(source)) return true;
+
+  return false;
+}
+
+function inferMarket(item: BlogPost): "cn" | "us" | "global" {
+  const explicit = String(item.market || "").trim().toLowerCase();
+  if (explicit === "cn" || explicit === "us" || explicit === "global" || explicit === "hybrid") {
+    return explicit === "hybrid" ? "global" : (explicit as "cn" | "us" | "global");
+  }
+  const source = String(item.source || "").trim().toLowerCase();
+  if (source === "cn_news") return "cn";
+  if (US_SOURCES.has(source)) return "us";
+  const extra = item.extra && typeof item.extra === "object" ? (item.extra as Record<string, unknown>) : {};
+  const fromExtra = String(extra.news_market || "").trim().toLowerCase();
+  if (fromExtra === "cn" || fromExtra === "us" || fromExtra === "global") return fromExtra as "cn" | "us" | "global";
+  return "global";
+}
+
+function matchesMarket(item: BlogPost, selectedMarket: string): boolean {
+  const market = String(selectedMarket || "").trim().toLowerCase();
+  if (!market || market === "hybrid" || market === "global") return true;
+  return inferMarket(item) === market;
+}
+
+function buildSourceOptions(data: BlogPost[] | undefined) {
+  const seen = new Set<string>();
+  for (const item of data || []) {
+    const source = String(item.source || "").trim();
+    if (source) seen.add(source);
+  }
+
+  const ordered: string[] = [];
+  for (const source of SOURCE_ORDER) {
+    if (seen.has(source)) ordered.push(source);
+  }
+
+  const rest = [...seen]
+    .filter((source) => !(SOURCE_ORDER as readonly string[]).includes(source))
+    .sort((a, b) => a.localeCompare(b, "en"));
+
+  return ["", ...ordered, ...rest];
+}
+
+function useSourceLabels() {
+  const { t } = useLocale();
+  return useMemo<Record<string, string>>(
+    () => ({
+      "": t.blog.allSources,
+      cn_news: t.blog.cnSources,
+      cn_news_glm: t.blog.cnGlmSources,
+      hackernews: "Hacker News",
+      producthunt: "Product Hunt",
+      youtube: "YouTube",
+      x: "X",
+      reddit: "Reddit",
+      tech_news: "Tech News",
+    }),
+    [t]
+  );
+}
+
+function useMarketLabels() {
+  const { t } = useLocale();
+  return useMemo<Record<string, string>>(
+    () => ({
+      hybrid: t.blog.globalHybrid,
+      cn: t.blog.china,
+      us: t.blog.usa,
+      global: t.blog.global,
+    }),
+    [t]
+  );
+}
+
+type MarketValue = "hybrid" | "cn" | "us";
+
+const MARKET_KEYS: MarketValue[] = ["hybrid", "cn", "us"];
+
+function BlogCard({ item }: { item: BlogPost }) {
+  const { t } = useLocale();
+  const sourceLabels = useSourceLabels();
+  const marketLabels = useMarketLabels();
+  const website = normalizeWebsite(item.website);
+  const hasWebsite = isValidWebsite(website);
+  const sourceLabel = sourceLabels[item.source || ""] || item.source || "Blog";
+  const marketLabel = marketLabels[inferMarket(item)] || t.blog.global;
+  const freshness = getFreshnessLabel({
+    name: item.name,
+    description: item.description,
+    published_at: item.published_at,
+  });
+  const publishedLabel = item.published_at
+    ? new Date(item.published_at).toLocaleString("zh-CN", {
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+    : t.freshness.unknown;
+
+  return (
+    <article className="product-card product-card--signal product-card--watch product-card--compact">
+      <div className="product-card__content blog-card__content">
+        <p className="product-card__microline">{`${marketLabel} · ${sourceLabel} · ${freshness}`}</p>
+
+        <header className="product-card__headline blog-card__headline">
+          <div className="product-card__identity">
+            <SmartLogo
+              key={`${item.name}-${item.logo_url || ""}-${item.logo || ""}-${item.website || ""}`}
+              className="product-card__logo"
+              name={item.name}
+              logoUrl={item.logo_url}
+              secondaryLogoUrl={item.logo}
+              website={item.website}
+              size={44}
+            />
+            <div className="product-card__identity-copy">
+              <h3 className="product-card__title">{item.name}</h3>
+              <p className="product-card__meta">{publishedLabel}</p>
+            </div>
+          </div>
+        </header>
+
+        <p className="product-card__desc">{cleanDescription(item.description)}</p>
+
+        <div className="product-card__actions blog-card__actions">
+          <FavoriteButton blog={item} />
+          {hasWebsite ? (
+            <a className="link-btn link-btn--card" href={website} target="_blank" rel="noopener noreferrer">
+              {t.common.original}
+            </a>
+          ) : (
+            <span className="pending-tag">{t.common.linkPending}</span>
+          )}
+        </div>
+      </div>
+    </article>
+  );
+}
+
+type BlogClientProps = {
+  initialBlogs: BlogPost[];
+};
+
+export function BlogClient({ initialBlogs }: BlogClientProps) {
+  const { t } = useLocale();
+  const sourceLabels = useSourceLabels();
+  const marketLabels = useMarketLabels();
+  const [source, setSource] = useState("");
+  const [market, setMarket] = useState<MarketValue>("hybrid");
+
+  const marketBlogs = useMemo(() => initialBlogs.filter((item) => matchesMarket(item, market)), [initialBlogs, market]);
+  const sourceOptions = useMemo(() => buildSourceOptions(marketBlogs), [marketBlogs]);
+
+  const activeSource = source && sourceOptions.includes(source) ? source : "";
+  const posts = useMemo(
+    () => marketBlogs.filter((item) => matchesSource(item, activeSource)),
+    [activeSource, marketBlogs]
+  );
+
+  const sourceSummary = activeSource ? t.blog.sourceSummary(sourceLabels[activeSource] || activeSource) : t.blog.sourceAll;
+  const marketSummary = t.blog.marketSummary(marketLabels[market] || market);
+  const emptyStateText = market === "cn" ? t.blog.noDataCn : t.blog.noData;
+
+  return (
+    <section className="section">
+      <div className="section-header">
+        <h1 className="section-title">{t.blog.title}</h1>
+        <p className="section-desc">{t.blog.subtitle}</p>
+        <p className="section-micro-note">{t.blog.summary(marketSummary, sourceSummary, posts.length)}</p>
+      </div>
+
+      <div className="blog-toolbar">
+        <label>
+          {t.blog.regionLabel}
+          <select
+            value={market}
+            onChange={(event) => {
+              setMarket(event.target.value as MarketValue);
+              setSource("");
+            }}
+          >
+            {MARKET_KEYS.map((key) => (
+              <option key={key} value={key}>
+                {marketLabels[key]}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      <div className="source-pills" role="tablist" aria-label={t.blog.sourceFilter}>
+        {sourceOptions.map((option) => {
+          const isActive = option === activeSource;
+          return (
+            <button
+              key={option || "all-pill"}
+              type="button"
+              className={`source-pill ${isActive ? "active" : ""}`}
+              onClick={() => setSource(option)}
+            >
+              {sourceLabels[option] || option}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="products-grid">
+        {posts.map((item) => (
+          <BlogCard item={item} key={`${item.source || "source"}-${item.website || item.name}`} />
+        ))}
+      </div>
+
+      {posts.length === 0 ? (
+        <div className="empty-state">
+          <p className="empty-state-text">{emptyStateText}</p>
+        </div>
+      ) : null}
+    </section>
+  );
+}

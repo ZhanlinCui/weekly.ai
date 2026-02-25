@@ -1,0 +1,27 @@
+.DS_Store
+.env
+.env.*
+.codex/
+
+# Vercel
+.vercel/
+backend/.vercel/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Next.js / build artifacts
+.next/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
+*.log
+crawler/logs/
+backend/backend.out.log
+.vercel

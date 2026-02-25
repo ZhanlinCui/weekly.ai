@@ -1,0 +1,155 @@
+[
+  {
+    "name": "SurrealDB",
+    "website": "https://surrealdb.com/",
+    "description": "伦敦初创公司开发的云原生多模型数据库，支持AI代理内存、向量搜索和实时查询，简化AI应用数据基础设施。",
+    "category": "agent",
+    "region": "🇬🇧",
+    "funding_total": "$44M Series A",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation"
+    ],
+    "why_matters": "Series A扩展融资2300万美元，总额达4400万美元，同时发布3.0版支持代理内存和上下文图，是首个为AI代理提供原生内存和多模态数据支持的数据库，下载量230万、GitHub 3.1万星。",
+    "latest_news": "2026-02: 完成2300万美元Series A扩展，总融资4400万美元并发布SurrealDB 3.0",
+    "source": "TechTarget",
+    "source_url": "https://bebeez.eu/2026/02/17/london-based-surrealdb-raises-additional-e19-million-to-scale-multi-model-database-for-ai-applications/",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-22",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A Europe",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "country_flag": "🇬🇧",
+    "country_display": "🇬🇧 United Kingdom",
+    "country_source": "region:legacy",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-22T21:39:24.131691Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "error",
+          "window_days": 7,
+          "error": "hn_search_failed:HTTPSConnectionPool(host='hn.algolia.com', port=443): Read timed out. (read timeout=12)"
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "雷鸟X3 Pro Project eSIM",
+    "website": "https://www.thunderbird-ar.com",
+    "description": "全球首款搭载eSIM的AR智能眼镜，支持独立通话、AI对话和实时翻译，无需手机或WiFi。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "smart_glasses",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "always_on",
+      "proactive_ai"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$100M+",
+    "price": "unknown",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "eSIM独立通信打破眼镜对手机依赖，专注移动AI交互场景，已获10亿融资。",
+    "latest_news": "CES 2026发布，计划量产。",
+    "source": "东财网",
+    "source_url": "https://biz.eastmoney.com/a/202601053608853826.html",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-22",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI hardware startup Singapore",
+    "country_code": "CN",
+    "country_name": "China",
+    "country_flag": "🇨🇳",
+    "country_display": "🇨🇳 China",
+    "country_source": "region:search_fallback",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-22T21:50:45.985458Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  }
+]

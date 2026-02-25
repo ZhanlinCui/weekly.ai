@@ -1,0 +1,2091 @@
+[
+  {
+    "name": "vitrealab Quantum Light Chips",
+    "website": "https://vitrealab.com",
+    "description": "Photonics company developing quantum light chips for augmented reality displays.",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "AR light-engine",
+    "use_case": "augmented_reality",
+    "innovation_traits": [
+      "non_traditional_form",
+      "new_form_factor",
+      "wearable"
+    ],
+    "region": "🇪🇺",
+    "funding_total": "€14.1M",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation"
+    ],
+    "why_matters": "Quantum light chips enable compact AR displays, pushing beyond traditional screens for immersive AI experiences.",
+    "latest_news": "2026-01: Raised €9.3M Series A to industrialize AR light-engine technology.",
+    "source": "Vestbee",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "discovered_at": "2026-02-08",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI chip startup funding"
+  },
+  {
+    "name": "逐际动力",
+    "website": "https://www.limxdynamics.com",
+    "description": "聚焦足式机器人的运动控制技术与具身AI算法的结合。",
+    "category": "hardware",
+    "hardware_type": "traditional",
+    "form_factor": "legged_robot",
+    "use_case": "research_and_industrial",
+    "innovation_traits": [
+      "media_coverage"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "media_coverage"
+    ],
+    "why_matters": "获得阿里巴巴、招商局创投等战略投资，推动足式机器人运动控制技术发展。",
+    "latest_news": "完成新一轮战略融资",
+    "source": "ChinaVenture",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-08",
+    "discovery_method": "glm_search",
+    "search_keyword": "具身智能 创业公司"
+  },
+  {
+    "name": "Feltsense",
+    "website": "https://feltsense.com",
+    "description": "构建'代理创始人'AI自主完成从idea到产品上线全流程。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$5.1M Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "category_innovation"
+    ],
+    "why_matters": "Draper Associates领投，专注agentic founder概念——AI代理自动建公司，Precursor Ventures等跟投。",
+    "latest_news": "2026-02-04: $5.1M Seed by Draper Associates",
+    "source": "The Fashion Law",
+    "source_url": "https://www.thefashionlaw.com/generative-ai-investment-and-ma-tracker/",
+    "confidence": 0.92,
+    "discovered_at": "2026-02-08",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026"
+  },
+  {
+    "name": "Capalo AI",
+    "website": "https://capalo.ai",
+    "description": "赫尔辛基可持续科技公司，提供AI驱动的虚拟电厂解决方案，帮助欧洲优化能源管理。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "€11M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "完成€11M A轮融资，用于扩展AI虚拟电厂在欧洲的部署，是能源领域AI应用的创新实践。",
+    "latest_news": "2026-02: 完成€11M Series A融资",
+    "source": "EU Tech Future",
+    "source_url": "https://eutechfuture.com",
+    "confidence": 0.95,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup"
+  },
+  {
+    "name": "PleaseFix AI",
+    "website": "https://pleasefix.ai",
+    "description": "前麦肯锡顾问创办，帮助财务团队自动化PowerPoint繁琐任务的AI工具。",
+    "category": "finance",
+    "region": "🇪🇺",
+    "funding_total": "$2.1M Pre-Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "前麦肯锡顾问创立，$2.1M Pre-Seed融资，针对财务PPT自动化痛点，提供垂直领域效率提升。",
+    "latest_news": "2026-02: 完成$2.1M Pre-Seed融资",
+    "source": "EU Tech Future",
+    "source_url": "https://eutechfuture.com",
+    "confidence": 0.9,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup"
+  },
+  {
+    "name": "Limy",
+    "website": "https://limy.ai",
+    "description": "为AI‘代理网络’构建品牌可见性基础设施，帮助财富100强品牌通过分析AI代理行为优化发现性和收入。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$10M Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Flybridge领投1000万美元种子轮，a16z speedrun等参投，客户已将10%收入归因于其工具，专注AI代理行为而非人类数据分析。",
+    "latest_news": "2026-01-29: 1000万美元种子轮融资",
+    "source": "The Fashion Law",
+    "source_url": "https://www.thefashionlaw.com/generative-ai-investment-and-ma-tracker/",
+    "confidence": 0.95,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026"
+  },
+  {
+    "name": "Arcads.ai",
+    "website": "https://arcads.ai",
+    "description": "营销人员AI驱动视频创建平台，已盈利服务6000+客户，将加速美国扩张和平台开发。",
+    "category": "video",
+    "region": "🇺🇸",
+    "funding_total": "$16M Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Eurazeo领投1600万美元种子轮，Sequoia Scout参投，已盈利且拥有6000+客户基础，专注营销视频自动化创建。",
+    "latest_news": "2025-12-17: 1600万美元种子轮融资",
+    "source": "The Fashion Law",
+    "source_url": "https://www.thefashionlaw.com/generative-ai-investment-and-ma-tracker/",
+    "confidence": 0.95,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026"
+  },
+  {
+    "name": "Fibr AI",
+    "website": "https://fibr.ai",
+    "description": "使用AI代理将静态网站转化为针对每个访客的一对一个性化体验。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$7.5M total ($5.7M seed)",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Accel领投570万美元种子轮（此前180万美元pre-seed），解决网站个性化落后的痛点，获Fortune 100高管天使投资。",
+    "latest_news": "2026-02-04: Accel领投570万美元种子轮",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/04/accel-doubles-down-on-fibr-ai-as-agents-turn-static-websites-into-one-to-one-experiences/",
+    "confidence": 0.85,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding"
+  },
+  {
+    "name": "Upstage",
+    "website": "https://upstage.ai",
+    "description": "韩国生成式AI独角兽，提供Solar LLM和企业级Private AI安全训练技术。",
+    "category": "enterprise",
+    "region": "🇺🇸",
+    "funding_total": "$2-4B估值",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "首个韩国生成式AI独角兽，估值20-40亿美元，通过B2B SaaS构建实际收入模式，被视为上市热门候选。",
+    "latest_news": "2026年初: 估值达$2-4B，潜在IPO候选",
+    "source": "Chosun",
+    "source_url": "https://www.chosun.com/english/industry-en/2026/01/29/D4C5JW6E4NCHTDOXSUV5MIPEOA/",
+    "confidence": 0.9,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026"
+  },
+  {
+    "name": "宾果智慧光 AI护眼学习台灯",
+    "website": "https://binggo.com",
+    "description": "无屏智触AI台灯，将书桌变沉浸式学习空间。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "desk_lamp",
+    "use_case": "education",
+    "innovation_traits": [
+      "non_traditional_form",
+      "ambient",
+      "single_use_case",
+      "screenless"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "台灯形态的AI学习设备，投影触控交互专注青少年护眼教育。",
+    "latest_news": "2026: 创业黑马社区展示。",
+    "source": "AI星球社区",
+    "confidence": 0.8,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI pendant necklace wearable 2026"
+  },
+  {
+    "name": "Vuzix",
+    "website": "https://vuzix.com",
+    "description": "与微软合作开发的企业级AI智能眼镜，专注工业和医疗应用",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "enterprise",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "single_use_case"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$50M+",
+    "price": "$999",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "微软HoloLens技术商业化，专注垂直领域",
+    "latest_news": "2026-01: 与微软达成战略合作",
+    "source": "VentureBeat",
+    "confidence": 0.8,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI智能眼镜 创业公司"
+  },
+  {
+    "name": "Fractile",
+    "website": "https://fractile.ai",
+    "description": "英国AI芯片初创公司，构建AI推理专用硬件和软件解决方案。",
+    "category": "hardware",
+    "region": "🇪🇺",
+    "funding_total": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "growth_anomaly"
+    ],
+    "why_matters": "宣布投资£100M扩展英国运营，聚焦AI推理芯片，正值AI巨头争夺内存资源之际，为初创创造机遇。",
+    "latest_news": "2026-02-10: 宣布£100M投资英国运营",
+    "source": "Sifted",
+    "source_url": "https://sifted.eu",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding"
+  },
+  {
+    "name": "GetReal Security",
+    "website": "https://getrealsecurity.com",
+    "description": "专注于防御深度伪造和AI生成冒充攻击的AI安全初创公司。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$17.5M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2025年获1750万美元A轮融资，针对深度伪造和AI冒充防御，契合AI安全市场Q4融资暴增8倍至21.7亿美元的趋势。",
+    "latest_news": "2025-Q4: $17.5M Series A for deepfake defense",
+    "source": "Software Strategies Blog",
+    "source_url": "https://softwarestrategiesblog.com/2025/12/30/ai-security-startups-funding-2025/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI agent startup funding"
+  },
+  {
+    "name": "Jericho Security",
+    "website": "https://jerichosecurity.com",
+    "description": "提供针对生成式AI驱动攻击的训练防御解决方案的AI安全公司。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$15M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2025年完成1500万美元A轮，专注生成式AI攻击训练防御，正值AI安全领域全年融资达63.4亿美元、平均轮次规模升至5400万美元。",
+    "latest_news": "2025-Q4: $15M Series A for gen AI attack training",
+    "source": "Software Strategies Blog",
+    "source_url": "https://softwarestrategiesblog.com/2025/12/30/ai-security-startups-funding-2025/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI agent startup funding"
+  },
+  {
+    "name": "Snap Spectacles",
+    "website": "https://spectacles.snapchat.com",
+    "description": "Wearable AR glasses enabling production-scale spatial computing and AI experiences beyond screens.",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "spatial_computing",
+    "innovation_traits": [
+      "wearable",
+      "new_form_factor",
+      "proactive_ai",
+      "media_coverage"
+    ],
+    "region": "🇸🇬",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "work_demo"
+    ],
+    "why_matters": "AR眼镜作为日常计算层，支持Lens Studio跨平台部署，在AWE Asia 2026展位有动手演示。",
+    "latest_news": "2026-02: AWE Asia铂金赞助商，获Best in Show奖",
+    "source": "[1]",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI wearable device startup Asia 2026"
+  },
+  {
+    "name": "scavenger.ai",
+    "website": "https://scavenger.ai",
+    "description": "专注于复杂数据AI分析的初创公司，源自hessian.AI的孵化程序，已进入市场。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "参与60M欧元总融资池",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "AI Startup Rising项目成功毕业生，项目为140活跃团队提供从孵化到加速支持，整体融资超60百万欧元。",
+    "latest_news": "2025-12: AI Startup Rising续获联邦资助至2027",
+    "source": "StartHub Hessen",
+    "source_url": "https://www.starthub-hessen.de/de/aktuelles/f%C3%B6rderung-von-ai-startup-rising-wird-fortgesetzt/",
+    "confidence": 0.75,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "KI Startup Finanzierung"
+  },
+  {
+    "name": "Polaron",
+    "website": "https://polaron.ai",
+    "description": "开发材料科学AI智能层，针对能源和汽车行业的工程用例。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "€6.7M",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2026年2月获€6.7百万融资，是欧洲早期AI材料科学领域的领先投资，针对能源汽车垂直应用，与ElevenLabs同期形成鲜明对比。",
+    "latest_news": "2026-02: €6.7M融资用于材料科学AI层开发",
+    "source": "EU-Startups",
+    "source_url": "https://www.eu-startups.com/2026/02/elevenlabs-e424-million-raise-values-the-company-at-e9-3-billion-and-marks-one-of-europes-largest-ai-funding-rounds-this-year/",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026"
+  },
+  {
+    "name": "Ranketta",
+    "website": "https://ranketta.ai",
+    "description": "构建平台测量品牌在大语言模型输出中的可见度。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "€1M pre-Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2025年底获€1百万pre-Seed，是中欧首个专注LLM品牌可见度测量的AI平台，填补品牌监控新空白。",
+    "latest_news": "2025-12: €1M pre-Seed轮融资",
+    "source": "EU-Startups",
+    "source_url": "https://www.eu-startups.com/2026/02/elevenlabs-e424-million-raise-values-the-company-at-e9-3-billion-and-marks-one-of-europes-largest-ai-funding-rounds-this-year/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-10",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026"
+  },
+  {
+    "name": "Oura Ring 3",
+    "website": "https://ouraring.com",
+    "description": "市面功能最强大的 AI 智能戒指之一，专注于睡眠追踪和健康监测。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "ring",
+    "use_case": "health_monitoring",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "screenless",
+      "lifestyle"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "price": "$299+",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "智能戒指领域的标杆产品，推动了戒指作为可穿戴健康设备的主流认知。",
+    "latest_news": "2024: 入选年度最值得关注的五大 AI 戒指。",
+    "source": "Wearable Daily",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-02-11",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI戒指 智能穿戴"
+  },
+  {
+    "name": "Circular Ring",
+    "website": "https://circular.xyz",
+    "description": "设计时尚的 AI 智能戒指，提供健康监测与运动数据分析。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "ring",
+    "use_case": "health_monitoring",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "screenless",
+      "lifestyle"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "以时尚设计切入市场，展示了 AI 硬件在个性化外观上的潜力。",
+    "latest_news": "2024: 被列为年度五大 AI 戒指推荐之一。",
+    "source": "Wearable Daily",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "discovered_at": "2026-02-11",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI戒指 智能穿戴"
+  },
+  {
+    "name": "XbotGo Falcon",
+    "website": "https://xbotgo.com/pages/xbotgo-falcon",
+    "description": "搭载AI芯片的智能摄像机，支持20多种运动项目的智能跟踪。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "camera",
+    "use_case": "sports_recording",
+    "innovation_traits": [
+      "single_use_case",
+      "crowdfunding",
+      "affordable"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$1.42M",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "use_case_clear",
+      "crowdfunding_success"
+    ],
+    "why_matters": "专注于运动场景的AI摄像机，众筹超预期28384%，显示出垂直场景AI硬件的爆发力。",
+    "latest_news": "众筹已筹1,419,209美元，超预期28384%。",
+    "source": "Kickstarter",
+    "confidence": 0.8,
+    "is_hardware": true,
+    "needs_verification": true,
+    "discovered_at": "2026-02-11",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI硬件 众筹 创新",
+    "logo_url": "https://logo.clearbit.com/xbotgo.com"
+  },
+  {
+    "name": "Winn.ai",
+    "website": "https://winn.ai",
+    "description": "AI驱动的销售助手，为销售代表提供实时通话指导和CRM集成，自动化销售前后的行政任务",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$18M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Insight Partners、S Capital、Mangusta Capital联合领投$18M Series A，总融资$35M，专注销售流程自动化，企业应用场景明确",
+    "latest_news": "2026-02: 完成$18M Series A融资",
+    "source": "Crunchbase News",
+    "source_url": "https://news.crunchbase.com/venture/startup-winn-ai-seriesa-real-time-assistant/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-11",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026"
+  },
+  {
+    "name": "Glīd",
+    "website": "https://glidtech.us",
+    "description": "2025 Startup Battlefield冠军，AI相关早期创业公司。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$5.1M",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "获TechCrunch Startup Battlefield 2025冠军，融资510万美元，脱颖而出获评委青睐。",
+    "latest_news": "2025: Startup Battlefield Winner",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/startup-battlefield/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-11",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding"
+  },
+  {
+    "name": "SenseTime SenseNova-MARS",
+    "website": "https://www.sensetime.com",
+    "description": "开源AI模型结合图像文本搜索与智能推理能力，可解决复杂视觉谜题",
+    "category": "image",
+    "region": "🇸🇬",
+    "funding_total": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "category_innovation"
+    ],
+    "why_matters": "首个开源多模态推理模型，整合图像文本搜索与视觉推理，突破传统计算机视觉局限",
+    "latest_news": "2026-02: 开源SenseNova-MARS AI模型，支持图像文本搜索与智能推理",
+    "source": "Entelechy Asia",
+    "source_url": "https://entelechyasia.com/category/artificial-intelligence/",
+    "confidence": 0.75,
+    "needs_verification": true,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-11",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Tech in Asia artificial intelligence"
+  },
+  {
+    "name": "Sirbai Autonomous Drone Swarm",
+    "website": "https://sirbai.com",
+    "description": "中东首个AI驱动自主无人机群技术，专注防御应用领域",
+    "category": "hardware",
+    "region": "🇸🇬",
+    "funding_total": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "category_innovation"
+    ],
+    "why_matters": "由40+AI、自主系统和机器人工程师开发，在UMEX 2026首次展示中东首创自主无人机群技术，针对防御应用",
+    "latest_news": "2026-02: 在阿布扎比UMEX 2026展示中东首个AI驱动自主无人机群技术",
+    "source": "Entelechy Asia",
+    "source_url": "https://entelechyasia.com/category/artificial-intelligence/",
+    "confidence": 0.72,
+    "needs_verification": true,
+    "is_hardware": true,
+    "discovered_at": "2026-02-11",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Tech in Asia artificial intelligence"
+  },
+  {
+    "name": "讯飞 AI 会议耳机 Pro3",
+    "website": "https://viaim.com",
+    "description": "未来智能viaim品牌的多语言AI会议耳机，支持高效转录和办公协作。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "earpiece",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "wearable",
+      "single_use_case",
+      "voice_first",
+      "media_coverage"
+    ],
+    "region": "🇸🇬",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "use_case_clear",
+      "media_coverage"
+    ],
+    "why_matters": "获微软AI创新奖，专注海外办公多语言场景，已完成多轮融资。",
+    "latest_news": "2026 CES: 获微软AI创新奖",
+    "source": "[3]",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "robotics company Southeast Asia",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T05:31:06.319217Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Emdoor XR AI Glasses",
+    "website": "https://vr.emdoor.com",
+    "description": "提供端到端XR和AI眼镜解决方案，结合可定制前框与标准化镜腿，实现个性化设计与硬件标准化平衡。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "augmented_vision",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "voice_first",
+      "proactive_ai"
+    ],
+    "region": "🇪🇺",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "AI眼镜全流程解决方案，强调形态定制化与快速量产，缩短开发周期至4-5个月。",
+    "latest_news": "提供I camera glasses和AI audio glasses解决方案，降低开发成本60%",
+    "source": "Emdoor XR site",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI glasses pendant Europe startup",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T05:32:06.036606Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Markup AI",
+    "website": "https://markup.ai",
+    "description": "英国AI软件公司，帮助企业自动化文档分析和内容审查。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "€23.5M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "€23.5M A轮融资，用于全球扩张和团队增长，专注企业级文档AI自动化。",
+    "latest_news": "2025-09: €23.5M Series A完成",
+    "source": "Vestbee",
+    "source_url": "https://vestbee.com/insights/articles/top-european-funding-rounds-closed-in-september-2025",
+    "confidence": 0.88,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A Europe",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T05:32:16.752511Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Mozart AI",
+    "website": "https://mozartai.com",
+    "description": "伦敦初创公司开发AI工具支持音乐创作与技术工作流，获超额认购种子轮融资。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "$6M seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "种子轮融资600万美元超额认购，专注AI音乐创作工具，支持创意和技术工作流，是欧洲音乐AI领域的早期创新者。",
+    "latest_news": "2026-02-12: 获600万美元种子轮融资，用于开发音乐AI工具",
+    "source": "Tech.eu",
+    "source_url": "https://tech.eu",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T05:32:40.766817Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "XbotGo Falcon",
+    "website": "https://xbotgo.com/pages/xbotgo-falcon",
+    "description": "搭载6 TOPS算力AI芯片，支持20多种运动项目智能跟踪的摄像机。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "smart_camera",
+    "use_case": "sports_tracking",
+    "innovation_traits": [
+      "single_use_case",
+      "crowdfunding",
+      "affordable"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$1.42M",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "use_case_clear",
+      "crowdfunding_success"
+    ],
+    "why_matters": "专注运动场景的AI摄像机，众筹超预期28384%，显示出垂直场景AI硬件的爆发力。",
+    "latest_news": "Kickstarter众筹已结束，金额超141万美元",
+    "source": "Brandark",
+    "confidence": 0.8,
+    "is_hardware": true,
+    "needs_verification": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI硬件 众筹 创新",
+    "logo_url": "https://logo.clearbit.com/xbotgo.com"
+  },
+  {
+    "name": "Amazfit Helio",
+    "website": "https://www.amazfit.com",
+    "description": "华米科技推出的 AI 智能戒指，专注于运动健康与体能恢复。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "ring",
+    "use_case": "health_monitoring",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "single_use_case"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "N/A",
+    "price": "$299.99",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "传统穿戴设备厂商对新形态的探索，专注于运动员和健康爱好者的细分市场。",
+    "latest_news": "2024: 入围 2024 年最值得期待的 AI 智能戒指汇总",
+    "source": "Ifanr",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI戒指 智能穿戴"
+  },
+  {
+    "name": "Berget AI",
+    "website": "https://berget.ai",
+    "description": "瑞典主权AI平台，帮助企业使用开源语言模型构建应用，确保数据留在欧洲符合EU AI Act。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "$2.4M",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2026年2月获240万美元融资，由Luminar Ventures领投，用于加速主权AI基础设施开发，满足欧洲数据主权需求。",
+    "latest_news": "2026-02: $2.4M funding round",
+    "source": "The AI Insider",
+    "source_url": "https://theaiinsider.tech/2026/02/10/berget-ai-announces-2-4m-funding-round-to-build-sovereign-ai-infrastructure-platform-in-europe/",
+    "confidence": 0.92,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "UK France Germany AI startup",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T07:36:20.403166Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Alibaba Quark AI Glasses S1",
+    "website": "https://www.quark.alibaba.com",
+    "description": "51g双目AI眼镜，支持拍照搜题、语音问答、健康监测等，7小时续航。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "smart_glasses",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "wearable",
+      "single_use_case",
+      "voice_first"
+    ],
+    "region": "🇸🇬",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "轻量化AI眼镜针对学习、健康等场景优化，CES 2026展示。",
+    "latest_news": "CES 2026: 计划2025发布，配备通义千问模型。",
+    "source": "[3]",
+    "confidence": 0.85,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI hardware startup Singapore"
+  },
+  {
+    "name": "安克 AI 录音豆",
+    "website": "https://www.anker.com",
+    "description": "飞书联合安克发布的首款AI硬件，豆状录音设备。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "pod",
+    "use_case": "meeting_notes",
+    "innovation_traits": [
+      "non_traditional_form",
+      "portable",
+      "single_use_case",
+      "media_coverage"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "豆荚状AI录音笔，专注会议记录，非传统小型载体。",
+    "latest_news": "2026-01: 飞书安克联合发布。",
+    "source": "QQ.com",
+    "confidence": 0.8,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI hardware kickstarter indiegogo 2026"
+  },
+  {
+    "name": "iBuddi",
+    "website": "https://ibuddi.ai",
+    "description": "AI 陪伴徽章，为独居老人提供健康监测和情感对话",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "badge",
+    "use_case": "companion",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "health",
+      "affordable"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$3M",
+    "price": "$79",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "低成本陪伴设备，专注老年群体需求",
+    "latest_news": "2025-10: 与日本养老院合作试点",
+    "source": "Tech in Asia",
+    "confidence": 0.65,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI随身设备 助手"
+  },
+  {
+    "name": "Aura Frame",
+    "website": "https://auraframe.com",
+    "description": "AI 相框，自动整理家庭照片并生成故事性展示",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "smart_frame",
+    "use_case": "memory",
+    "innovation_traits": [
+      "ambient",
+      "screenless",
+      "proactive_ai"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$8M",
+    "price": "$249",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "桌面AI相框，重新定义家庭记忆展示",
+    "latest_news": "2025-09: 北美零售渠道上线",
+    "source": "Engadget",
+    "confidence": 0.6,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI随身设备 助手"
+  },
+  {
+    "name": "Lumos Ring",
+    "website": "https://lumosring.com",
+    "description": "AI 睡眠戒指，监测睡眠质量并提供个性化改善建议",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "ring",
+    "use_case": "health_monitoring",
+    "innovation_traits": [
+      "wearable",
+      "single_use_case",
+      "haptic"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$1M",
+    "price": "$149",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "戒指形态睡眠监测器，专注单一健康场景",
+    "latest_news": "2025-08: 众筹进行中，达成 150%",
+    "source": "Kickstarter",
+    "confidence": 0.55,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI随身设备 助手"
+  },
+  {
+    "name": "Pawscout AI",
+    "website": "https://pawscout.com",
+    "description": "AI 宠物项圈，实时追踪宠物行为并提供健康分析",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "pet_collar",
+    "use_case": "health_monitoring",
+    "innovation_traits": [
+      "wearable",
+      "single_use_case",
+      "proactive_ai"
+    ],
+    "region": "🇨🇳",
+    "funding_total": "$4M",
+    "price": "$179",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "宠物AI项圈，开创动物健康监测新形态",
+    "latest_news": "2025-07: 与宠物连锁店合作推广",
+    "source": "PetTech Today",
+    "confidence": 0.6,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "glm_search",
+    "search_keyword": "AI随身设备 助手"
+  },
+  {
+    "name": "Linse Lite",
+    "website": "https://www.meganeichiba.jp/lp/linse/",
+    "description": "軽量オーディオグラスで、耳を塞がないスピーカー・マイク搭載、通話・音楽再生に特化、度付きレンズ対応。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "screenless",
+      "affordable",
+      "single_use_case"
+    ],
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "unknown",
+    "price": "¥19,800",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "シンプルなメガネ型Bluetoothオーディオ、40g軽量で日常使いやすく、Linseの廉価版としてメインストリーム普及狙い。",
+    "latest_news": "2026年2月発売、眼鏡市場で展開",
+    "source": "眼鏡市場",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AIメガネ デバイス 日本"
+  },
+  {
+    "name": "Overmind",
+    "website": "https://overmind.ai",
+    "description": "开发代理式AI（agentic AI）的伦敦初创公司，支持自主智能代理应用。",
+    "category": "agent",
+    "region": "🇪🇺",
+    "funding_total": "£2M seed",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "种子轮获200万英镑支持agentic AI开发，此类自主代理技术正成为AI新热点，具有早期增长潜力。",
+    "latest_news": "2026-02-11: 携£2M种子轮推出agentic AI平台",
+    "source": "Tech.eu",
+    "source_url": "https://tech.eu",
+    "confidence": 0.8,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T19:52:51.175711Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Shizuku AI",
+    "website": "https://shizuku.ai",
+    "description": "日本発AI VTuberで、超高速画像生成技術StreamDiffusionを活用しリアルタイム反応を実現するサービス。",
+    "category": "image",
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "a16zから資金調達",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "米VC大手a16zから投資獲得、RCFGアルゴリズムで画像生成クオリティ維持しつつ計算負荷劇減、VTuberのリアルタイム性を世界初レベルで実現し採用急増中。",
+    "latest_news": "2026-02-10: a16zから資金調達",
+    "source": "ITmedia NEWS",
+    "source_url": "https://initial.inc",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "人工知能 スタートアップ",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T19:56:30.336084Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "ニュウジア",
+    "website": "https://www.niusia.co.jp",
+    "description": "AIデジタルヒューマン、AIアパレル試着、エージェンティックAIなど多様な日本市場向けAIソリューションを提供。",
+    "category": "agent",
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "category_innovation"
+    ],
+    "why_matters": "AI試着で撮影コスト90%削減、AIスマートバッジで営業日報自動化、n'Spaceでゴーグル不要3D没入型空間など複数製品を短期間リリースし業界変革。",
+    "latest_news": "2026-02-10: AI試着サービスWearStudio.aiリリース",
+    "source": "ニュウジア公式",
+    "source_url": "https://www.niusia.co.jp",
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-12",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "人工知能 スタートアップ",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-12T19:56:30.510697Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "genas.ai",
+    "website": "https://genas.ai",
+    "description": "ハリウッド級AI動画生成プラットフォームで、Sora2・Veo3等最新モデルを日本市場向けに実装し映像量産を可能に。",
+    "category": "video",
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "category_innovation"
+    ],
+    "why_matters": "2026.1に初期費用50万円完全無料化しAI試着等15機能追加、ByteDance最新モデルSeedance 1.5 Proをリップシンク対応で実装、ショートドラマ量産工程を実現。",
+    "latest_news": "2026-01-05: 初期費用完全無料化、15革新機能追加で映像量産時代へ",
+    "source": "株式会社ニュウジア",
+    "source_url": "https://www.niusia.co.jp",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "日本 AI企業 シリーズA",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T03:58:16.664035Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Ray-Ban Meta AI Glasses Gen 2",
+    "website": "https://www.meta.com/ai-glasses/ray-ban-meta/",
+    "description": "AI智能眼镜，内置摄像头麦克风，支持免提信息捕获和现实世界AI交互。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "life_logging",
+    "innovation_traits": [
+      "wearable",
+      "voice_first",
+      "gesture",
+      "media_coverage"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "unknown",
+    "price": "$329-799",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation"
+    ],
+    "why_matters": "眼镜即多媒体设备，8小时续航+实时翻译",
+    "latest_news": "Gen 2升级摄像头和电池",
+    "source": "Meta",
+    "source_url": "https://www.meta.com/ai-glasses/ray-ban-meta/",
+    "confidence": 0.95,
+    "is_hardware": true,
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "screenless AI device wearable",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:00:16.733635Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Maestro AI",
+    "website": "https://maestro.ai",
+    "description": "专为抵押贷款 origination 打造的垂直AI平台，帮助加速市场推广和行业采用。",
+    "category": "finance",
+    "region": "🇺🇸",
+    "funding_total": "$1.2M Pre-Seed",
+    "dark_horse_index": 1,
+    "criteria_met": [],
+    "why_matters": "New Stack Ventures领投120万美元pre-seed，用于扩展抵押贷款AI产品功能，但资金规模较小，尚未显示爆发增长。",
+    "latest_news": "2026-02: 完成120万美元pre-seed融资",
+    "source": "Pulse 2.0",
+    "source_url": "https://pulse2.com/artificial-intelligence/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "artificial intelligence company raised funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:00:32.107405Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Complyance",
+    "website": "https://complyance.ai",
+    "description": "AI原生企业GRC（治理、风险、合规）平台，帮助企业管理合规需求。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$20M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "GV（Google Ventures）领投2000万美元A轮，Creandum等持续参与，新天使包括Anthropic和Mastercard高管，专注AI驱动GRC。",
+    "latest_news": "2026-02: 完成2000万美元Series A融资",
+    "source": "Pulse 2.0",
+    "source_url": "https://pulse2.com/artificial-intelligence/",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "artificial intelligence company raised funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:00:37.104712Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Scala",
+    "website": "https://scala.ai",
+    "description": "专为现代联系中心打造的操作智能平台，支持人机混合运营。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$8.5M Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal",
+      "demand_signal_hn"
+    ],
+    "why_matters": "Madrona和FUSE联合领投850万美元种子轮，从隐身推出，针对联系中心AI转型，提供运营智能。",
+    "latest_news": "2026-02: 从隐身推出并完成850万美元种子轮",
+    "source": "Pulse 2.0",
+    "source_url": "https://pulse2.com/artificial-intelligence/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "artificial intelligence company raised funding",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:00:37.426509Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 9,
+          "top_story_id": "46983068",
+          "points": 4,
+          "comments": 4,
+          "engagement_depth_ratio": 1.0,
+          "is_controversial": false,
+          "top_comments_sample": [
+            "This is a great observation. I'm the creator of OpenClaw, and you've hit on exactly why we recently introduced the \"Gateway\" architecture. The early versions were indeed \"single programs trying to do everything,\" which is fine for a demo but fails for long-horizon tasks. The new Gateway architecture (v1.0+) moves us toward the OS model you're describing: 1. Process Supervision: The Gateway acts as a supervisor for multiple agent sessions. If an agent crashes or hangs, the Gateway can detect the heartbeat failure and attempt recovery. 2. State Persistence: We're moving memory and session state into a decoupled database (Clawdb) so you can restart the process without losing context. 3. Event-D",
+            "It’s impressive to see OpenClaw improving itself—especially with so many people contributing while the project is still brand new. Have you tried optimizing your workflow on it yet? You can add and tweak skills to much improve accuracy and token efficiency. Which model are you using, and where are you running it? Performance seems to vary a lot right now, and there are already tons of X posts and videos with different optimization approaches.",
+            "You are not the creator of OpenClaw, stop impersonating people.",
+            "Oh jeez good call on this. I took a look at the profile and it looks very LLM generated. The phrasing and everything."
+          ],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.3793,
+        "demand_tier": "medium",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "社区重点讨论了产品价值与落地细节。评论情绪整体偏中性分歧，并反复提及可用性与真实场景。这类反馈可用于判断短期需求强度是否能转化为持续增长。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "mixed",
+      "confidence": 0.6
+    }
+  },
+  {
+    "name": "Blockbrain",
+    "website": "https://blockbrain.ai",
+    "description": "德国生成式AI初创，开发企业级AI智能代理解决方案。",
+    "category": "agent",
+    "region": "🇪🇺",
+    "funding_total": "€17.5M",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "€17.5M融资推进企业级GenAI代理，专注B2B复杂工作流自动化。",
+    "latest_news": "2026-02: €17.5M融资完成",
+    "source": "Bebeez",
+    "source_url": "https://bebeez.eu/2026/02/12/german-genai-startup-blockbrain-lands-e17-5-million-to-advance-enterprise-grade-ai-agents/",
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A Europe",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:05:26.249143Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Seamflow",
+    "website": "https://seamflow.com",
+    "description": "为全球测试、检验和认证（TIC）行业开发AI软件工具，提升供应链合规效率。",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "$4.5M seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "450万美元种子轮针对TIC行业痛点开发AI工具，服务全球供应链关键环节，具有垂直领域高增长潜力。",
+    "latest_news": "2026-02-11: $4.5M种子轮开发TIC行业AI工具",
+    "source": "Tech.eu",
+    "source_url": "https://tech.eu",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "European AI startup funding 2026",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:06:01.578400Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "etalytics",
+    "website": "https://etalytics.com",
+    "description": "KI-basierte Energieoptimierungslösung, die Kühlsysteme optimiert und Stromverbrauch um 21% senkt.",
+    "category": "other",
+    "region": "🇪🇺",
+    "funding_total": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "growth_anomaly"
+    ],
+    "why_matters": "AI Startup Rising校友，已实现与Merck合作，部署技术后Kühlsysteme Strom消耗减少21%，证明市场牵引力和实际部署成功。",
+    "latest_news": "2026: 与Merck合作实施能源优化技术",
+    "source": "StartHub Hessen",
+    "source_url": "https://www.starthub-hessen.de/de/aktuelles/f%C3%B6rderung-von-ai-startup-rising-wird-fortgesetzt/",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "KI Startup Finanzierung",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:06:14.727933Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Plaud Note Pro",
+    "website": "https://pla ud.ai",
+    "description": "全球最先进的AI笔记设备，支持面对面、电话和在线会议的无缝笔记工作流。",
+    "category": "hardware",
+    "region": "🇸🇬",
+    "funding_total": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "growth_anomaly"
+    ],
+    "why_matters": "全球150万用户，2026年2月扩展东南亚市场（新加坡、泰国、马来西亚等），推出可穿戴NotePin S，专注多语言跨国专业环境的生产力工具。",
+    "latest_news": "2026-02-02: 宣布扩展东南亚市场，参加泰国GATES峰会",
+    "source": "PRNewswire",
+    "source_url": "https://sea.plaud.ai/th/blogs/news/plaud-to-gates-thailand-2026",
+    "confidence": 0.9,
+    "is_hardware": true,
+    "discovered_at": "2026-02-13",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Southeast Asia AI company",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-13T04:06:47.556686Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  },
+  {
+    "name": "Modveon",
+    "website": "https://modveon.com",
+    "description": "本人性検証を中心としたID起点の信頼OSを構築し、行政DXやオンライン相互作用の信頼性を担保するプラットフォーム。",
+    "category": "other",
+    "region": "🇯🇵🇰🇷",
+    "funding_total": "$10M Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Coinbase Ventures参加で1000万ドル調達。なりすまし・詐欺対策のverified interactionsを社会規模で実現する信頼基盤。",
+    "latest_news": "2026-02-09: 1000万ドル調達、Coinbase Venturesなど参加",
+    "source": "note.com/startup_now0708",
+    "source_url": "https://note.com/startup_now0708/n/n9d02e31907de",
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "discovered_at": "2026-02-14",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI スタートアップ 資金調達 2026",
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-14T08:18:46.292319Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    }
+  }
+]
