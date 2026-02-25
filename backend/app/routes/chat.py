@@ -29,22 +29,30 @@ def _is_chat_allowed(ip: str) -> bool:
 
 @chat_bp.route('/status', methods=['GET'])
 def chat_status():
-    """Check if chat service is configured."""
+    """Check if chat service is configured + test token generation."""
     key = os.environ.get('ZHIPU_API_KEY', '')
     has_key = bool(key and len(key) > 5)
     has_jwt = False
+    jwt_version = ""
+    token_test = ""
     try:
         import jwt
         has_jwt = True
-    except ImportError:
-        pass
+        jwt_version = getattr(jwt, '__version__', 'unknown')
+        if has_key:
+            from app.services.chat_service import _generate_token
+            tok = _generate_token(key)
+            token_test = tok[:20] + '...' if tok != key else 'FALLBACK_RAW_KEY'
+    except Exception as e:
+        token_test = f"ERROR: {str(e)[:80]}"
     return jsonify({
         'success': True,
         'has_api_key': has_key,
         'key_prefix': key[:8] + '...' if has_key else 'NOT_SET',
         'has_jwt': has_jwt,
+        'jwt_version': jwt_version,
+        'token_test': token_test,
         'model': os.environ.get('GLM_MODEL', 'glm-4.7'),
-        'mode': 'raw_http',
     })
 
 
