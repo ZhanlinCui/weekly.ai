@@ -35,23 +35,31 @@ def chat_status():
     has_jwt = False
     jwt_version = ""
     token_test = ""
-    try:
-        import jwt
-        has_jwt = True
-        jwt_version = getattr(jwt, '__version__', 'unknown')
-        if has_key:
+    key_len = len(key)
+    key_has_dot = '.' in key
+    key_parts = len(key.split('.'))
+    api_test_result = ""
+    if has_key:
+        try:
             from app.services.chat_service import _generate_token
+            import requests as req
             tok = _generate_token(key)
-            token_test = tok[:20] + '...' if tok != key else 'FALLBACK_RAW_KEY'
-    except Exception as e:
-        token_test = f"ERROR: {str(e)[:80]}"
+            resp = req.post(
+                "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+                headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json"},
+                json={"model": "glm-4.7", "messages": [{"role": "user", "content": "hi"}], "max_tokens": 10, "stream": False, "thinking": {"type": "disabled"}},
+                timeout=10,
+            )
+            api_test_result = f"status={resp.status_code} body={resp.text[:120]}"
+        except Exception as e:
+            api_test_result = f"ERROR: {str(e)[:120]}"
     return jsonify({
         'success': True,
         'has_api_key': has_key,
-        'key_prefix': key[:8] + '...' if has_key else 'NOT_SET',
-        'has_jwt': has_jwt,
-        'jwt_version': jwt_version,
-        'token_test': token_test,
+        'key_len': key_len,
+        'key_has_dot': key_has_dot,
+        'key_parts': key_parts,
+        'api_test': api_test_result,
         'model': os.environ.get('GLM_MODEL', 'glm-4.7'),
     })
 
