@@ -3,19 +3,16 @@ Chat Service — GLM-powered conversational AI for WeeklyAI.
 
 Provides streaming responses about AI products using the Zhipu GLM model,
 with product data injected as system context.
+
+Designed to work standalone (no crawler dependency) for Vercel deployment.
 """
 
 import json
 import os
-import sys
-import time
 from typing import Generator
 
-# Add crawler to path for GLM client access
-_project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
-_crawler_path = os.path.join(_project_root, 'crawler')
-if _crawler_path not in sys.path:
-    sys.path.insert(0, _crawler_path)
+ZHIPU_API_KEY = os.environ.get('ZHIPU_API_KEY', '')
+GLM_MODEL = os.environ.get('GLM_MODEL', 'glm-4.7')
 
 
 def _get_product_context(locale: str = "zh") -> str:
@@ -85,25 +82,24 @@ Response rules:
 5. Respond in English"""
 
 
-def _get_glm_client():
-    """Lazy-load GLM client."""
+def _get_zhipu_client():
+    """Create a ZhipuAI client directly (no crawler dependency)."""
+    if not ZHIPU_API_KEY:
+        return None
     try:
-        from utils.glm_client import GLMClient
-        client = GLMClient()
-        if client.is_available():
-            return client
-    except Exception:
-        pass
-    return None
+        from zhipuai import ZhipuAI
+        return ZhipuAI(api_key=ZHIPU_API_KEY)
+    except ImportError:
+        return None
 
 
 def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, None, None]:
     """
     Stream a chat response as SSE events.
 
-    Yields SSE-formatted strings: 'data: {...}\n\n'
+    Yields SSE-formatted strings: 'data: {...}\\n\\n'
     """
-    client = _get_glm_client()
+    client = _get_zhipu_client()
 
     if not client:
         yield _sse_event({"type": "text", "content": _no_api_message(locale)})
@@ -113,13 +109,8 @@ def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, Non
     system_prompt = _build_system_prompt(locale)
 
     try:
-        from zhipuai import ZhipuAI
-        sdk_client = client._client
-        if not sdk_client:
-            raise RuntimeError("ZhipuAI SDK not initialized")
-
-        response = sdk_client.chat.completions.create(
-            model=client.model,
+        response = client.chat.completions.create(
+            model=GLM_MODEL,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": message},
@@ -144,7 +135,7 @@ def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, Non
         if "429" in error_msg or "并发" in error_msg:
             msg = "服务繁忙，请稍后再试。" if locale == "zh" else "Service is busy, please try again later."
         else:
-            msg = f"抱歉，发生了错误。" if locale == "zh" else "Sorry, an error occurred."
+            msg = "抱歉，发生了错误。" if locale == "zh" else "Sorry, an error occurred."
         yield _sse_event({"type": "text", "content": msg})
         yield _sse_event({"type": "done"})
 
