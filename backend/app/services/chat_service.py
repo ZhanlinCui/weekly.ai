@@ -26,11 +26,13 @@ def _get_model() -> str:
 def _generate_token(api_key: str) -> str:
     """Generate JWT token for Zhipu API authentication.
 
-    Zhipu API requires:
-    - Header: {"alg": "HS256", "sign_type": "SIGN"}
-    - Payload: {"api_key": <id>, "exp": <ts+3600>, "timestamp": <ts>}
-    - Secret: the part after the dot in the API key
+    Manually builds the JWT to ensure exact header format required by Zhipu:
+    {"alg": "HS256", "sign_type": "SIGN"}
     """
+    import base64
+    import hashlib
+    import hmac
+
     parts = api_key.split(".")
     if len(parts) != 2:
         return api_key
@@ -39,22 +41,19 @@ def _generate_token(api_key: str) -> str:
     now_ms = int(time.time() * 1000)
     exp_ms = now_ms + 3600 * 1000
 
-    payload = {
-        "api_key": kid,
-        "exp": exp_ms,
-        "timestamp": now_ms,
-    }
+    header = {"alg": "HS256", "sign_type": "SIGN"}
+    payload = {"api_key": kid, "exp": exp_ms, "timestamp": now_ms}
 
-    try:
-        import jwt
-        return jwt.encode(
-            payload,
-            secret,
-            algorithm="HS256",
-            headers={"alg": "HS256", "sign_type": "SIGN"},
-        )
-    except Exception:
-        return api_key
+    def b64url(data: bytes) -> str:
+        return base64.urlsafe_b64encode(data).rstrip(b"=").decode("ascii")
+
+    header_b64 = b64url(json.dumps(header, separators=(",", ":")).encode())
+    payload_b64 = b64url(json.dumps(payload, separators=(",", ":")).encode())
+    signing_input = f"{header_b64}.{payload_b64}"
+    signature = hmac.new(secret.encode(), signing_input.encode(), hashlib.sha256).digest()
+    sig_b64 = b64url(signature)
+
+    return f"{header_b64}.{payload_b64}.{sig_b64}"
 
 
 def _get_product_context(locale: str = "zh") -> str:
