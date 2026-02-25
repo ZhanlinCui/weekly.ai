@@ -25,15 +25,23 @@ function nextId() {
   return `msg-${Date.now()}-${msgCounter}`;
 }
 
+const TYPING_SPEED = 18;
+
 export function useChat({ locale }: UseChatOptions) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const abortRef = useRef<AbortController | null>(null);
+  const typingRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const sendMessage = useCallback(
     async (text: string) => {
       const trimmed = text.trim();
       if (!trimmed || isLoading) return;
+
+      if (typingRef.current) {
+        clearInterval(typingRef.current);
+        typingRef.current = null;
+      }
 
       const userMsg: ChatMessage = { id: nextId(), role: "user", content: trimmed };
       const assistantId = nextId();
@@ -59,77 +67,53 @@ export function useChat({ locale }: UseChatOptions) {
           signal: controller.signal,
         });
 
-        if (!res.ok || !res.body) {
-          throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        const fullContent = data.content || data.message || "";
+
+        if (!fullContent || !data.success) {
+          setMessages((prev) =>
+            prev.map((m) =>
+              m.id === assistantId
+                ? { ...m, content: fullContent || "__ERROR__", isStreaming: false }
+                : m
+            )
+          );
+          setIsLoading(false);
+          return;
         }
 
-        const reader = res.body.getReader();
-        const decoder = new TextDecoder();
-        let buffer = "";
+        let charIndex = 0;
+        typingRef.current = setInterval(() => {
+          charIndex += 2;
+          const partial = fullContent.slice(0, charIndex);
+          const done = charIndex >= fullContent.length;
 
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
+          setMessages((prev) =>
+            prev.map((m) =>
+              m.id === assistantId
+                ? { ...m, content: partial, isStreaming: !done }
+                : m
+            )
+          );
 
-          buffer += decoder.decode(value, { stream: true });
-          const lines = buffer.split("\n");
-          buffer = lines.pop() || "";
-
-          for (const line of lines) {
-            if (!line.startsWith("data: ")) continue;
-            const payload = line.slice(6).trim();
-            if (payload === "[DONE]") continue;
-
-            try {
-              const parsed = JSON.parse(payload) as {
-                type: string;
-                content?: string;
-                ids?: string[];
-              };
-
-              if (parsed.type === "text" && parsed.content) {
-                setMessages((prev) =>
-                  prev.map((m) =>
-                    m.id === assistantId
-                      ? { ...m, content: m.content + parsed.content }
-                      : m
-                  )
-                );
-              }
-
-              if (parsed.type === "products" && parsed.ids) {
-                setMessages((prev) =>
-                  prev.map((m) =>
-                    m.id === assistantId ? { ...m, products: parsed.ids } : m
-                  )
-                );
-              }
-            } catch {
-              /* skip malformed chunks */
-            }
+          if (done) {
+            if (typingRef.current) clearInterval(typingRef.current);
+            typingRef.current = null;
+            setIsLoading(false);
           }
-        }
+        }, TYPING_SPEED);
 
-        setMessages((prev) =>
-          prev.map((m) =>
-            m.id === assistantId ? { ...m, isStreaming: false } : m
-          )
-        );
       } catch (err) {
         if ((err as Error).name === "AbortError") return;
 
         setMessages((prev) =>
-          prev.map((m) => {
-            if (m.id !== assistantId) return m;
-            if (m.content && m.content.length > 10) {
-              return { ...m, isStreaming: false };
-            }
-            return { ...m, content: "__ERROR__", isStreaming: false };
-          })
+          prev.map((m) =>
+            m.id === assistantId
+              ? { ...m, content: "__ERROR__", isStreaming: false }
+              : m
+          )
         );
-      } finally {
         setIsLoading(false);
-        abortRef.current = null;
       }
     },
     [isLoading, locale]
@@ -137,6 +121,10 @@ export function useChat({ locale }: UseChatOptions) {
 
   const clearMessages = useCallback(() => {
     abortRef.current?.abort();
+    if (typingRef.current) {
+      clearInterval(typingRef.current);
+      typingRef.current = null;
+    }
     setMessages([]);
     setIsLoading(false);
   }, []);

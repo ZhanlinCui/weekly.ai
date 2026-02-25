@@ -122,14 +122,12 @@ Rules:
 5. Respond in English"""
 
 
-def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, None, None]:
-    """Stream a chat response as SSE events using raw HTTP."""
+def get_chat_response(message: str, locale: str = "zh") -> dict:
+    """Get a complete chat response (non-streaming for Vercel 10s limit)."""
     api_key = _get_api_key()
 
     if not api_key:
-        yield _sse_event({"type": "text", "content": _no_api_message(locale)})
-        yield _sse_event({"type": "done"})
-        return
+        return {"success": False, "content": _no_api_message(locale)}
 
     system_prompt = _build_system_prompt(locale)
     token = _generate_token(api_key)
@@ -147,13 +145,12 @@ def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, Non
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": message},
                 ],
-                "max_tokens": 800,
+                "max_tokens": 600,
                 "temperature": 0.5,
-                "stream": True,
+                "stream": False,
                 "thinking": {"type": "disabled"},
             },
-            stream=True,
-            timeout=30,
+            timeout=9,
         )
 
         if resp.status_code != 200:
@@ -163,42 +160,23 @@ def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, Non
                 error_detail = err_json.get("error", {}).get("message", resp.text[:200])
             except Exception:
                 error_detail = resp.text[:200]
-            msg = f"API 返回错误 ({resp.status_code}): {error_detail}" if locale == "zh" else f"API error ({resp.status_code}): {error_detail}"
-            yield _sse_event({"type": "text", "content": msg})
-            yield _sse_event({"type": "done"})
-            return
+            return {"success": False, "content": f"API error ({resp.status_code}): {error_detail}"}
 
-        for line in resp.iter_lines(decode_unicode=True):
-            if not line:
-                continue
-            if not line.startswith("data:"):
-                continue
+        data = resp.json()
+        choices = data.get("choices", [])
+        if choices:
+            content = choices[0].get("message", {}).get("content", "")
+            if content:
+                return {"success": True, "content": content}
 
-            payload = line[5:].strip()
-            if payload == "[DONE]":
-                break
-
-            try:
-                chunk = json.loads(payload)
-                choices = chunk.get("choices", [])
-                if choices:
-                    delta = choices[0].get("delta", {})
-                    content = delta.get("content", "")
-                    if content:
-                        yield _sse_event({"type": "text", "content": content})
-            except (json.JSONDecodeError, KeyError, IndexError):
-                continue
-
-        yield _sse_event({"type": "done"})
+        return {"success": False, "content": "Empty response from model"}
 
     except requests.exceptions.Timeout:
-        msg = "请求超时，请重试。" if locale == "zh" else "Request timed out. Please try again."
-        yield _sse_event({"type": "text", "content": msg})
-        yield _sse_event({"type": "done"})
-    except Exception:
+        msg = "回答生成超时，请重试。" if locale == "zh" else "Response timed out. Please try again."
+        return {"success": False, "content": msg}
+    except Exception as e:
         msg = "抱歉，发生了错误。" if locale == "zh" else "Sorry, an error occurred."
-        yield _sse_event({"type": "text", "content": msg})
-        yield _sse_event({"type": "done"})
+        return {"success": False, "content": msg}
 
 
 def _sse_event(data: dict) -> str:

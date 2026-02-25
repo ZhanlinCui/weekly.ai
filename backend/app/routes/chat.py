@@ -98,17 +98,7 @@ def chat():
     if locale not in ("zh", "en"):
         locale = "zh"
 
-    from app.services.chat_service import stream_chat_response
+    from app.services.chat_service import get_chat_response
 
-    def generate():
-        yield from stream_chat_response(message, locale)
-
-    return Response(
-        generate(),
-        mimetype='text/event-stream',
-        headers={
-            'Cache-Control': 'no-cache',
-            'Connection': 'keep-alive',
-            'X-Accel-Buffering': 'no',
-        }
-    )
+    result = get_chat_response(message, locale)
+    return jsonify(result)
