@@ -1,277 +1,325 @@
-# WeeklyAI
+<p align="center">
+  <img src="https://img.shields.io/badge/WeeklyAI-Global_AI_Discovery-635bff?style=for-the-badge&logo=sparkles&logoColor=white" alt="WeeklyAI" />
+</p>
 
-> 全球 AI 产品灵感库 + 黑马发现平台
+<h1 align="center">WeeklyAI</h1>
 
-帮 PM 发现全球正在崛起的 AI 产品，从潜力股到黑马一网打尽。
+<p align="center">
+  <strong>The world's first AI-powered product intelligence platform</strong><br/>
+  <em>Discover tomorrow's AI unicorns before everyone else</em>
+</p>
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.9+-green.svg)
-![Node](https://img.shields.io/badge/node-18+-green.svg)
+<p align="center">
+  <a href="#-中文">中文</a> · <a href="#-english">English</a> · <a href="#-日本語">日本語</a>
+</p>
 
-## 特性
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Flask-3.0-000?style=flat-square&logo=flask" alt="Flask" />
+  <img src="https://img.shields.io/badge/MongoDB-7-47A248?style=flat-square&logo=mongodb" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/GLM--4.7-Zhipu_AI-635bff?style=flat-square" alt="GLM" />
+  <img src="https://img.shields.io/badge/Perplexity-Sonar-00d4aa?style=flat-square" alt="Perplexity" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" />
+</p>
 
-- **全球视野** - 覆盖美国/中国/欧洲/日韩/东南亚
-- **智能发现** - 自动搜索 + AI 评分，每日更新
-- **分层收录** - 黑马(4-5分) / 潜力股(2-3分) 分级推荐
-- **创新硬件** - 重点发掘 AI 吊坠、别针、戒指等新形态硬件
-- **为什么重要** - 每个产品都有清晰的价值说明
+<p align="center">
+  <a href="https://frontend-next-psi-nine.vercel.app"><strong>Live Demo</strong></a> · 
+  <a href="https://backend-flax-mu-17.vercel.app/api/v1/products/dark-horses"><strong>API</strong></a> · 
+  <a href="https://backend-flax-mu-17.vercel.app/api/v1/products/feed/rss"><strong>RSS Feed</strong></a>
+</p>
 
-## 快速开始
+---
 
-### 环境要求
+## 🇨🇳 中文
 
-- Python 3.9+
-- Node.js 18+
-- npm
+### 产品定位
 
-### 安装
+**WeeklyAI** 是全球首个 AI 驱动的产品情报平台。我们每天自动扫描全球 6 大地区的 AI 创业生态，通过多模型智能评分体系（Perplexity Sonar + 智谱 GLM-4.7），从海量信息中精准筛选出高潜力 AI 产品，让产品经理、投资人和创业者在 5 分钟内掌握全球 AI 产品脉搏。
+
+### 核心竞争力
+
+| 能力 | 描述 |
+|------|------|
+| **全球六区覆盖** | 美国 · 中国 · 欧洲 · 日韩 · 东南亚 · 全球硬件，多语言原生搜索 |
+| **双 AI 引擎** | Perplexity Sonar（全球）+ 智谱 GLM-4.7（中国），智能路由，互为回退 |
+| **5 级评分体系** | 融资规模 × 创始人背景 × 品类创新 × 社区热度 × 增长信号，量化评判 |
+| **硬件专项发掘** | 创新形态硬件（可穿戴 / 桌面 / 随身），40% 形态创新权重，独家评分维度 |
+| **AI 对话助手** | 基于 GLM-4.7 的流式对话，实时注入产品数据，秒级回答产品问题 |
+| **中英双语** | 前端一键切换中 / 英，语言偏好自动记忆 |
+| **Swipe 发现** | Tinder 式卡片交互，支持手势 / 惯性 / 连击特效，30 秒筛出黑马 |
+| **10 步自动化流水线** | 发现 → 发布 → 回填 → 解析 → 验证 → 去重 → Logo → 新闻 → 社交信号 → 同步 |
+
+### 产品分层
+
+```
+ 5分  现象级黑马    融资 >$100M / 品类开创 / 社交爆火
+ 4分  强力黑马      融资 >$30M / 顶级 VC / ARR >$10M
+ 3分  高潜力股      融资 $1M-$5M / ProductHunt 上榜
+ 2分  早期观察      有创新点 / 数据不足但值得追踪
+```
+
+### 技术架构
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Frontend (Next.js 16)                     │
+│  React 19 · TypeScript · SWR · Zod · p5.js · i18n          │
+├─────────────────────────────────────────────────────────────┤
+│                    Backend (Flask 3.0)                       │
+│  REST API · SSE Streaming · Rate Limiting · MongoDB/JSON    │
+├──────────────────────┬──────────────────────────────────────┤
+│  Perplexity Sonar    │    Zhipu GLM-4.7                     │
+│  (US/EU/JP/KR/SEA)   │    (China · search_pro)              │
+├──────────────────────┴──────────────────────────────────────┤
+│              MongoDB 7 / JSON Fallback                      │
+├─────────────────────────────────────────────────────────────┤
+│  10-Step Daily Pipeline · launchd · Docker · Vercel         │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 快速启动
 
 ```bash
-# 克隆项目
-git clone https://github.com/your-username/WeeklyAI.git
-cd WeeklyAI
+git clone https://github.com/ZhanlinCui/weekly.ai.git
+cd weekly.ai
 
-# 后端依赖
-cd backend
-pip install -r requirements.txt
+# 前端
+cd frontend-next && npm install && npm run dev    # localhost:3001
 
-# 前端依赖
-cd ../frontend
-npm install
+# 后端
+cd backend && pip install -r requirements.txt && python run.py  # localhost:5000
 
-# 爬虫依赖
-cd ../crawler
-pip install -r requirements.txt
+# AI 发现（需要 API Key）
+cd crawler && python3 tools/auto_discover.py --region all --dry-run
 ```
 
-### 配置
+### 环境变量
 
-```bash
-# 创建环境变量文件
-cp crawler/.env.example crawler/.env
-
-# 编辑配置
-# PERPLEXITY_API_KEY=your_perplexity_key
-```
-
-### 启动
-
-```bash
-# 启动后端 (localhost:5000)
-cd backend && python run.py
-
-# 启动前端 (localhost:3000)
-cd frontend && npm start
-```
-
-## 核心功能
-
-### 1. 自动发现
-
-每日自动搜索全球 AI 产品，使用 Perplexity 进行智能评分。
-
-```bash
-cd crawler
-
-# 搜索所有地区
-python3 tools/auto_discover.py --region all
-
-# 只搜索美国
-python3 tools/auto_discover.py --region us
-
-# 只搜索硬件产品
-python3 tools/auto_discover.py --type hardware
-
-# 预览模式（不保存）
-python3 tools/auto_discover.py --dry-run
-```
-
-### 2. 产品评分体系
-
-| 评分 | 层级 | 定义 | 示例 |
-|------|------|------|------|
-| 5分 | 现象级 | 融资>$100M / 社交爆火 / 品类开创 | Lovable, Friend Pendant |
-| 4分 | 黑马 | 融资>$30M / 顶级VC背书 / 形态创新 | Plaud NotePin, Vocci |
-| 3分 | 潜力股 | 融资$1M-$5M / ProductHunt上榜 | 早期有热度的产品 |
-| 2分 | 观察 | 刚发布/有创新点但数据不足 | 新发布的创新产品 |
-
-### 3. 创新硬件发掘
-
-重点发掘非传统形态的 AI 硬件产品：
-
-```
-评分权重：形态创新 (40%) > 使用场景 (30%) > 热度信号 (15%) > 商业可行 (15%)
-```
-
-支持的创新形态：
-- 可穿戴：吊坠、别针、戒指、眼镜、耳夹...
-- 随身携带：卡片、钥匙扣、手机配件...
-- 桌面/家居：AI 相框、台灯、镜子、玩偶...
-- 特定场景：宠物项圈、儿童手表、运动装备...
-
-### 4. 数据管理工具
-
-```bash
-cd crawler
-
-# 清理重复数据
-python3 tools/clean_duplicates.py --analyze-only  # 分析
-python3 tools/clean_duplicates.py --backup        # 清理并备份
-
-# 修复产品 Logo
-python3 tools/fix_logos.py --dry-run  # 预览
-python3 tools/fix_logos.py            # 执行
-
-# 手动添加产品
-python3 tools/add_product.py --quick "产品名" "URL" "描述"
-```
-
-## 项目结构
-
-```
-WeeklyAI/
-├── frontend/           # 前端 (EJS + Express)
-│   ├── views/         # 页面模板
-│   └── public/        # 静态资源
-├── backend/           # 后端 API (Python + Flask)
-│   └── app/
-│       └── routes/    # API 路由
-├── crawler/           # 爬虫和数据处理
-│   ├── tools/         # 工具脚本
-│   ├── prompts/       # AI Prompt 模块
-│   ├── utils/         # 工具函数
-│   └── data/          # 数据文件
-│       ├── products_featured.json  # 精选产品
-│       └── industry_leaders.json   # 行业领军
-└── ops/               # 运维
-    └── scheduling/    # 定时任务
-```
-
-## API 端点
-
-Base URL: `http://localhost:5000/api/v1`
-
-| 端点 | 方法 | 说明 |
+| 变量 | 必需 | 说明 |
 |------|------|------|
-| `/products/weekly-top` | GET | 本周 Top 15 |
-| `/products/dark-horses` | GET | 黑马产品 (4-5分) |
-| `/products/rising-stars` | GET | 潜力股 (2-3分) |
-| `/products/today` | GET | 今日精选 |
-| `/products/<id>` | GET | 产品详情 |
-| `/search?q=xxx` | GET | 搜索产品 |
+| `ZHIPU_API_KEY` | 中国区 | 智谱 GLM-4.7 API Key |
+| `PERPLEXITY_API_KEY` | 全球区 | Perplexity Sonar API Key |
+| `MONGO_URI` | 可选 | MongoDB 连接（不设则用 JSON） |
+| `NEXT_PUBLIC_API_BASE_URL` | 部署时 | 前端 API 地址 |
 
-## 定时任务
+### API 端点
 
-使用 macOS launchd 每日自动更新：
+| 端点 | 说明 |
+|------|------|
+| `GET /products/dark-horses` | 本周黑马（4-5 分，自动轮换） |
+| `GET /products/rising-stars` | 潜力股（2-3 分） |
+| `GET /products/weekly-top` | 本周 Top 15（composite / trending / recency） |
+| `GET /products/blogs` | 新闻动态（YouTube / X / HN / PH） |
+| `GET /search?q=xxx` | 全文搜索（多字段加权） |
+| `POST /chat` | AI 对话（GLM-4.7 流式 SSE） |
+| `GET /products/feed/rss` | RSS 订阅源 |
+
+---
+
+## 🇺🇸 English
+
+### What is WeeklyAI?
+
+**WeeklyAI** is the world's first AI-powered product intelligence platform. We automatically scan the global AI startup ecosystem across 6 regions daily, using a multi-model scoring system (Perplexity Sonar + Zhipu GLM-4.7) to surface high-potential AI products — so product managers, investors, and founders can catch the next breakout in 5 minutes.
+
+### Why WeeklyAI?
+
+| Capability | Description |
+|------------|-------------|
+| **6-Region Coverage** | US · China · Europe · Japan/Korea · Southeast Asia · Global Hardware |
+| **Dual AI Engine** | Perplexity Sonar (global) + Zhipu GLM-4.7 (China), smart routing with fallback |
+| **5-Tier Scoring** | Funding × Founder Background × Category Innovation × Community Buzz × Growth Signals |
+| **Hardware Discovery** | Innovative form factors (wearables / desktop / portable), 40% innovation weight |
+| **AI Chat Assistant** | GLM-4.7 streaming chat with real-time product data injection |
+| **Bilingual (ZH/EN)** | One-click language switch, preference auto-saved |
+| **Swipe Discovery** | Tinder-style card interaction with gesture, inertia, and streak effects |
+| **10-Step Pipeline** | Discover → Publish → Backfill → Resolve → Validate → Dedup → Logo → News → Social → Sync |
+
+### Product Tiers
+
+```
+ 5pts  Phenomenal     Funding >$100M / Category creator / Viral
+ 4pts  Dark Horse     Funding >$30M / Top VC / ARR >$10M
+ 3pts  Rising Star    Funding $1M-$5M / ProductHunt featured
+ 2pts  Early Watch    Innovative but insufficient data
+```
+
+### Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Frontend (Next.js 16)                     │
+│  React 19 · TypeScript · SWR · Zod · p5.js · i18n          │
+├─────────────────────────────────────────────────────────────┤
+│                    Backend (Flask 3.0)                       │
+│  REST API · SSE Streaming · Rate Limiting · MongoDB/JSON    │
+├──────────────────────┬──────────────────────────────────────┤
+│  Perplexity Sonar    │    Zhipu GLM-4.7                     │
+│  (US/EU/JP/KR/SEA)   │    (China · search_pro)              │
+├──────────────────────┴──────────────────────────────────────┤
+│              MongoDB 7 / JSON Fallback                      │
+├─────────────────────────────────────────────────────────────┤
+│  10-Step Daily Pipeline · launchd · Docker · Vercel         │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Quick Start
 
 ```bash
-# 安装定时任务
-launchctl unload ~/Library/LaunchAgents/com.weeklyai.crawler.plist 2>/dev/null
-cp ops/scheduling/com.weeklyai.crawler.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.weeklyai.crawler.plist
+git clone https://github.com/ZhanlinCui/weekly.ai.git
+cd weekly.ai
 
-# 查看状态
-launchctl list | grep weeklyai
+# Frontend
+cd frontend-next && npm install && npm run dev    # localhost:3001
 
-# 手动运行
-./ops/scheduling/daily_update.sh
+# Backend
+cd backend && pip install -r requirements.txt && python run.py  # localhost:5000
 
-# 查看日志
-tail -f crawler/logs/daily_update.log
+# AI Discovery (requires API keys)
+cd crawler && python3 tools/auto_discover.py --region all --dry-run
 ```
 
-**运行时间**: 每天凌晨 3:00
+### Environment Variables
 
-## 数据模板
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `ZHIPU_API_KEY` | For China | Zhipu GLM-4.7 API Key |
+| `PERPLEXITY_API_KEY` | For Global | Perplexity Sonar API Key |
+| `MONGO_URI` | Optional | MongoDB connection (falls back to JSON) |
+| `NEXT_PUBLIC_API_BASE_URL` | Deploy | Frontend API base URL |
 
-### 创新硬件
+### API Endpoints
 
-```json
-{
-  "name": "Friend Pendant",
-  "website": "https://friend.com",
-  "description": "AI 伴侣项链，Claude 驱动的 always-on 情感陪伴设备",
-  "category": "hardware",
-  "hardware_type": "innovative",
-  "form_factor": "pendant",
-  "use_case": "emotional_companion",
-  "innovation_traits": ["non_traditional_form", "voice_first", "affordable"],
-  "price": "$99",
-  "dark_horse_index": 5,
-  "why_matters": "AI 伴侣吊坠，Claude 驱动，$99 无订阅，Twitter 现象级爆火"
-}
+| Endpoint | Description |
+|----------|-------------|
+| `GET /products/dark-horses` | This week's dark horses (4-5 pts, auto-rotation) |
+| `GET /products/rising-stars` | Rising stars (2-3 pts) |
+| `GET /products/weekly-top` | Weekly Top 15 (composite / trending / recency) |
+| `GET /products/blogs` | News feed (YouTube / X / HN / PH) |
+| `GET /search?q=xxx` | Full-text search (multi-field weighted) |
+| `POST /chat` | AI chat (GLM-4.7 streaming SSE) |
+| `GET /products/feed/rss` | RSS feed |
+
+---
+
+## 🇯🇵 日本語
+
+### WeeklyAI とは
+
+**WeeklyAI** は、世界初の AI 駆動型プロダクトインテリジェンスプラットフォームです。毎日グローバル 6 地域の AI スタートアップエコシステムを自動スキャンし、マルチモデルスコアリングシステム（Perplexity Sonar + Zhipu GLM-4.7）を活用して、高ポテンシャルな AI プロダクトを精密に抽出。プロダクトマネージャー、投資家、起業家が 5 分で世界の AI プロダクト動向を把握できます。
+
+### コア機能
+
+| 機能 | 説明 |
+|------|------|
+| **6 地域カバー** | 米国 · 中国 · 欧州 · 日韓 · 東南アジア · グローバルハードウェア |
+| **デュアル AI エンジン** | Perplexity Sonar（グローバル）+ Zhipu GLM-4.7（中国）、スマートルーティング |
+| **5 段階スコアリング** | 資金調達 × 創業者背景 × カテゴリ革新 × コミュニティ注目度 × 成長シグナル |
+| **ハードウェア発掘** | 革新的フォームファクタ（ウェアラブル / デスクトップ / ポータブル） |
+| **AI チャットアシスタント** | GLM-4.7 ストリーミング対話、リアルタイムプロダクトデータ注入 |
+| **バイリンガル（中/英）** | ワンクリック言語切替、設定自動保存 |
+| **スワイプ発見** | Tinder 式カードインタラクション、ジェスチャー・慣性・連続ヒット対応 |
+| **10 ステップ自動パイプライン** | 発見 → 公開 → 補完 → 解決 → 検証 → 重複排除 → ロゴ → ニュース → ソーシャル → 同期 |
+
+### プロダクトティア
+
+```
+ 5pt  フェノメナル    資金調達 >$100M / カテゴリ創造 / バイラル
+ 4pt  ダークホース    資金調達 >$30M / トップ VC / ARR >$10M
+ 3pt  ライジングスター 資金調達 $1M-$5M / ProductHunt 注目
+ 2pt  アーリーウォッチ 革新的だがデータ不足
 ```
 
-### 软件产品
+### アーキテクチャ
 
-```json
-{
-  "name": "Lovable",
-  "website": "https://lovable.dev",
-  "description": "AI-first full-stack development platform",
-  "category": "coding",
-  "funding_total": "$100M",
-  "dark_horse_index": 5,
-  "why_matters": "8个月从0到独角兽，AI原生代码编辑器，Sequoia领投"
-}
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Frontend (Next.js 16)                     │
+│  React 19 · TypeScript · SWR · Zod · p5.js · i18n          │
+├─────────────────────────────────────────────────────────────┤
+│                    Backend (Flask 3.0)                       │
+│  REST API · SSE Streaming · Rate Limiting · MongoDB/JSON    │
+├──────────────────────┬──────────────────────────────────────┤
+│  Perplexity Sonar    │    Zhipu GLM-4.7                     │
+│  (US/EU/JP/KR/SEA)   │    (China · search_pro)              │
+├──────────────────────┴──────────────────────────────────────┤
+│              MongoDB 7 / JSON Fallback                      │
+├─────────────────────────────────────────────────────────────┤
+│  10-Step Daily Pipeline · launchd · Docker · Vercel         │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-## 地区覆盖
-
-| 地区 | 权重 | 搜索引擎 |
-|------|------|----------|
-| 美国 | 40% | Bing |
-| 中国 | 25% | Sogou |
-| 欧洲 | 15% | Bing |
-| 日韩 | 10% | Bing |
-| 东南亚 | 10% | Bing |
-
-## 开发指南
-
-### 添加新的搜索关键词
-
-编辑 `crawler/tools/auto_discover.py` 中的 `KEYWORDS_SOFTWARE` 或 `KEYWORDS_HARDWARE`。
-
-### 修改评分标准
-
-编辑 `crawler/prompts/analysis_prompts.py` 中的评分 Prompt。
-
-### 添加新的 API 端点
-
-在 `backend/app/routes/products.py` 中添加新路由。
-
-## 技术栈
-
-- **前端**: Express.js, EJS, Tailwind CSS
-- **后端**: Python, Flask
-- **AI**: Perplexity Sonar
-- **数据**: JSON 文件存储
-- **定时任务**: macOS launchd
-
-## 前端 API 配置（部署必看）
-
-前端浏览器侧会按下面优先级选择 API Base URL：
-
-1. 如果页面注入了 `API_BASE_URL`（由 `frontend/app.js` 从环境变量 `API_BASE_URL` 注入 `window.__API_BASE_URL__`），则使用该值
-2. 如果是本地 `localhost`，使用 `http://localhost:5000/api/v1`
-3. 否则使用同源 `/api/v1`（适用于同域部署或反向代理）
-
-如果你把前端部署到 Vercel，但后端不在同域，请在 Vercel 项目里设置环境变量：
-
-- `API_BASE_URL=https://<your-backend-host>/api/v1`
-
-## CI / Tests
-
-- GitHub Actions workflow: `.github/workflows/ci.yml`
-- E2E 脚本: `tests/test_frontend.py`（Playwright，CI 会启动前后端后运行该脚本）
-
-本地运行 Playwright（只需安装一次）：
+### クイックスタート
 
 ```bash
-python3 -m pip install playwright
-python3 -m playwright install chromium
-python3 tests/test_frontend.py
+git clone https://github.com/ZhanlinCui/weekly.ai.git
+cd weekly.ai
+
+# フロントエンド
+cd frontend-next && npm install && npm run dev    # localhost:3001
+
+# バックエンド
+cd backend && pip install -r requirements.txt && python run.py  # localhost:5000
+
+# AI ディスカバリー（API キーが必要）
+cd crawler && python3 tools/auto_discover.py --region all --dry-run
 ```
+
+### 環境変数
+
+| 変数 | 必須 | 説明 |
+|------|------|------|
+| `ZHIPU_API_KEY` | 中国向け | Zhipu GLM-4.7 API キー |
+| `PERPLEXITY_API_KEY` | グローバル | Perplexity Sonar API キー |
+| `MONGO_URI` | 任意 | MongoDB 接続（未設定で JSON フォールバック） |
+| `NEXT_PUBLIC_API_BASE_URL` | デプロイ時 | フロントエンド API ベース URL |
+
+### API エンドポイント
+
+| エンドポイント | 説明 |
+|----------------|------|
+| `GET /products/dark-horses` | 今週のダークホース（4-5pt、自動ローテーション） |
+| `GET /products/rising-stars` | ライジングスター（2-3pt） |
+| `GET /products/weekly-top` | ウィークリー Top 15（composite / trending / recency） |
+| `GET /products/blogs` | ニュースフィード（YouTube / X / HN / PH） |
+| `GET /search?q=xxx` | 全文検索（マルチフィールド加重） |
+| `POST /chat` | AI チャット（GLM-4.7 ストリーミング SSE） |
+| `GET /products/feed/rss` | RSS フィード |
+
+---
+
+## Project Structure
+
+```
+weekly.ai/
+├── frontend-next/        Next.js 16 + React 19 (primary frontend)
+│   ├── src/app/          Pages (home, product, blog, discover, search)
+│   ├── src/components/   Components (chat, home, product, layout, favorites)
+│   ├── src/i18n/         Bilingual system (zh/en)
+│   ├── src/lib/          API client, product utils, schemas
+│   └── src/styles/       Design tokens, base, home, chat
+├── backend/              Flask 3.0 API
+│   ├── app/routes/       products, search, chat
+│   └── app/services/     repository, service, filters, sorting, chat
+├── crawler/              AI Discovery Engine
+│   ├── tools/            33 automation scripts
+│   ├── utils/            Perplexity + GLM clients
+│   ├── prompts/          Search + Analysis prompts
+│   ├── spiders/          17 crawlers (YouTube, X, HN, PH...)
+│   └── data/             Product data (featured, dark horses, blogs)
+├── ops/scheduling/       Daily pipeline (launchd + cron)
+├── tests/                13 Python test files + Vitest
+└── docker-compose.yml    Full-stack containerization
+```
+
+## Deployment
+
+| Service | Platform | URL |
+|---------|----------|-----|
+| Frontend | Vercel (Next.js) | [frontend-next-psi-nine.vercel.app](https://frontend-next-psi-nine.vercel.app) |
+| Backend | Vercel (Serverless Python) | [backend-flax-mu-17.vercel.app](https://backend-flax-mu-17.vercel.app) |
+| Database | MongoDB Atlas / JSON Fallback | Configurable |
 
 ## License
 
@@ -279,4 +327,7 @@ MIT
 
 ---
 
-Made with AI for AI enthusiasts.
+<p align="center">
+  <strong>WeeklyAI</strong> — Discover the future of AI, before it happens.<br/>
+  <sub>Built with Perplexity Sonar, Zhipu GLM-4.7, Next.js 16, and Flask 3.0</sub>
+</p>
