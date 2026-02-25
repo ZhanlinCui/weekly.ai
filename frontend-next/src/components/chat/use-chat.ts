@@ -119,11 +119,13 @@ export function useChat({ locale }: UseChatOptions) {
         if ((err as Error).name === "AbortError") return;
 
         setMessages((prev) =>
-          prev.map((m) =>
-            m.id === assistantId
-              ? { ...m, content: m.content || "__ERROR__", isStreaming: false }
-              : m
-          )
+          prev.map((m) => {
+            if (m.id !== assistantId) return m;
+            if (m.content && m.content.length > 10) {
+              return { ...m, isStreaming: false };
+            }
+            return { ...m, content: "__ERROR__", isStreaming: false };
+          })
         );
       } finally {
         setIsLoading(false);
