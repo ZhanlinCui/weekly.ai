@@ -153,14 +153,18 @@ a {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.42rem;
+  gap: 0.6rem;
 }
 
-.logo-img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  flex-shrink: 0;
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.62rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(132deg, var(--primary), color-mix(in oklab, var(--punch) 72%, var(--primary)));
 }
 
 .logo-text {
@@ -256,32 +260,50 @@ a:focus-visible {
   border-color: color-mix(in oklab, var(--primary) 62%, transparent);
 }
 
-.locale-toggle {
-  height: 2.2rem;
-  padding: 0 0.62rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
-  background: var(--surface);
-  color: var(--text);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.32rem;
-  cursor: pointer;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  transition: transform var(--motion-fast), border-color var(--motion-fast), color var(--motion-fast);
-}
-
-.locale-toggle:hover {
-  transform: translateY(-2px);
-  border-color: color-mix(in oklab, var(--primary) 62%, transparent);
-}
-
 .nav-actions {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.locale-switcher {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.locale-switcher__btn {
+  min-width: 2.2rem;
+  height: 2.2rem;
+  border: 0;
+  border-left: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: color var(--motion-fast), background-color var(--motion-fast);
+}
+
+.locale-switcher__btn:first-child {
+  border-left: 0;
+}
+
+.locale-switcher__btn:hover {
+  color: var(--text);
+}
+
+.locale-switcher__btn.active {
+  color: var(--surface);
+  background: var(--text);
+}
+
+[data-theme="dark"] .locale-switcher__btn.active {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .nav-favorites {
@@ -479,14 +501,14 @@ input {
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 0.72rem;
+  grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+  gap: 1.02rem;
 }
 
 .darkhorse-section .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 0.72rem;
+  grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+  gap: 1rem;
   align-items: start;
 }
 
@@ -1050,121 +1072,6 @@ input {
 
 .blog-card__actions .favorite-btn {
   margin-right: auto;
-}
-
-/* ── Dense product card layout (compact, one-click navigation) ── */
-
-.product-card--dense {
-  cursor: pointer;
-}
-
-.product-card--dense .product-card__content {
-  padding: 0.72rem 0.8rem 0.68rem 0.92rem;
-  gap: 0.42rem;
-  grid-template-rows: auto auto auto;
-}
-
-.product-card__row-top {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  min-width: 0;
-}
-
-.product-card__logo--sm {
-  width: 36px;
-  height: 36px;
-  border-radius: 9px;
-  flex-shrink: 0;
-  font-size: 0.72rem;
-}
-
-.product-card__logo--sm img {
-  padding: 3px;
-}
-
-.product-card--dense .product-card__identity-copy {
-  flex: 1;
-  min-width: 0;
-}
-
-.product-card--dense .product-card__title {
-  font-size: 0.88rem;
-  line-height: 1.2;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.product-card--dense .product-card__meta {
-  font-size: 0.68rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.product-badge--sm {
-  font-size: 0.68rem;
-  padding: 0.14rem 0.4rem;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.product-card__desc-dense {
-  margin: 0;
-  font-size: 0.8rem;
-  line-height: 1.4;
-  color: var(--text-soft);
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-}
-
-.product-card__row-bottom {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-  margin-top: auto;
-}
-
-.product-card__funding-tag {
-  display: inline-flex;
-  align-items: center;
-  border-radius: var(--radius-pill);
-  border: 1px solid color-mix(in oklab, var(--accent) 22%, transparent);
-  background: color-mix(in oklab, var(--accent) 8%, transparent);
-  color: color-mix(in oklab, var(--accent) 88%, var(--text));
-  font-size: 0.66rem;
-  font-family: var(--font-mono);
-  padding: 0.1rem 0.38rem;
-  line-height: 1;
-}
-
-.product-card__type-tag {
-  display: inline-flex;
-  align-items: center;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  font-size: 0.66rem;
-  font-family: var(--font-mono);
-  padding: 0.1rem 0.38rem;
-  line-height: 1;
-}
-
-.product-card__actions-dense {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  margin-left: auto;
-}
-
-.link-btn--xs {
-  padding: 0.2rem 0.48rem;
-  font-size: 0.7rem;
-  min-height: unset;
 }
 
 .blog-card__content .product-card__desc {
@@ -1945,6 +1852,11 @@ input {
 
   .nav-favorites span {
     font-size: 0.74rem;
+  }
+
+  .locale-switcher__btn {
+    min-width: 2rem;
+    font-size: 0.72rem;
   }
 }
 

@@ -2,11 +2,13 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useLocale } from "@/i18n";
 
 const THEME_STORAGE_KEY = "weeklyai_theme";
 
 type Theme = "light" | "dark";
+type ThemeToggleProps = {
+  ariaLabel?: string;
+};
 
 function resolveInitialTheme(): Theme {
   if (typeof window === "undefined") return "light";
@@ -17,9 +19,8 @@ function resolveInitialTheme(): Theme {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
-export function ThemeToggle() {
+export function ThemeToggle({ ariaLabel = "Toggle theme" }: ThemeToggleProps) {
   const [theme, setTheme] = useState<Theme>(resolveInitialTheme);
-  const { t } = useLocale();
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -32,7 +33,7 @@ export function ThemeToggle() {
   }
 
   return (
-    <button className="theme-toggle" type="button" onClick={toggleTheme} aria-label={t.theme.toggle}>
+    <button className="theme-toggle" type="button" onClick={toggleTheme} aria-label={ariaLabel}>
       {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
     </button>
   );

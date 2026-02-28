@@ -4,8 +4,8 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 import useSWR from "swr";
 import { searchProductsClient } from "@/lib/api-client";
 import type { SearchParams } from "@/types/api";
+import { useSiteLocale } from "@/components/layout/locale-provider";
 import { ProductCard } from "@/components/product/product-card";
-import { useLocale } from "@/i18n";
 
 const SEARCH_DEBOUNCE_MS = 360;
 
@@ -14,7 +14,7 @@ type SearchClientProps = {
 };
 
 export function SearchClient({ initialQuery = "" }: SearchClientProps) {
-  const { t } = useLocale();
+  const { locale, t } = useSiteLocale();
   const seedQuery = initialQuery.trim();
   const [q, setQ] = useState(seedQuery);
   const [submittedQ, setSubmittedQ] = useState(seedQuery);
@@ -94,15 +94,21 @@ export function SearchClient({ initialQuery = "" }: SearchClientProps) {
   const currentPage = data?.pagination?.page ?? page;
   const hasResults = (data?.data.length ?? 0) > 0;
   const hasTypeFilter = type !== "all";
-  const statusText = isLoading ? t.search.searching : isValidating ? t.search.updating : isDebouncing ? t.search.typing : "";
-  const errorMessage = error instanceof Error ? error.message : String(error || t.search.failed);
+  const statusText = isLoading
+    ? t("搜索中...", "Searching...")
+    : isValidating
+      ? t("更新结果中...", "Updating results...")
+      : isDebouncing
+        ? t("输入中...", "Typing...")
+        : "";
+  const errorMessage = error instanceof Error ? error.message : String(error || t("请求失败", "Request failed"));
 
   return (
     <section className="section search-page">
       <div className="section-header">
-        <h1 className="section-title">{t.search.title}</h1>
-        <p className="section-desc">{t.search.subtitle}</p>
-        <p className="section-micro-note">{t.search.note}</p>
+        <h1 className="section-title">{t("搜索产品", "Search Products")}</h1>
+        <p className="section-desc">{t("仅保留关键词和类型筛选，减少操作负担。", "Keep only keyword and type filters to reduce friction.")}</p>
+        <p className="section-micro-note">{t("输入关键词自动搜索，按需切换软件/硬件。", "Type keywords for instant search and switch software/hardware when needed.")}</p>
       </div>
 
       <form className="search-panel" onSubmit={onSubmit}>
@@ -110,25 +116,25 @@ export function SearchClient({ initialQuery = "" }: SearchClientProps) {
           type="search"
           value={q}
           onChange={(event) => setQ(event.target.value)}
-          placeholder={t.search.placeholder}
-          aria-label={t.search.ariaLabel}
+          placeholder={t("输入关键词，例如 agent、硬件、融资...", "Enter keywords, e.g. agent, hardware, funding...")}
+          aria-label={t("搜索关键词", "Search keywords")}
           autoComplete="off"
         />
         <div className="search-panel__actions">
           <button type="button" onClick={clearSearch} disabled={!q.trim() && !submittedQ}>
-            {t.search.clearBtn}
+            {t("清空", "Clear")}
           </button>
-          <button type="submit">{t.search.searchBtn}</button>
+          <button type="submit">{t("搜索", "Search")}</button>
         </div>
       </form>
 
       <div className="search-toolbar search-toolbar--minimal">
         <label className="search-toolbar__item">
-          {t.search.typeLabel}
+          {t("类型", "Type")}
           <select value={type} onChange={(event) => updateType(event.target.value as SearchParams["type"])}>
-            <option value="all">{t.common.all}</option>
-            <option value="software">{t.common.software}</option>
-            <option value="hardware">{t.common.hardware}</option>
+            <option value="all">{t("全部", "All")}</option>
+            <option value="software">{t("软件", "Software")}</option>
+            <option value="hardware">{t("硬件", "Hardware")}</option>
           </select>
         </label>
         <button
@@ -137,23 +143,25 @@ export function SearchClient({ initialQuery = "" }: SearchClientProps) {
           onClick={resetTypeFilter}
           disabled={!hasTypeFilter}
         >
-          {t.search.resetType}
+          {t("重置类型", "Reset type")}
         </button>
       </div>
 
-      {isLoading && !hasResults ? <div className="loading-block">{t.search.searching}</div> : null}
+      {isLoading && !hasResults ? <div className="loading-block">{t("搜索中...", "Searching...")}</div> : null}
       {error ? (
         <div className="error-block">
-          {t.search.failedMessage(errorMessage)}
+          {t("搜索失败", "Search failed")}: {errorMessage}
           <button type="button" className="link-btn" onClick={() => mutate()}>
-            {t.common.retry}
+            {t("重试", "Retry")}
           </button>
         </div>
       ) : null}
 
       {shouldSearch && !error ? (
         <p className="search-result-meta">
-          {t.search.results(resultCount, hasTypeFilter ? (type === "software" ? t.common.software : t.common.hardware) : undefined)}
+          {locale === "en-US"
+            ? `${resultCount} results${hasTypeFilter ? ` (${type === "software" ? "Software" : "Hardware"})` : ""}`
+            : `共找到 ${resultCount} 个结果${hasTypeFilter ? `（${type === "software" ? "软件" : "硬件"}）` : ""}`}
           {statusText ? ` · ${statusText}` : ""}
         </p>
       ) : null}
@@ -173,30 +181,34 @@ export function SearchClient({ initialQuery = "" }: SearchClientProps) {
             disabled={currentPage <= 1 || isLoading || isValidating}
             onClick={() => setPage((value) => Math.max(1, value - 1))}
           >
-            {t.search.prevPage}
+            {t("上一页", "Previous")}
           </button>
-          <span>{t.search.pageInfo(currentPage, totalPages)}</span>
+          <span>
+            {locale === "en-US" ? `Page ${currentPage} / ${totalPages}` : `第 ${currentPage} / ${totalPages} 页`}
+          </span>
           <button
             type="button"
             disabled={currentPage >= totalPages || isLoading || isValidating}
             onClick={() => setPage((value) => value + 1)}
           >
-            {t.search.nextPage}
+            {t("下一页", "Next")}
           </button>
         </div>
       ) : null}
 
       {!shouldSearch ? (
         <div className="empty-state">
-          <p className="empty-state-text">{t.search.startSearch}</p>
+          <p className="empty-state-text">{t("输入关键词开始搜索。", "Enter a keyword to start searching.")}</p>
         </div>
       ) : null}
 
       {shouldSearch && !isLoading && !isValidating && !error && !hasResults ? (
         <div className="empty-state">
-          <p className="empty-state-text">{t.search.noResults}</p>
+          <p className="empty-state-text">
+            {t("没有匹配结果，建议尝试更宽泛关键词或重置筛选。", "No results matched. Try broader keywords or reset filters.")}
+          </p>
           <button type="button" className="link-btn" onClick={resetAll}>
-            {t.search.clearAndRetry}
+            {t("清空并重试", "Clear and retry")}
           </button>
         </div>
       ) : null}

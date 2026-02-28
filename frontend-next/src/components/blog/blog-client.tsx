@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { SmartLogo } from "@/components/common/smart-logo";
 import { FavoriteButton } from "@/components/favorites/favorite-button";
-import { ArticleReader } from "@/components/blog/article-reader";
+import { useSiteLocale } from "@/components/layout/locale-provider";
 import {
   cleanDescription,
   getFreshnessLabel,
@@ -11,9 +11,47 @@ import {
   normalizeWebsite,
 } from "@/lib/product-utils";
 import type { BlogPost } from "@/types/api";
-import { useLocale } from "@/i18n";
+
+const SOURCE_LABELS_ZH: Record<string, string> = {
+  "": "全部",
+  cn_news: "中国本土源",
+  cn_news_glm: "中国本土源（GLM）",
+  hackernews: "Hacker News",
+  producthunt: "Product Hunt",
+  youtube: "YouTube",
+  x: "X",
+  reddit: "Reddit",
+  tech_news: "Tech News",
+};
+
+const SOURCE_LABELS_EN: Record<string, string> = {
+  "": "All",
+  cn_news: "China Local Sources",
+  cn_news_glm: "China Local Sources (GLM)",
+  hackernews: "Hacker News",
+  producthunt: "Product Hunt",
+  youtube: "YouTube",
+  x: "X",
+  reddit: "Reddit",
+  tech_news: "Tech News",
+};
 
 const SOURCE_ORDER = ["cn_news", "cn_news_glm", "hackernews", "reddit", "tech_news", "producthunt", "youtube", "x"] as const;
+
+const MARKET_LABELS_ZH: Record<string, string> = {
+  hybrid: "全球 Hybrid",
+  cn: "中国",
+  us: "美国",
+  global: "全球",
+};
+
+const MARKET_LABELS_EN: Record<string, string> = {
+  hybrid: "Global Hybrid",
+  cn: "China",
+  us: "United States",
+  global: "Global",
+};
+type MarketValue = "hybrid" | "cn" | "us";
 
 const US_SOURCES = new Set(["hackernews", "producthunt", "youtube", "x", "reddit", "tech_news"]);
 const SOURCE_ALIASES: Record<string, string[]> = {
@@ -78,64 +116,27 @@ function buildSourceOptions(data: BlogPost[] | undefined) {
   return ["", ...ordered, ...rest];
 }
 
-function useSourceLabels() {
-  const { t } = useLocale();
-  return useMemo<Record<string, string>>(
-    () => ({
-      "": t.blog.allSources,
-      cn_news: t.blog.cnSources,
-      cn_news_glm: t.blog.cnGlmSources,
-      hackernews: "Hacker News",
-      producthunt: "Product Hunt",
-      youtube: "YouTube",
-      x: "X",
-      reddit: "Reddit",
-      tech_news: "Tech News",
-    }),
-    [t]
-  );
-}
-
-function useMarketLabels() {
-  const { t } = useLocale();
-  return useMemo<Record<string, string>>(
-    () => ({
-      hybrid: t.blog.globalHybrid,
-      cn: t.blog.china,
-      us: t.blog.usa,
-      global: t.blog.global,
-    }),
-    [t]
-  );
-}
-
-type MarketValue = "hybrid" | "cn" | "us";
-
-const MARKET_KEYS: MarketValue[] = ["hybrid", "cn", "us"];
-
-function BlogCard({ item, onRead }: { item: BlogPost; onRead: (url: string, title: string) => void }) {
-  const { t, locale } = useLocale();
-  const sourceLabels = useSourceLabels();
-  const marketLabels = useMarketLabels();
+function BlogCard({ item }: { item: BlogPost }) {
+  const { locale, t } = useSiteLocale();
+  const sourceLabels = locale === "en-US" ? SOURCE_LABELS_EN : SOURCE_LABELS_ZH;
+  const marketLabels = locale === "en-US" ? MARKET_LABELS_EN : MARKET_LABELS_ZH;
   const website = normalizeWebsite(item.website);
   const hasWebsite = isValidWebsite(website);
   const sourceLabel = sourceLabels[item.source || ""] || item.source || "Blog";
-  const marketLabel = marketLabels[inferMarket(item)] || t.blog.global;
+  const marketLabel = marketLabels[inferMarket(item)] || (locale === "en-US" ? "Global" : "全球");
   const freshness = getFreshnessLabel({
     name: item.name,
     description: item.description,
     published_at: item.published_at,
-  });
+  }, new Date(), locale);
   const publishedLabel = item.published_at
-    ? new Date(item.published_at).toLocaleString(locale === "zh" ? "zh-CN" : "en-US", {
+    ? new Date(item.published_at).toLocaleString(locale, {
         month: "2-digit",
         day: "2-digit",
         hour: "2-digit",
         minute: "2-digit",
       })
-    : t.freshness.unknown;
-
-  const readLabel = locale === "zh" ? "阅读" : "Read";
+    : t("时间待补充", "Timestamp unavailable");
 
   return (
     <article className="product-card product-card--signal product-card--watch product-card--compact">
@@ -160,20 +161,16 @@ function BlogCard({ item, onRead }: { item: BlogPost; onRead: (url: string, titl
           </div>
         </header>
 
-        <p className="product-card__desc">{cleanDescription(item.description)}</p>
+        <p className="product-card__desc">{cleanDescription(item.description, locale)}</p>
 
         <div className="product-card__actions blog-card__actions">
           <FavoriteButton blog={item} />
           {hasWebsite ? (
-            <button
-              type="button"
-              className="link-btn link-btn--card link-btn--card-primary"
-              onClick={() => onRead(website, item.name)}
-            >
-              {readLabel}
-            </button>
+            <a className="link-btn link-btn--card" href={website} target="_blank" rel="noopener noreferrer">
+              {t("原文", "Source")}
+            </a>
           ) : (
-            <span className="pending-tag">{t.common.linkPending}</span>
+            <span className="pending-tag">{t("链接待补充", "Link pending")}</span>
           )}
         </div>
       </div>
@@ -186,13 +183,16 @@ type BlogClientProps = {
 };
 
 export function BlogClient({ initialBlogs }: BlogClientProps) {
-  const { t } = useLocale();
-  const sourceLabels = useSourceLabels();
-  const marketLabels = useMarketLabels();
+  const { locale, t } = useSiteLocale();
   const [source, setSource] = useState("");
   const [market, setMarket] = useState<MarketValue>("hybrid");
-  const [readerUrl, setReaderUrl] = useState<string | null>(null);
-  const [readerTitle, setReaderTitle] = useState("");
+  const sourceLabels = locale === "en-US" ? SOURCE_LABELS_EN : SOURCE_LABELS_ZH;
+  const marketLabels = locale === "en-US" ? MARKET_LABELS_EN : MARKET_LABELS_ZH;
+  const marketOptions = [
+    { value: "hybrid", label: marketLabels.hybrid },
+    { value: "cn", label: marketLabels.cn },
+    { value: "us", label: marketLabels.us },
+  ] as const;
 
   const marketBlogs = useMemo(() => initialBlogs.filter((item) => matchesMarket(item, market)), [initialBlogs, market]);
   const sourceOptions = useMemo(() => buildSourceOptions(marketBlogs), [marketBlogs]);
@@ -203,21 +203,28 @@ export function BlogClient({ initialBlogs }: BlogClientProps) {
     [activeSource, marketBlogs]
   );
 
-  const sourceSummary = activeSource ? t.blog.sourceSummary(sourceLabels[activeSource] || activeSource) : t.blog.sourceAll;
-  const marketSummary = t.blog.marketSummary(marketLabels[market] || market);
-  const emptyStateText = market === "cn" ? t.blog.noDataCn : t.blog.noData;
+  const sourceSummary = activeSource
+    ? `${t("来源", "Source")}: ${sourceLabels[activeSource] || activeSource}`
+    : `${t("来源", "Source")}: ${sourceLabels[""]}`;
+  const marketSummary = `${t("区域", "Region")}: ${marketLabels[market] || market}`;
+  const emptyStateText =
+    market === "cn"
+      ? t("暂无中国区动态，请稍后重试或切换全球。", "No China updates yet. Please retry later or switch to global.")
+      : t("暂无匹配数据，请切换来源或稍后再试。", "No matching data. Switch source or retry later.");
 
   return (
     <section className="section">
       <div className="section-header">
-        <h1 className="section-title">{t.blog.title}</h1>
-        <p className="section-desc">{t.blog.subtitle}</p>
-        <p className="section-micro-note">{t.blog.summary(marketSummary, sourceSummary, posts.length)}</p>
+        <h1 className="section-title">{t("博客 & 动态", "News & Signals")}</h1>
+        <p className="section-desc">{t("中国本土源与海外动态共存，可按区域快速切换", "China-local and global sources in one feed, with quick market switching.")}</p>
+        <p className="section-micro-note">
+          {marketSummary} · {sourceSummary} · {locale === "en-US" ? `${posts.length} items` : `共 ${posts.length} 条`}
+        </p>
       </div>
 
       <div className="blog-toolbar">
         <label>
-          {t.blog.regionLabel}
+          {t("区域", "Market")}
           <select
             value={market}
             onChange={(event) => {
@@ -225,16 +232,16 @@ export function BlogClient({ initialBlogs }: BlogClientProps) {
               setSource("");
             }}
           >
-            {MARKET_KEYS.map((key) => (
-              <option key={key} value={key}>
-                {marketLabels[key]}
+            {marketOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
               </option>
             ))}
           </select>
         </label>
       </div>
 
-      <div className="source-pills" role="tablist" aria-label={t.blog.sourceFilter}>
+      <div className="source-pills" role="tablist" aria-label={t("博客来源筛选", "News source filters")}>
         {sourceOptions.map((option) => {
           const isActive = option === activeSource;
           return (
@@ -252,11 +259,7 @@ export function BlogClient({ initialBlogs }: BlogClientProps) {
 
       <div className="products-grid">
         {posts.map((item) => (
-          <BlogCard
-            item={item}
-            key={`${item.source || "source"}-${item.website || item.name}`}
-            onRead={(url, title) => { setReaderUrl(url); setReaderTitle(title); }}
-          />
+          <BlogCard item={item} key={`${item.source || "source"}-${item.website || item.name}`} />
         ))}
       </div>
 
@@ -264,14 +267,6 @@ export function BlogClient({ initialBlogs }: BlogClientProps) {
         <div className="empty-state">
           <p className="empty-state-text">{emptyStateText}</p>
         </div>
-      ) : null}
-
-      {readerUrl ? (
-        <ArticleReader
-          url={readerUrl}
-          blogTitle={readerTitle}
-          onClose={() => { setReaderUrl(null); setReaderTitle(""); }}
-        />
       ) : null}
     </section>
   );

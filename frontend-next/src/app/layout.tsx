@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Noto_Sans_SC, Plus_Jakarta_Sans } from "next/font/google";
+import { LocaleProvider } from "@/components/layout/locale-provider";
 import { PageShell } from "@/components/layout/page-shell";
-import { LocaleProvider } from "@/i18n";
+import { getRequestLocale } from "@/lib/locale-server";
 import "./globals.css";
 import "../styles/tokens.css";
 import "../styles/base.css";
 import "../styles/home.css";
 import "../styles/chat.css";
-import "../styles/reader.css";
 
 const displayFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -34,19 +34,26 @@ const monoFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WeeklyAI - Discover This Week's Hottest AI Products",
-  description: "Global AI product discovery platform — dark horses & rising stars",
+  title: "WeeklyAI - Discover Rising AI Products",
+  description: "Global AI product discovery and inspiration platform",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const locale = await getRequestLocale();
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               (function () {
                 try {
+                  var localeKey = "weeklyai_locale";
+                  var localeStored = window.localStorage.getItem(localeKey);
+                  var locale = localeStored === "zh-CN" || localeStored === "en-US" ? localeStored : "zh-CN";
+                  document.documentElement.setAttribute("lang", locale);
+                  document.cookie = "weeklyai_locale=" + locale + "; path=/; max-age=31536000; samesite=lax";
+
                   var key = "weeklyai_theme";
                   var stored = window.localStorage.getItem(key);
                   var next = stored === "dark" || stored === "light"
@@ -62,7 +69,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
       <body className={`${displayFont.variable} ${bodyLatinFont.variable} ${bodyFont.variable} ${monoFont.variable}`}>
-        <LocaleProvider>
+        <LocaleProvider initialLocale={locale}>
           <PageShell>{children}</PageShell>
         </LocaleProvider>
       </body>

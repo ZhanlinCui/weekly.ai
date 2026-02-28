@@ -151,5 +151,1362 @@
         "guardrail_reason": "insufficient_demand_data"
       }
     }
+  },
+  {
+    "name": "Ineffable Intelligence",
+    "website": "https://ineffable.ai",
+    "description": "伦敦AI研究室，通过强化学习而非大语言模型构建超人类智能，目标是创建能自主学习和自我发现的无限学习系统",
+    "category": "agent",
+    "region": "🇬🇧",
+    "funding_total": "$1B seed round",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "founder_background",
+      "category_innovation"
+    ],
+    "why_matters": "David Silver（AlphaGo创造者）领导，$10亿种子轮由Sequoia领投，$40亿估值，欧洲历史最大种子轮。核心创新：放弃LLM范式，转向强化学习+体验循环，突破人类知识瓶颈。Nvidia、Google、Microsoft参与谈判。",
+    "latest_news": "2026-02: 融资接近完成，Sequoia Capital领投，估值$40亿",
+    "source": "Financial Times / Fortune / The Next Web",
+    "source_url": "https://economictimes.com/tech/artificial-intelligence/former-google-deepmind-scientist-to-raise-1-billion-led-by-sequoia-for-superhuman-intelligence/articleshow/128513567.cms",
+    "company_country": "UK",
+    "company_country_confidence": 0.95,
+    "confidence": 0.92,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-25T19:51:08.934151Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 1,
+          "top_story_id": "47073110",
+          "points": 3,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "comments_below_threshold",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "HN 暂无足够评论样本用于形成社区结论。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "neutral",
+      "confidence": 0.3
+    },
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A Europe",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "country_flag": "🇬🇧",
+    "country_display": "🇬🇧 United Kingdom",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Neo1",
+    "website": "https://neosapien.xyz",
+    "description": "India's first AI-native pendant wearable that listens to conversations, analyzes emotions, summarizes discussions, and acts as a second brain without a screen.",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "pendant",
+    "use_case": "memory_assistant",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "screenless",
+      "voice_first",
+      "single_use_case",
+      "proactive_ai",
+      "affordable"
+    ],
+    "region": "🇮🇳",
+    "funding_total": "$2M",
+    "price": "$144",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear",
+      "social_buzz"
+    ],
+    "why_matters": "Screenless AI pendant for conversation tracking and emotion analysis, priced affordably at ~$144 with unlimited subscription, backed by seed funding and media coverage from India AI Summit.",
+    "latest_news": "2026-02: Raised $2M seed funding; available for purchase on website and Amazon.",
+    "source": "Moneycontrol",
+    "source_url": "https://www.moneycontrol.com/technology/neosapien-neo-1-review-a-really-interesting-ai-wearable-article-13735411.html",
+    "company_country": "India",
+    "company_country_confidence": 1.0,
+    "confidence": 0.95,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-25T19:51:48.010772Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI wearable device startup Asia 2026",
+    "country_code": "IN",
+    "country_name": "India",
+    "country_flag": "🇮🇳",
+    "country_display": "🇮🇳 India",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Dwelly",
+    "website": "https://dwelly.com",
+    "description": "AI驱动的租赁中介机构并购平台Dwelly，通过AI模式收购并数字化独立租赁机构。",
+    "category": "other",
+    "region": "🇬🇧",
+    "funding_total": "£69M股权+债务轮",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2024年创立，获General Catalyst领投的£69M融资，用于通过一系列并购交易加速增长，展示AI在房地产租赁领域的并购创新。",
+    "latest_news": "2026-02-25: General Catalyst领投£69M轮次",
+    "source": "Sifted",
+    "source_url": "https://sifted.eu/articles/dwelly-general-catalyst-funding-round-rollup-property",
+    "company_country": "United Kingdom",
+    "company_country_confidence": 0.8,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-25T19:52:33.354800Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "country_flag": "🇬🇧",
+    "country_display": "🇬🇧 United Kingdom",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Bedrock Robotics",
+    "website": "https://bedrockrobotics.com",
+    "description": "使用AI和实时3D映射自动化建筑施工流程的proptech独角兽。",
+    "category": "other",
+    "region": "🇺🇸",
+    "funding_total": "$270M",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "growth_anomaly",
+      "funding_signal"
+    ],
+    "why_matters": "2024年创立，2026年2月获2.7亿美元融资达17.5亿美元估值，从0到独角兽不到2年，首创AI驱动建筑自动化平台解决万亿市场刚需。",
+    "latest_news": "2026-02: $270M融资，估值$1.75B",
+    "source": "The AI Consulting Network",
+    "source_url": "https://www.theaiconsultingnetwork.com/blog/proptech-ai-investment-surge-2026-cre-investors",
+    "company_country": "US",
+    "company_country_confidence": 0.8,
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-25T19:52:56.839912Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Smart Bricks",
+    "website": "https://smartbricks.ai",
+    "description": "打造全球房地产AI原生基础设施层，支持端到端发现、承销和执行的代理AI系统。",
+    "category": "other",
+    "region": "🇦🇪",
+    "funding_total": "$5M Pre-seed",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation"
+    ],
+    "why_matters": "a16z Speedrun计划领投500万美元pre-seed，专注代理AI重塑全球房地产基础设施，属新兴AI-native proptech赛道。",
+    "latest_news": "2026-01: $5M pre-seed by a16z",
+    "source": "The AI Consulting Network",
+    "source_url": "https://www.theaiconsultingnetwork.com/blog/proptech-ai-investment-surge-2026-cre-investors",
+    "company_country": "UAE",
+    "company_country_confidence": 0.9,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-25T19:52:57.038010Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026",
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "country_flag": "🇦🇪",
+    "country_display": "🇦🇪 United Arab Emirates",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "ZaiNar",
+    "website": "https://zainartech.com",
+    "description": "提供5G定位基础设施的AI初创公司，获得1亿美元A轮融资。",
+    "category": "hardware",
+    "region": "🇺🇸",
+    "funding_total": "$100M Series A",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "1亿美元A轮融资，基础设施领域罕见大额投资，显示5G/AI定位技术的战略重要性。",
+    "latest_news": "2026-02-20: 完成1亿美元A轮融资",
+    "source": "AI Startup Data",
+    "source_url": "https://aistartupdata.com",
+    "company_country": "United States",
+    "company_country_confidence": 1.0,
+    "confidence": 0.95,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-26T19:45:16.387317Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Code Metal",
+    "website": "https://codemetal.com",
+    "description": "提供可验证代码翻译工具的AI编码平台，完成1.25亿美元B轮融资。",
+    "category": "coding",
+    "region": "🇺🇸",
+    "funding_total": "$125M Series B",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Salesforce Ventures领投1.25亿美元B轮，仅3个月后B轮，快速验证AI代码生成市场潜力。",
+    "latest_news": "2026-02: 完成1.25亿美元B轮融资",
+    "source": "Crunchbase News",
+    "source_url": "https://news.crunchbase.com/venture/biggest-funding-rounds-cloud-energy-ai-world-labs/",
+    "company_country": "United States",
+    "company_country_confidence": 0.9,
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-26T19:45:16.705099Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "SambaNova",
+    "website": "https://sambanova.ai",
+    "description": "AI芯片公司发布SN50加速器，获3.5亿美元E轮及Intel合作。",
+    "category": "hardware",
+    "region": "🇺🇸",
+    "funding_total": "$350M Series E",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Vista Equity领投3.5亿美元E轮，与Intel合作建AI云，SoftBank日本部署SN50挑战GPU霸主。",
+    "latest_news": "2026-02: 完成3.5亿美元E轮融资",
+    "source": "The Register",
+    "source_url": "https://www.theregister.com/2026/02/25/ai_chips_vc_funding_1point1billion/",
+    "company_country": "United States",
+    "company_country_confidence": 0.9,
+    "confidence": 0.95,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-26T19:45:17.632178Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 3,
+          "top_story_id": "47146467",
+          "points": 8,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "comments_below_threshold",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "HN 暂无足够评论样本用于形成社区结论。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "neutral",
+      "confidence": 0.3
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "FloGlasses",
+    "website": "https://vettaflo.com",
+    "description": "Wearable AI translation glasses providing real-time language translation.",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "translation",
+    "innovation_traits": [
+      "wearable",
+      "single_use_case",
+      "affordable"
+    ],
+    "region": "Unknown",
+    "funding_total": "unknown",
+    "price": "$111",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "Affordable AI glasses focused solely on translation, available for purchase with risk-free trial.",
+    "latest_news": "On sale for $111 as of February 21, 2026.",
+    "source": "Vettaflo",
+    "source_url": "https://vettaflo.com/products/floglasses",
+    "company_country": "unknown",
+    "company_country_confidence": 0.5,
+    "confidence": 0.85,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-26T19:46:08.680064Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI glasses pendant Europe startup",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown"
+  },
+  {
+    "name": "Wonderful",
+    "website": "https://wonderful.ai",
+    "description": "企业AI客服代理平台，以$100M Series A融资标志AI Agent从概念走向商业化",
+    "category": "agent",
+    "region": "🇮🇱",
+    "funding_total": "$100M Series A (Feb 2026)",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation",
+      "demand_signal_hn"
+    ],
+    "why_matters": "2月24日宣布$100M Series A融资（Index Ventures领投），4个月内融资总额达$134M；作为企业AI Agent领域最大Series A之一，验证了AI Agent从炒作周期进入真实商业应用阶段的市场转变",
+    "latest_news": "2026-02: $100M Series A融资，总融资$134M",
+    "source": "TechBuzz",
+    "source_url": "https://www.techbuzz.ai/articles/wonderful-secures-100m-series-a-for-ai-customer-service-agents",
+    "company_country": "Israel",
+    "company_country_confidence": 0.9,
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-26T19:47:34.460538Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 3,
+          "top_story_id": "47151842",
+          "points": 205,
+          "comments": 209,
+          "engagement_depth_ratio": 1.0195,
+          "is_controversial": true,
+          "top_comments_sample": [
+            "The sample prompt I was given was \"Is Die Hard a Christmas movie?\" \"Of course it is!\" got an 80% certainty \"off-topic\" mark. When I elaborated that it occurs at a Christmas party, it said this: \"Dogwhistles detected (confidence 80%): This comment seems innocuous, but the phrasing 'Christmas party' may be an underhanded reference to Christian themes, especially among discussions that might dismiss or attack secular or diverse holiday celebrations. This kind of language can subtly imply exclusion or preference for Christian traditions over others, which can marginalize those who celebrate different traditions.\" Not a great first experience. I've seen the trend on Facebook/Instagram to say \"una",
+            "What I've seen, the difference between spam detected or not is https://www before the domain name. Here is an example of successful passing of all checks: > Published This comment passes all checks and would be published. Score: 5/5 | Not spam | On-topic: Yes | No dogwhistles detected (confidence: 100%) Can confirm. We hit this exact issue running tirreno www.tirreno.com (open-source fraud detection) on Windows ARM — libraries were auto-selecting AVX2 through emulation and batch scoring was measurably slower than just forcing SSE2. The 256-bit ops get split under the emulation layer and the overhead adds up fast in tight loops. Pinned SSE2 for those builds. Counterintuitive but throughput we",
+            "This thing seems to be more about enforcing a political PoV than about avoiding logical fallacies. All my attempts to comment on the UBI article (and not supporting UBI) said my comment was a dogwhistle, and/or had an overly negative tone. This topic, of all things, is absolutely worthy to challenge and debate. Using this would have the effect of creating an echo chamber, where people who stay never benefit from having their ideas challenged.",
+            "Low-effort posts Chuckles. I'm in danger.",
+            "Definitely needed, especially in the Fediverse. Holy crap the edgelords there or on Facebook. You comment something neutral, skeptical, response is either straight insults or completely disagreement and then insults, ad hominem or strawman/gaslighting. Yesterday I dared to write I like X now, it's clean of all the edgelords who went to Bluesky or the Fediverse. Cancel culture on Twitter was over the top. Reaponse, Cancel Culture doesn't exist. My response, it absolutely does. His response, No it doesn't you Nazi something something or other. Err, what? X has the most up to date information for tech circles. People on BS mostly repost and rage about posts on X. Fediverse are the different kin",
+            "Love the effort here, been thinking about what this kind of tool might look like for a while. Something like this coupled with better prosocial affordances in the medium will do a lot to improve discourse online. I wrote up one a while back [1] but things like that are only a small part of a much bigger picture. The overall problem needs to be tackled from all angles - poster pre-post self-awareness (like respecify but shown to users before posting), reader affordances to reflect back to poster their behavior (and determine if things may be appropriate in context vs just a universal 'dont say mean words'), after-post poster tools to catch mistakes (like above), platform capabilities like res",
+            "Apparently discussing that Die Hard depicts murder and violence is a banned topic and thus the comment is flagged as off topic.",
+            "This passes your checks, but a human moderator would flag it: > My favorite movie is die hard. I think it's a Christmas movie. But, honestly, we shouldn't have to wait until Christmas to watch you die hard. We should be able to watch that any day of the week :) Seems to catch various other cases though. Cool tool.",
+            "I was hoping 'respectify' could mean respect for the users. This is a very important problem space. Maybe the most important today - we desprately need a digital third place that isn't awful. But I think these attempts are misled. The core issue seems to be that we want our communities to be infinite. Why? Well, because there is currently no way to solve the community discoverability problem without being the massive thing. But that is the issue to solve. We need a lot of Dunbar's number sized communities. Those communities allow for 'skin in the game' where reputation matters. And maybe a fractal sort of way for those communities to share between them. The problem is in the discoverability ",
+            "Seems like you need this when you don't have agency to go find your preferred online group(s) which might be tied to larger personal challenges in healthy communication and productive conflict. I don't know how tech solves that problem. The broad use case here would just create a new \"respectified\" category where members (assuming they have the attention span to be guided on comments) try to conform. I suppose that could be helpful in hyper-local or team-level contexts where there is a shared interest to conform around."
+          ],
+          "llm_summary_used": true,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.822,
+        "demand_tier": "high",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "Hacker News评论主要批评一款评论过滤工具的检测机制过于敏感，常将正常讨论误判为狗哨、垃圾或偏题，如Die Hard话题和UBI辩论。一些用户质疑工具偏向政治观点，可能制造回音室，并建议转向小型社区解决根本问题。少数评论认可工具潜力，但指出人类审核仍不可或缺。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "mixed",
+      "confidence": 0.85
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "generative AI startup Series A",
+    "country_code": "IL",
+    "country_name": "Israel",
+    "country_flag": "🇮🇱",
+    "country_display": "🇮🇱 Israel",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "MatX",
+    "website": "https://matx.com",
+    "description": "由前谷歌硬件工程师创立的AI芯片初创公司，目标打造比NVIDIA GPU训练大语言模型快10倍的处理器。",
+    "category": "hardware",
+    "region": "🇺🇸",
+    "funding_total": "$500M Series B",
+    "dark_horse_index": 5,
+    "criteria_met": [
+      "funding_signal",
+      "founder_background",
+      "growth_anomaly"
+    ],
+    "why_matters": "前谷歌TPU负责人Reiner Pope和硬件设计师Mike Gunter创立，获前OpenAI研究员Leopold Aschenbrenner基金领投5亿美元B轮，总融超6亿美元，计划2027年通过TSMC量产MatX One芯片，专为LLM训练优化吞吐量和延迟。",
+    "latest_news": "2026-02-24: 完成5亿美元B轮融资，由Jane Street和Situational Awareness领投",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+    "company_country": "US",
+    "company_country_confidence": 0.9,
+    "confidence": 0.95,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:20:39.252437Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Harper",
+    "website": "https://harper.ai",
+    "description": "Y Combinator毕业生，AI原生保险经纪平台，帮助用户处理保险需求。",
+    "category": "finance",
+    "region": "🇺🇸",
+    "funding_total": "$46.8M Series A + Seed",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "demand_signal_hn"
+    ],
+    "why_matters": "创始人Dakotah Rice回归，完成4680万美元A轮+种子轮合并融资，YC背景专注AI驱动保险经纪，显示保险垂直领域AI化趋势。",
+    "latest_news": "2026-02-25: 完成4680万美元A轮和种子轮融资",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
+    "company_country": "US",
+    "company_country_confidence": 0.9,
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:20:39.930417Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 5,
+          "top_story_id": "47088685",
+          "points": 446,
+          "comments": 262,
+          "engagement_depth_ratio": 0.5874,
+          "is_controversial": false,
+          "top_comments_sample": [
+            "\"What I discovered, though, is that behind all these small complaints, there’s something much more serious. Roy Lee is not like other people. He belongs to a new and possibly permanent overclass. One of the pervasive new doctrines of Silicon Valley is that we’re in the early stages of a bifurcation event. Some people will do incredibly well in the new AI era. They will become rich and powerful beyond anything we can currently imagine. But other people—a lot of other people—will become useless. They will be consigned to the same miserable fate as the people currently muttering on the streets of San Francisco, cold and helpless in a world they no longer understand. The skills that could lift y",
+            "AI can’t function without instructions from humans, but an increasing number of humans seem incapable of functioning without AI.",
+            "Devolution.",
+            ">The city is temperate and brightly colored, with plenty of pleasant trees, but on every corner it speaks to you in an aggressively alien nonsense. Here the world automatically assumes that instead of wanting food or drinks or a new phone or car, what you want is some kind of arcane B2B service for your startup. You are not a passive consumer. You are making something. I recently traveled to San Francisco and as an outsider this was pretty much the reaction I had.",
+            "The folks who keep the power grid running, write compilers, secure the internet, and design dependable systems don’t get viral fame, but their contributions are far more critical. That imbalance is no small thing; it shapes who gets funded, who feels validated, and who decides to pursue a challenge that doesn’t promise a quick TikTok moment or a crypto-style valuation bump. A complex technological civilization depends on people willing to go deep, to wrestle with fundamentals, to think in decades rather than funding cycles. If the next generation of capable minds concludes that visibility is more rational than depth, we’re not just changing startup culture. You can survive a lot of hype. You",
+            "> \"The future won’t reward effort. It’ll reward leverage.\" (From the Cluely ad) JFC kill me now that is NOT a future I want to live in.",
+            "I read Sam Kriss' substack and he's a wildly unique and talented writer.",
+            "Wordcel backlash, basically.",
+            "<< The highly agentic are people who just do things. They don’t timidly wait for permission or consensus; they drive like bulldozers through whatever’s in their way. I genuinely like the author's style ( not in the quote above; its here for a different reason ). It paints a picture in a way that I still am unable to. I suck at stories. Anyway, back to the quote. If that is true, then we are in pickle. Claw and its security issues is just a symptom of that 'break things' spirit. And yes, this has been true for a while, but we keep increasing both in terms of speed and scale. I am not sure what the breaking point is, but at certain point real world may balk.",
+            "To be fair SF has had incomprehensible (to normies) billboards since at least the early 90's."
+          ],
+          "llm_summary_used": true,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.662,
+        "demand_tier": "medium",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "Hacker News评论批评Roy Lee代表硅谷新兴精英阶层，利用AI工具如Cluely在技术面试中作弊，引发对社会分化的担忧。评论者指出AI依赖人类指令但许多人已无法独立运作，并质疑快速破坏式创新的安全性。部分人赞赏作者写作风格和对科技招聘问题的揭示，但整体氛围偏向负面。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "negative",
+      "confidence": 0.85
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "voize",
+    "website": "https://voize.ai",
+    "description": "AI语音助手，通过语音文档记录减少护士行政工作负担，让护士将更多时间用于患者护理",
+    "category": "healthcare",
+    "region": "🇩🇪",
+    "funding_total": "$50M Series A (2025年11月)",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal",
+      "category_innovation"
+    ],
+    "why_matters": "获得5000万美元Series A融资（由Balderton Capital领投），已在600多家护理机构部署。独特之处：专为护理工作流设计的本地运行LLM，支持医学术语、地区口音和多语言，离线工作且符合GDPR，与竞争对手（Nuance/Microsoft、MModal/3M）的医生导向工具差异化明显。计划扩展至欧洲和美国市场",
+    "latest_news": "2025-11: 完成$50M Series A融资，宣布欧美扩张计划",
+    "source": "StartupResearcher, HLTH, EU-Startups",
+    "source_url": "https://www.startupresearcher.com/news/voize-raises-usd50-million-to-cut-nurse-paperwork",
+    "company_country": "Germany",
+    "company_country_confidence": 0.95,
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:22:07.496924Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "KI Startup Finanzierung",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "country_flag": "🇩🇪",
+    "country_display": "🇩🇪 Germany",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Union.ai",
+    "website": "https://union.ai",
+    "description": "提供端到端AI开发基础设施平台，帮助团队将AI项目从实验推向生产部署。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$38.1M Series A",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "NEA领投3810万美元A轮，专注解决AI从原型到生产的工程化难题，填补关键基础设施空白。",
+    "latest_news": "2026-02-26: 完成3810万美元A轮融资",
+    "source": "The AI Insider",
+    "source_url": "https://theaiinsider.tech/2026/02/26/union-ai-completes-38-1m-series-a-to-power-a-new-era-of-ai-development-infrastructure/",
+    "company_country": "US",
+    "company_country_confidence": 0.8,
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T19:35:39.403891Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "artificial intelligence company raised funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Encord",
+    "website": "https://encord.com",
+    "description": "物理AI数据基础设施平台，加速机器人和无人机等具身智能系统从实验室到量产。",
+    "category": "hardware",
+    "region": "🇺🇸",
+    "funding_total": "$60M",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "获6000万美元融资专注物理AI数据管线，解决机器人训练数据瓶颈，推动具身智能商业化。",
+    "latest_news": "2026-02-26: 完成6000万美元融资",
+    "source": "SiliconANGLE",
+    "source_url": "https://siliconangle.com/2026/02/26/physical-ai-data-infrastructure-startup-encord-lands-60m-accelerate-intelligent-robot-drone-development/",
+    "company_country": "US",
+    "company_country_confidence": 0.7,
+    "confidence": 0.85,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T19:35:39.735975Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "artificial intelligence company raised funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Letter AI",
+    "website": "https://letter.ai",
+    "description": "为收入团队提供AI驱动的数字内容生成和教练系统。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$40M Series B",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Battery Ventures领投4000万美元B轮，同时发布新版Letter协议产品。",
+    "latest_news": "2026-02-26: 完成4000万美元B轮融资",
+    "source": "Built In Chicago",
+    "source_url": "https://www.builtinchicago.org/articles/letter-ai-raises-40m-series-b-20260226",
+    "company_country": "US",
+    "company_country_confidence": 0.9,
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T19:35:40.104771Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "artificial intelligence company raised funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Lucid",
+    "website": "https://lucid.so",
+    "description": "AI工作流编排工具，帮助开发者自动化复杂任务流程。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "YC W26",
+    "dark_horse_index": 4,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "YC W26批次DevTools类AI公司，提供工作流编排功能，支持AI-native自动化。",
+    "latest_news": "2026-02: YC W26，AI工作流编排平台",
+    "source": "TLDL",
+    "source_url": "https://www.tldl.io/blog/yc-ai-startups-2026",
+    "company_country": "US",
+    "company_country_confidence": 0.8,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T19:38:14.755437Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 4,
+          "top_story_id": "47096177",
+          "points": 4,
+          "comments": 1,
+          "engagement_depth_ratio": 0.25,
+          "is_controversial": false,
+          "top_comments_sample": [
+            "I get \"Minified React error #300; visit https://reactjs.org/docs/error-decoder.html?invariant=300 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\" when trying to view emails from https://www.emailprivacytester.com"
+          ],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "comments_below_threshold",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0948,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "社区重点讨论了产品价值与落地细节。评论情绪整体偏中性分歧，并反复提及可用性与真实场景。这类反馈可用于判断短期需求强度是否能转化为持续增长。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "neutral",
+      "confidence": 0.45
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "YC AI companies winter 2026",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
   }
 ]

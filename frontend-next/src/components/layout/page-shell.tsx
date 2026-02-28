@@ -1,8 +1,6 @@
 import type { ReactNode } from "react";
 import { FavoritesPanel } from "@/components/favorites/favorites-panel";
 import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { ChatBar } from "@/components/chat/chat-bar";
 
 type PageShellProps = {
   children: ReactNode;
@@ -19,8 +17,6 @@ export function PageShell({ children }: PageShellProps) {
       <SiteHeader />
       <FavoritesPanel />
       <main className="main-content">{children}</main>
-      <SiteFooter />
-      <ChatBar />
     </>
   );
 }

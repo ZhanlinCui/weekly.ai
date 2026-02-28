@@ -1,4 +1,5 @@
 import type { Product } from "@/types/api";
+import { DEFAULT_LOCALE, pickLocaleText, type SiteLocale } from "@/lib/locale";
 
 const INVALID_WEBSITE_VALUES = new Set(["unknown", "n/a", "na", "none", "null", "undefined", ""]);
 const PLACEHOLDER_VALUES = new Set(["unknown", "n/a", "na", "none", "tbd", "暂无", "未公开", "待定", "unknown.", "n/a."]);
@@ -25,7 +26,10 @@ const DIRECTION_IGNORED = new Set([
   "ai_硬件",
 ]);
 
-const DIRECTION_LABELS: Record<string, string> = {
+const DIRECTION_LABELS_ZH: Record<string, string> = {
+  hardware: "硬件",
+  software: "软件",
+  other: "其他",
   agent: "Agent",
   coding: "编程开发",
   image: "图像",
@@ -52,6 +56,38 @@ const DIRECTION_LABELS: Record<string, string> = {
   legal: "法律",
   brain_computer_interface: "脑机接口",
   world_model: "世界模型",
+};
+
+const DIRECTION_LABELS_EN: Record<string, string> = {
+  hardware: "Hardware",
+  software: "Software",
+  other: "Other",
+  agent: "Agent",
+  coding: "Coding",
+  image: "Image",
+  video: "Video",
+  vision: "Vision",
+  voice: "Voice",
+  writing: "Writing",
+  finance: "Finance",
+  education: "Education",
+  healthcare: "Healthcare",
+  enterprise: "Enterprise",
+  productivity: "Productivity",
+  ai_chip: "AI Chips",
+  robotics: "Robotics",
+  driving: "Autonomous Driving",
+  wearables: "Wearables",
+  smart_glasses: "Smart Glasses",
+  smart_home: "Smart Home",
+  edge_ai: "Edge AI",
+  drone: "Drones",
+  simulation: "Simulation",
+  security: "AI Security",
+  infrastructure: "Infrastructure",
+  legal: "Legal",
+  brain_computer_interface: "Brain-Computer Interface",
+  world_model: "World Model",
 };
 
 const UNKNOWN_COUNTRY_CODE = "UNKNOWN";
@@ -380,6 +416,28 @@ export function isPlaceholderValue(value: string | undefined | null): boolean {
   return PLACEHOLDER_VALUES.has(normalized);
 }
 
+function isLikelyEnglish(text: string): boolean {
+  const trimmed = String(text || "").trim();
+  if (!trimmed) return false;
+  if (/[\u4e00-\u9fff]/.test(trimmed)) return false;
+  return /[A-Za-z]/.test(trimmed);
+}
+
+function pickLocalizedText(product: Product, field: keyof Product, locale: SiteLocale): string {
+  const zhField = String(product[field] || "").trim();
+  const enField = `${String(field)}_en` as keyof Product;
+  const zh = isPlaceholderValue(zhField) ? "" : zhField;
+  const en = isPlaceholderValue(String(product[enField] || "").trim())
+    ? ""
+    : String(product[enField] || "").trim();
+
+  if (locale === "en-US") {
+    return en || (isLikelyEnglish(zh) ? zh : "");
+  }
+
+  return zh || en;
+}
+
 export function parseFundingAmount(value: string | undefined): number {
   if (!value) return 0;
   const normalized = value.replace(/,/g, "").trim().toLowerCase();
@@ -458,10 +516,40 @@ function getCompositeScore(product: Product, nowTs: number): number {
   );
 }
 
-export function formatCategories(product: Product) {
-  if (product.categories?.length) return product.categories.join(" · ");
-  if (product.category) return product.category;
-  return "精选 AI 工具";
+function normalizeCategoryTokenForLabel(value: string | undefined | null): string {
+  const trimmed = String(value || "").trim();
+  if (!trimmed) return "";
+
+  const mapped = normalizeDirectionToken(trimmed);
+  if (mapped) return mapped;
+  return trimmed.toLowerCase().replace(/[_\s/-]+/g, "_");
+}
+
+function getCategoryLabel(category: string, locale: SiteLocale): string {
+  const labels = locale === "en-US" ? DIRECTION_LABELS_EN : DIRECTION_LABELS_ZH;
+  return labels[category] || category.replace(/_/g, " ");
+}
+
+export function formatCategories(product: Product, locale: SiteLocale = DEFAULT_LOCALE) {
+  if (product.categories?.length) {
+    const localized = product.categories
+      .map((category) => {
+        const normalized = normalizeCategoryTokenForLabel(category);
+        if (!normalized) return "";
+        return getCategoryLabel(normalized, locale);
+      })
+      .filter(Boolean);
+
+    if (localized.length) {
+      return localized.join(" · ");
+    }
+  }
+  if (product.category) {
+    const normalized = normalizeCategoryTokenForLabel(product.category);
+    if (normalized) return getCategoryLabel(normalized, locale);
+    return product.category;
+  }
+  return pickLocaleText(locale, { zh: "精选 AI 工具", en: "Featured AI tools" });
 }
 
 export function normalizeDirectionToken(value: string | undefined | null): string {
@@ -500,10 +588,11 @@ export function normalizeDirectionToken(value: string | undefined | null): strin
   return DIRECTION_IGNORED.has(compacted) ? "" : compacted;
 }
 
-export function getDirectionLabel(direction: string): string {
+export function getDirectionLabel(direction: string, locale: SiteLocale = DEFAULT_LOCALE): string {
   const normalized = normalizeDirectionToken(direction);
   if (!normalized) return "";
-  return DIRECTION_LABELS[normalized] || normalized.replace(/_/g, " ");
+  const labels = locale === "en-US" ? DIRECTION_LABELS_EN : DIRECTION_LABELS_ZH;
+  return labels[normalized] || normalized.replace(/_/g, " ");
 }
 
 export function getProductDirections(product: Product): string[] {
@@ -537,15 +626,30 @@ export function getProductDirections(product: Product): string[] {
   return [...deduped];
 }
 
-export function cleanDescription(desc: string | undefined) {
-  if (!desc) return "暂无描述";
+export function cleanDescription(desc: string | undefined, locale: SiteLocale = DEFAULT_LOCALE) {
+  if (!desc) {
+    return pickLocaleText(locale, { zh: "暂无描述", en: "Description coming soon" });
+  }
   return desc
-    .replace(/Hugging Face (模型|Space): [^|]+[|]/g, "")
+    .replace(/Hugging Face (模型|model|space): [^|]+[|]/gi, "")
     .replace(/[|] ⭐ [\d.]+K?\+? Stars/g, "")
-    .replace(/[|] 技术: .+$/g, "")
-    .replace(/[|] 下载量: .+$/g, "")
+    .replace(/[|] (技术|tech): .+$/gi, "")
+    .replace(/[|] (下载量|downloads?): .+$/gi, "")
     .replace(/^\s*[|·]\s*/g, "")
     .trim();
+}
+
+export function getLocalizedProductDescription(product: Product, locale: SiteLocale = DEFAULT_LOCALE): string {
+  const picked = pickLocalizedText(product, "description", locale);
+  return picked ? cleanDescription(picked, locale) : "";
+}
+
+export function getLocalizedProductWhyMatters(product: Product, locale: SiteLocale = DEFAULT_LOCALE): string {
+  return pickLocalizedText(product, "why_matters", locale);
+}
+
+export function getLocalizedProductLatestNews(product: Product, locale: SiteLocale = DEFAULT_LOCALE): string {
+  return pickLocalizedText(product, "latest_news", locale);
 }
 
 export function getMonogram(name: string | undefined): string {
@@ -720,30 +824,48 @@ export function resolveProductCountry(product: Product): ProductCountryInfo {
   };
 }
 
-export function getFreshnessLabel(product: Product, now: Date = new Date()): string {
+export function getFreshnessLabel(
+  product: Product,
+  now: Date = new Date(),
+  locale: SiteLocale = DEFAULT_LOCALE
+): string {
   const raw = product.discovered_at || product.first_seen || product.published_at;
-  if (!raw) return "时间待补充";
+  if (!raw) {
+    return pickLocaleText(locale, { zh: "时间待补充", en: "Timestamp unavailable" });
+  }
 
   const date = new Date(raw);
-  if (!Number.isFinite(date.getTime())) return "时间待补充";
+  if (!Number.isFinite(date.getTime())) {
+    return pickLocaleText(locale, { zh: "时间待补充", en: "Timestamp unavailable" });
+  }
 
   const diffMs = now.getTime() - date.getTime();
-  if (diffMs <= 0) return "刚更新";
+  if (diffMs <= 0) {
+    return pickLocaleText(locale, { zh: "刚更新", en: "Just updated" });
+  }
 
   const minutes = Math.floor(diffMs / 60000);
-  if (minutes < 60) return "1小时内";
+  if (minutes < 60) {
+    return pickLocaleText(locale, { zh: "1小时内", en: "Within 1h" });
+  }
 
   const hours = Math.floor(minutes / 60);
-  if (hours < 24) return `${hours}小时前`;
+  if (hours < 24) {
+    return locale === "en-US" ? `${hours}h ago` : `${hours}小时前`;
+  }
 
   const days = Math.floor(hours / 24);
-  if (days < 30) return `${days}天前`;
+  if (days < 30) {
+    return locale === "en-US" ? `${days}d ago` : `${days}天前`;
+  }
 
   const months = Math.floor(days / 30);
-  if (months < 12) return `${months}个月前`;
+  if (months < 12) {
+    return locale === "en-US" ? `${months}mo ago` : `${months}个月前`;
+  }
 
   const years = Math.floor(days / 365);
-  return `${years}年前`;
+  return locale === "en-US" ? `${years}y ago` : `${years}年前`;
 }
 
 export function productKey(product: Product): string {
