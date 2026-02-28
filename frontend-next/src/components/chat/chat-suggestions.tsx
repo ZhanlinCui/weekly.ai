@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import { useLocale } from "@/i18n";
 
 type ChatSuggestionsProps = {
@@ -10,27 +11,25 @@ type ChatSuggestionsProps = {
 export function ChatSuggestions({ onSelect, compact = false }: ChatSuggestionsProps) {
   const { t } = useLocale();
 
-  const chips = [
-    t.chat.chipDarkHorse,
-    t.chat.chipFunding,
-    t.chat.chipHardware,
-    t.chat.chipTrend,
-    t.chat.chipAgent,
-    t.chat.chipRising,
-  ];
+  const suggestions = useMemo(
+    () => [
+      t.chat.chipDarkHorse,
+      t.chat.chipFunding,
+      t.chat.chipHardware,
+      t.chat.chipTrend,
+      t.chat.chipAgent,
+      t.chat.chipRising,
+    ],
+    [t]
+  );
 
-  const visible = compact ? chips.slice(0, 4) : chips;
+  const visible = compact ? suggestions.slice(0, 4) : suggestions;
 
   return (
     <div className="chat-suggestions">
-      {visible.map((chip) => (
-        <button
-          key={chip}
-          type="button"
-          className="chat-chip"
-          onClick={() => onSelect(chip)}
-        >
-          {chip}
+      {visible.map((text) => (
+        <button key={text} type="button" className="chat-chip" onClick={() => onSelect(text)}>
+          {text}
         </button>
       ))}
     </div>

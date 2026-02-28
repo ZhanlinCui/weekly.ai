@@ -3,70 +3,65 @@
 import { useState } from "react";
 import { ArrowUp, Sparkles } from "lucide-react";
 import { useLocale } from "@/i18n";
-import { useChat } from "./use-chat";
 import { ChatPanel } from "./chat-panel";
 import { ChatSuggestions } from "./chat-suggestions";
+import { useChat } from "./use-chat";
 
 export function ChatBar() {
   const { locale, t } = useLocale();
   const [isOpen, setIsOpen] = useState(false);
-  const { messages, isLoading, sendMessage, clearMessages } = useChat({ locale });
+  const { messages, isLoading, sendMessage } = useChat({ locale });
 
-  function handleOpen(text?: string) {
+  function openPanel(initialText?: string) {
     setIsOpen(true);
-    if (text) {
-      sendMessage(text);
-    }
+    if (initialText) sendMessage(initialText);
   }
 
-  function handleMinimize() {
+  function minimizePanel() {
     setIsOpen(false);
   }
 
-  function handleBarSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
+  function handleBarSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
     const input = form.elements.namedItem("chatInput") as HTMLInputElement;
-    const val = input?.value.trim();
-    if (!val) return;
+    const value = input?.value.trim();
+    if (!value) return;
     input.value = "";
-    handleOpen(val);
+    openPanel(value);
   }
 
   if (isOpen) {
     return (
       <div className="chat-overlay">
-        <div className="chat-overlay__backdrop" onClick={handleMinimize} />
-        <ChatPanel
-          messages={messages}
-          isLoading={isLoading}
-          onSend={sendMessage}
-          onMinimize={handleMinimize}
-        />
+        <div className="chat-overlay__backdrop" onClick={minimizePanel} />
+        <ChatPanel messages={messages} isLoading={isLoading} onSend={sendMessage} onMinimize={minimizePanel} />
       </div>
     );
   }
 
   return (
-    <div className="chat-bar">
-      <form className="chat-bar__form" onSubmit={handleBarSubmit}>
-        <div className="chat-bar__glow-blur" aria-hidden="true" />
-        <span className="chat-bar__icon">
-          <Sparkles size={18} />
-        </span>
-        <input
-          name="chatInput"
-          type="text"
-          className="chat-bar__input"
-          placeholder={t.chat.placeholder}
-          autoComplete="off"
-          onFocus={() => handleOpen()}
-        />
-        <button type="submit" className="chat-bar__send" aria-label={t.chat.send}>
-          <ArrowUp size={16} />
-        </button>
-      </form>
-      <ChatSuggestions onSelect={(text) => handleOpen(text)} compact />
+    <div className="chat-bar-anchor">
+      <div className="chat-bar">
+        <form className="chat-bar__form" onSubmit={handleBarSubmit}>
+          <div className="chat-bar__glow-blur" aria-hidden="true" />
+          <span className="chat-bar__icon">
+            <Sparkles size={16} />
+          </span>
+          <input
+            name="chatInput"
+            type="text"
+            className="chat-bar__input"
+            placeholder={t.chat.placeholder}
+            autoComplete="off"
+            onFocus={() => openPanel()}
+          />
+          <button type="submit" className="chat-bar__send" aria-label={t.chat.send}>
+            <ArrowUp size={16} />
+          </button>
+        </form>
+        <ChatSuggestions onSelect={(text) => openPanel(text)} compact />
+      </div>
     </div>
   );
 }

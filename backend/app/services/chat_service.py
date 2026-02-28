@@ -1,137 +1,258 @@
 """
-Chat Service — Perplexity Sonar streaming chat for WeeklyAI.
+Chat service for WeeklyAI.
 
-Uses Perplexity API (OpenAI-compatible) for global low-latency access.
-Product data is injected as system context for domain-specific answers.
+Supports both:
+- JSON (non-stream, Vercel-stable)
+- SSE stream (real-time UX)
 """
+
+from __future__ import annotations
 
 import json
 import os
-import requests
-from typing import Generator
+import re
+from typing import Any, Generator
 
+import requests
+
+from app.services.env_utils import sanitize_env_value
 
 PERPLEXITY_CHAT_URL = "https://api.perplexity.ai/chat/completions"
 
 
 def _get_api_key() -> str:
-    return os.environ.get('PERPLEXITY_API_KEY', '')
+    return sanitize_env_value(os.environ.get("PERPLEXITY_API_KEY", ""))
 
 
 def _get_model() -> str:
-    return os.environ.get('PERPLEXITY_CHAT_MODEL', 'sonar')
+    return sanitize_env_value(os.environ.get("PERPLEXITY_CHAT_MODEL", "sonar"), "sonar") or "sonar"
 
 
-def _get_product_context(locale: str = "zh") -> str:
+def _normalize_locale(locale: str | None) -> str:
+    value = (locale or "zh").strip().lower()
+    if value in ("en", "en-us"):
+        return "en"
+    return "zh"
+
+
+def _clean_output(text: str) -> str:
+    value = text or ""
+    value = re.sub(r"\[(?:\d+(?:\s*[-,，]\s*\d+)*)\]", "", value)
+    value = re.sub(r"\[(?:product_data|products?_data|产品数据|source|sources)\]", "", value, flags=re.IGNORECASE)
+    value = re.sub(r"[ \t]{2,}", " ", value)
+    value = re.sub(r"[ \t]+([,，。！？!?:;；])", r"\1", value)
+    return value.strip()
+
+
+def _shorten(text: str, max_len: int = 220) -> str:
+    trimmed = (text or "").strip()
+    if len(trimmed) <= max_len:
+        return trimmed
+    return f"{trimmed[: max_len - 1]}…"
+
+
+def _extract_content(payload: dict[str, Any]) -> str:
+    choices = payload.get("choices", [])
+    if not choices:
+        return ""
+    first = choices[0] if isinstance(choices[0], dict) else {}
+    message = first.get("message", {})
+    if not isinstance(message, dict):
+        return ""
+    return str(message.get("content", "")).strip()
+
+
+def _build_product_context() -> str:
     try:
         from app.services.product_service import ProductService
-        dark_horses = ProductService.get_dark_horse_products(limit=15, min_index=4)
-        rising = ProductService.get_rising_star_products(limit=10)
+
+        dark_horses = ProductService.get_dark_horse_products(limit=6, min_index=4)
+        rising = ProductService.get_rising_star_products(limit=4)
     except Exception:
         dark_horses = []
         rising = []
 
-    lines = []
-
+    lines: list[str] = []
     if dark_horses:
-        lines.append("=== Dark Horse Products (4-5 pts) ===")
-        for p in dark_horses[:15]:
-            name = p.get("name", "")
-            score = p.get("dark_horse_index", "")
-            funding = p.get("funding_total", "")
-            why = p.get("why_matters", "")
-            region = p.get("region", "")
-            cat = p.get("category", "")
-            hw = " [Hardware]" if p.get("is_hardware") or p.get("category") == "hardware" else ""
-            lines.append(f"- {name} ({score}pts, {region}{hw}): {why} | Funding: {funding} | Category: {cat}")
+        lines.append("=== Dark Horses (4-5) ===")
+        for item in dark_horses[:6]:
+            name = str(item.get("name", "")).strip() or "Unknown"
+            score = item.get("dark_horse_index", "")
+            funding = str(item.get("funding_total", "")).strip() or "n/a"
+            reason = _shorten(
+                str(item.get("why_matters", "")).strip() or str(item.get("description", "")).strip()
+            )
+            lines.append(f"- {name} ({score}): {reason} | Funding: {funding}")
 
     if rising:
-        lines.append("\n=== Rising Stars (2-3 pts) ===")
-        for p in rising[:10]:
-            name = p.get("name", "")
-            score = p.get("dark_horse_index", "")
-            why = p.get("why_matters", "")
-            lines.append(f"- {name} ({score}pts): {why}")
+        lines.append("=== Rising Stars (2-3) ===")
+        for item in rising[:4]:
+            name = str(item.get("name", "")).strip() or "Unknown"
+            score = item.get("dark_horse_index", "")
+            reason = _shorten(
+                str(item.get("why_matters", "")).strip() or str(item.get("description", "")).strip()
+            )
+            lines.append(f"- {name} ({score}): {reason}")
 
     return "\n".join(lines) if lines else "No product data available."
 
 
-def _build_system_prompt(locale: str = "zh") -> str:
-    product_context = _get_product_context(locale)
+def _build_system_prompt(locale: str) -> str:
+    product_context = _build_product_context()
+    if locale == "en":
+        return (
+            "You are the WeeklyAI assistant.\n"
+            "Answer only AI product questions based on the data below.\n"
+            "Keep it concise, practical, and specific.\n"
+            "Mention name, score, and key differentiator when recommending.\n\n"
+            f"{product_context}"
+        )
 
-    if locale == "zh":
-        return f"""你是 WeeklyAI 的 AI 助手，专注于帮助用户了解全球最新的 AI 产品动态。
-
-你的知识库包含以下最新 AI 产品数据：
-
-{product_context}
-
-回答规则：
-1. 基于上述产品数据回答，如果数据不够，坦诚说明
-2. 推荐产品时，提及产品名、评分、融资情况和核心亮点
-3. 回答简洁有力，每个产品 1-2 句话即可
-4. 如果用户问的不是 AI 产品相关，礼貌引导回主题
-5. 使用中文回答"""
-    else:
-        return f"""You are the WeeklyAI AI Assistant, focused on helping users discover the latest global AI products.
-
-Your knowledge base contains the following latest AI product data:
-
-{product_context}
-
-Response rules:
-1. Answer based on the product data above; if insufficient, be upfront about it
-2. When recommending products, mention the name, score, funding, and key highlights
-3. Keep answers concise — 1-2 sentences per product
-4. If the user asks about non-AI topics, politely redirect
-5. Respond in English"""
+    return (
+        "你是 WeeklyAI 助手。\n"
+        "请基于下方产品数据回答 AI 产品相关问题。\n"
+        "回答要简洁、具体、可执行。\n"
+        "做推荐时请提到产品名、评分和关键差异点。\n\n"
+        f"{product_context}"
+    )
 
 
-def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, None, None]:
-    """Stream a chat response as SSE events via Perplexity API."""
+def _request_payload(message: str, locale: str, stream: bool) -> dict[str, Any]:
+    return {
+        "model": _get_model(),
+        "messages": [
+            {"role": "system", "content": _build_system_prompt(locale)},
+            {"role": "user", "content": message},
+        ],
+        "max_tokens": 512,
+        "temperature": 0.3,
+        "stream": stream,
+    }
+
+
+def _request_error_message(normalized_locale: str) -> str:
+    return "An unexpected error occurred." if normalized_locale == "en" else "发生了未知错误，请稍后重试。"
+
+
+def get_chat_response(message: str, locale: str | None = "zh") -> dict[str, Any]:
+    normalized_locale = _normalize_locale(locale)
     api_key = _get_api_key()
-
     if not api_key:
-        yield _sse_event({"type": "text", "content": _no_api_message(locale)})
-        yield _sse_event({"type": "done"})
-        return
-
-    system_prompt = _build_system_prompt(locale)
+        return {
+            "success": False,
+            "content": "AI assistant is not configured." if normalized_locale == "en" else "AI 助手暂不可用（API 未配置）。",
+        }
 
     try:
-        resp = requests.post(
+        response = requests.post(
             PERPLEXITY_CHAT_URL,
             headers={
                 "Authorization": f"Bearer {api_key}",
                 "Content-Type": "application/json",
             },
-            json={
-                "model": _get_model(),
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": message},
-                ],
-                "max_tokens": 2048,
-                "temperature": 0.5,
-                "stream": True,
-            },
-            stream=True,
-            timeout=25,
+            json=_request_payload(message=message, locale=normalized_locale, stream=False),
+            timeout=9,
         )
+    except requests.exceptions.Timeout:
+        return {
+            "success": False,
+            "content": "Request timed out. Please try again." if normalized_locale == "en" else "请求超时，请重试。",
+        }
+    except Exception:
+        return {
+            "success": False,
+            "content": _request_error_message(normalized_locale),
+        }
 
-        if resp.status_code != 200:
-            error_detail = ""
-            try:
-                err_json = resp.json()
-                error_detail = err_json.get("error", {}).get("message", resp.text[:200])
-            except Exception:
-                error_detail = resp.text[:200]
-            msg = f"API error ({resp.status_code}): {error_detail}"
-            yield _sse_event({"type": "text", "content": msg})
-            yield _sse_event({"type": "done"})
-            return
+    if response.status_code != 200:
+        error_text = response.text[:200]
+        try:
+            parsed = response.json()
+            error_message = parsed.get("error", {}).get("message", "")
+            if error_message:
+                error_text = str(error_message)[:200]
+        except Exception:
+            pass
+        return {
+            "success": False,
+            "content": f"Upstream API error ({response.status_code}): {error_text}",
+        }
 
-        for line in resp.iter_lines(decode_unicode=True):
+    try:
+        payload = response.json()
+    except Exception:
+        return {
+            "success": False,
+            "content": "Failed to decode model response." if normalized_locale == "en" else "模型返回解析失败。",
+        }
+
+    content = _clean_output(_extract_content(payload))
+    if not content:
+        return {
+            "success": False,
+            "content": "No response generated." if normalized_locale == "en" else "未生成有效回答，请重试。",
+        }
+
+    return {"success": True, "content": content}
+
+
+def _sse_event(data: dict[str, Any]) -> str:
+    return f"data: {json.dumps(data, ensure_ascii=False)}\n\n"
+
+
+def stream_chat_response(message: str, locale: str | None = "zh") -> Generator[str, None, None]:
+    normalized_locale = _normalize_locale(locale)
+    api_key = _get_api_key()
+    if not api_key:
+        yield _sse_event(
+            {
+                "type": "error",
+                "message": "AI assistant is not configured." if normalized_locale == "en" else "AI 助手暂不可用（API 未配置）。",
+            }
+        )
+        yield _sse_event({"type": "done"})
+        return
+
+    try:
+        response = requests.post(
+            PERPLEXITY_CHAT_URL,
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            json=_request_payload(message=message, locale=normalized_locale, stream=True),
+            stream=True,
+            timeout=20,
+        )
+    except requests.exceptions.Timeout:
+        yield _sse_event(
+            {
+                "type": "error",
+                "message": "Request timed out. Please try again." if normalized_locale == "en" else "请求超时，请重试。",
+            }
+        )
+        yield _sse_event({"type": "done"})
+        return
+    except Exception:
+        yield _sse_event({"type": "error", "message": _request_error_message(normalized_locale)})
+        yield _sse_event({"type": "done"})
+        return
+
+    if response.status_code != 200:
+        error_text = response.text[:200]
+        try:
+            parsed = response.json()
+            error_message = parsed.get("error", {}).get("message", "")
+            if error_message:
+                error_text = str(error_message)[:200]
+        except Exception:
+            pass
+        yield _sse_event({"type": "error", "message": f"Upstream API error ({response.status_code}): {error_text}"})
+        yield _sse_event({"type": "done"})
+        return
+
+    try:
+        for line in response.iter_lines(decode_unicode=True):
             if not line:
                 continue
             if not line.startswith("data:"):
@@ -143,32 +264,21 @@ def stream_chat_response(message: str, locale: str = "zh") -> Generator[str, Non
 
             try:
                 chunk = json.loads(payload)
-                choices = chunk.get("choices", [])
-                if choices:
-                    delta = choices[0].get("delta", {})
-                    content = delta.get("content", "")
-                    if content:
-                        yield _sse_event({"type": "text", "content": content})
-            except (json.JSONDecodeError, KeyError, IndexError):
+            except Exception:
                 continue
 
-        yield _sse_event({"type": "done"})
+            choices = chunk.get("choices", [])
+            if not choices:
+                continue
+            choice = choices[0] if isinstance(choices[0], dict) else {}
+            delta = choice.get("delta", {}) if isinstance(choice, dict) else {}
+            if not isinstance(delta, dict):
+                continue
+            content = str(delta.get("content", ""))
+            if content:
+                yield _sse_event({"type": "text", "content": content})
 
-    except requests.exceptions.Timeout:
-        msg = "请求超时，请重试。" if locale == "zh" else "Request timed out. Please try again."
-        yield _sse_event({"type": "text", "content": msg})
         yield _sse_event({"type": "done"})
     except Exception:
-        msg = "抱歉，发生了错误。" if locale == "zh" else "Sorry, an error occurred."
-        yield _sse_event({"type": "text", "content": msg})
+        yield _sse_event({"type": "error", "message": _request_error_message(normalized_locale)})
         yield _sse_event({"type": "done"})
-
-
-def _sse_event(data: dict) -> str:
-    return f"data: {json.dumps(data, ensure_ascii=False)}\n\n"
-
-
-def _no_api_message(locale: str) -> str:
-    if locale == "zh":
-        return "AI 助手暂不可用（API 未配置）。请先配置环境变量后重试。"
-    return "AI assistant is not available (API not configured)."

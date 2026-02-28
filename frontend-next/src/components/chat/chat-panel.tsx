@@ -3,9 +3,9 @@
 import { useEffect, useRef } from "react";
 import { ChevronDown, Sparkles } from "lucide-react";
 import { useLocale } from "@/i18n";
-import type { ChatMessage } from "./use-chat";
 import { ChatMessageBubble } from "./chat-message";
 import { ChatSuggestions } from "./chat-suggestions";
+import type { ChatMessage } from "./use-chat";
 
 type ChatPanelProps = {
   messages: ChatMessage[];
@@ -20,23 +20,23 @@ export function ChatPanel({ messages, isLoading, onSend, onMinimize }: ChatPanel
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-    el.scrollTop = el.scrollHeight;
+    const node = scrollRef.current;
+    if (!node) return;
+    node.scrollTop = node.scrollHeight;
   }, [messages]);
 
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
     const input = inputRef.current;
     if (!input) return;
-    const val = input.value.trim();
-    if (!val) return;
+    const value = input.value.trim();
+    if (!value) return;
     input.value = "";
-    onSend(val);
+    onSend(value);
   }
 
   const hasMessages = messages.length > 0;
@@ -48,12 +48,7 @@ export function ChatPanel({ messages, isLoading, onSend, onMinimize }: ChatPanel
           <Sparkles size={16} />
           <span>{t.chat.title}</span>
         </div>
-        <button
-          type="button"
-          className="chat-panel__minimize"
-          onClick={onMinimize}
-          aria-label={t.chat.minimize}
-        >
+        <button type="button" className="chat-panel__minimize" onClick={onMinimize} aria-label={t.chat.minimize}>
           <ChevronDown size={18} />
         </button>
       </header>
@@ -66,11 +61,11 @@ export function ChatPanel({ messages, isLoading, onSend, onMinimize }: ChatPanel
           </div>
         ) : (
           <div className="chat-messages">
-            {messages.map((msg) => (
-              <ChatMessageBubble key={msg.id} message={msg} />
+            {messages.map((message) => (
+              <ChatMessageBubble key={message.id} message={message} />
             ))}
             {isLoading && messages[messages.length - 1]?.content === "" ? (
-              <div className="chat-thinking">
+              <div className="chat-thinking" aria-label={t.chat.thinking}>
                 <span className="chat-thinking__dot" />
                 <span className="chat-thinking__dot" />
                 <span className="chat-thinking__dot" />
@@ -95,12 +90,7 @@ export function ChatPanel({ messages, isLoading, onSend, onMinimize }: ChatPanel
           disabled={isLoading}
           autoComplete="off"
         />
-        <button
-          type="submit"
-          className="chat-panel__send"
-          disabled={isLoading}
-          aria-label={t.chat.send}
-        >
+        <button type="submit" className="chat-panel__send" disabled={isLoading} aria-label={t.chat.send}>
           {t.chat.send}
         </button>
       </form>

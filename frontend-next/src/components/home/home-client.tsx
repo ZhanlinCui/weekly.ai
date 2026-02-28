@@ -7,6 +7,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Product } from "@/types/api";
 import type { WeeklyTopSort } from "@/lib/api-client";
 import { SmartLogo } from "@/components/common/smart-logo";
+import { ChatBar } from "@/components/chat/chat-bar";
 import { ProductCard } from "@/components/product/product-card";
 import { countFavorites, openFavoritesPanel, subscribeFavorites } from "@/lib/favorites";
 import {
@@ -319,6 +320,9 @@ export function HomeClient({ darkHorses, allProducts, freshnessLabel }: HomeClie
               {t.hero.hotThisWeek}<span>{t.hero.signalAgent}</span> · <span>{t.hero.signalHardware}</span> · <span>{t.hero.signalSocial}</span>
             </p>
           </div>
+        </div>
+        <div className="hero-chat-slot">
+          <ChatBar />
         </div>
       </section>
 

@@ -1,20 +1,31 @@
 """
-Chat API Blueprint — Streaming AI chat powered by Perplexity Sonar.
+Chat API blueprint for WeeklyAI.
 
-POST /api/v1/chat
-  Body: { "message": "...", "locale": "zh" | "en" }
-  Response: SSE stream
+Routes:
+- GET /api/v1/chat/status
+- POST /api/v1/chat (JSON or SSE)
 """
 
-from flask import Blueprint, request, Response, jsonify
-from collections import defaultdict
-import time
-import os
+from __future__ import annotations
 
-chat_bp = Blueprint('chat', __name__)
+from collections import defaultdict
+import os
+import time
+
+from flask import Blueprint, Response, jsonify, request
+
+from app.services.env_utils import sanitize_env_value
+
+chat_bp = Blueprint("chat", __name__)
 
 _chat_rate_tracker: dict[str, list[float]] = defaultdict(list)
 CHAT_RATE_LIMIT = 10
+MAX_MESSAGE_LENGTH = 2000
+
+
+def _client_ip() -> str:
+    forwarded = request.headers.get("X-Forwarded-For", request.remote_addr) or "unknown"
+    return forwarded.split(",")[0].strip()
 
 
 def _is_chat_allowed(ip: str) -> bool:
@@ -27,64 +38,87 @@ def _is_chat_allowed(ip: str) -> bool:
     return True
 
 
-@chat_bp.route('/status', methods=['GET'])
+def _wants_sse(body: dict) -> bool:
+    query_stream = str(request.args.get("stream", "")).strip().lower() in {"1", "true", "yes"}
+    body_stream = str(body.get("stream", "")).strip().lower() in {"1", "true", "yes"}
+    accept_header = (request.headers.get("Accept", "") or "").lower()
+    header_stream = "text/event-stream" in accept_header
+    return query_stream or body_stream or header_stream
+
+
+@chat_bp.route("/status", methods=["GET"])
 def chat_status():
-    """Check if chat service is configured."""
-    key = os.environ.get('PERPLEXITY_API_KEY', '')
-    has_key = bool(key and len(key) > 5)
-    return jsonify({
-        'success': True,
-        'has_api_key': has_key,
-        'provider': 'perplexity',
-        'model': os.environ.get('PERPLEXITY_CHAT_MODEL', 'sonar'),
-    })
-
-
-@chat_bp.route('', methods=['POST'])
-def chat():
-    """Stream a chat response via SSE."""
-    client_ip = request.headers.get('X-Forwarded-For', request.remote_addr) or "unknown"
-    client_ip = client_ip.split(',')[0].strip()
-
-    if not _is_chat_allowed(client_ip):
-        return jsonify({
-            'success': False,
-            'message': 'Chat rate limit exceeded. Please wait a moment.',
-            'error': 'TOO_MANY_REQUESTS'
-        }), 429
-
-    body = request.get_json(silent=True) or {}
-    message = str(body.get('message', '')).strip()
-    locale = str(body.get('locale', 'zh')).strip()
-
-    if not message:
-        return jsonify({
-            'success': False,
-            'message': 'Message is required.',
-            'error': 'BAD_REQUEST'
-        }), 400
-
-    if len(message) > 2000:
-        return jsonify({
-            'success': False,
-            'message': 'Message too long (max 2000 chars).',
-            'error': 'BAD_REQUEST'
-        }), 400
-
-    if locale not in ("zh", "en"):
-        locale = "zh"
-
-    from app.services.chat_service import stream_chat_response
-
-    def generate():
-        yield from stream_chat_response(message, locale)
-
-    return Response(
-        generate(),
-        mimetype='text/event-stream',
-        headers={
-            'Cache-Control': 'no-cache',
-            'Connection': 'keep-alive',
-            'X-Accel-Buffering': 'no',
+    key = sanitize_env_value(os.environ.get("PERPLEXITY_API_KEY", ""))
+    model = sanitize_env_value(os.environ.get("PERPLEXITY_CHAT_MODEL", "sonar"), "sonar") or "sonar"
+    return jsonify(
+        {
+            "success": True,
+            "has_api_key": bool(key and len(key) > 5),
+            "provider": "perplexity",
+            "model": model,
+            "rate_limit_per_minute": CHAT_RATE_LIMIT,
         }
     )
+
+
+@chat_bp.route("", methods=["POST"])
+def chat():
+    client_ip = _client_ip()
+    if not _is_chat_allowed(client_ip):
+        return (
+            jsonify(
+                {
+                    "success": False,
+                    "content": "Chat rate limit exceeded. Please wait a moment.",
+                    "error": "TOO_MANY_REQUESTS",
+                }
+            ),
+            429,
+        )
+
+    body = request.get_json(silent=True) or {}
+    message = str(body.get("message", "")).strip()
+    locale = str(body.get("locale", "zh")).strip()
+
+    if not message:
+        return (
+            jsonify(
+                {
+                    "success": False,
+                    "content": "Message is required.",
+                    "error": "BAD_REQUEST",
+                }
+            ),
+            400,
+        )
+
+    if len(message) > MAX_MESSAGE_LENGTH:
+        return (
+            jsonify(
+                {
+                    "success": False,
+                    "content": f"Message too long (max {MAX_MESSAGE_LENGTH} chars).",
+                    "error": "BAD_REQUEST",
+                }
+            ),
+            400,
+        )
+
+    wants_sse = _wants_sse(body)
+
+    if wants_sse:
+        from app.services.chat_service import stream_chat_response
+
+        return Response(
+            stream_chat_response(message=message, locale=locale),
+            mimetype="text/event-stream",
+            headers={
+                "Cache-Control": "no-cache",
+                "Connection": "keep-alive",
+                "X-Accel-Buffering": "no",
+            },
+        )
+
+    from app.services.chat_service import get_chat_response
+
+    return jsonify(get_chat_response(message=message, locale=locale))
