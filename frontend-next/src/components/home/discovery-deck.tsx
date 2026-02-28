@@ -3,15 +3,17 @@
 import { PointerEvent, TouchEvent, useEffect, useRef, useState } from "react";
 import type { Product } from "@/types/api";
 import { SmartLogo } from "@/components/common/smart-logo";
+import { useSiteLocale } from "@/components/layout/locale-provider";
 import {
   cleanDescription,
   formatCategories,
+  getLocalizedProductDescription,
+  getLocalizedProductWhyMatters,
   isValidWebsite,
   normalizeWebsite,
   productKey,
   resolveProductCountry,
 } from "@/lib/product-utils";
-import { useLocale } from "@/i18n";
 
 const SWIPED_KEY = "weeklyai_swiped";
 const SWIPE_GUIDE_SEEN_KEY = "weeklyai_swipe_guide_seen";
@@ -110,8 +112,14 @@ function createDeck(products: Product[]) {
   };
 }
 
-function SwipeCardIdentity({ product, compact = false }: { product: Product; compact?: boolean }) {
-  const { t } = useLocale();
+type SwipeCardIdentityProps = {
+  product: Product;
+  compact?: boolean;
+  locale: "zh-CN" | "en-US";
+  t: (zh: string, en: string) => string;
+};
+
+function SwipeCardIdentity({ product, compact = false, locale, t }: SwipeCardIdentityProps) {
   const country = resolveProductCountry(product);
   const countryText = country.unknown ? "Unknown" : country.name;
   const logoSize = compact ? 42 : 48;
@@ -132,18 +140,23 @@ function SwipeCardIdentity({ product, compact = false }: { product: Product; com
       <div className="swipe-card-header__copy">
         <div className="swipe-card-header__name-row">
           <h3>{product.name}</h3>
-          <span className={`swipe-card-country ${country.unknown ? "is-unknown" : ""}`} aria-label={t.product.regionTooltip(countryText)} title={t.product.regionTooltip(countryText)}>
+          <span
+            className={`swipe-card-country ${country.unknown ? "is-unknown" : ""}`}
+            aria-label={`${t("国家", "Country")}: ${countryText}`}
+            title={`${t("国家", "Country")}: ${countryText}`}
+          >
             {country.flag ? <span className="swipe-card-country__flag">{country.flag}</span> : null}
             <span className="swipe-card-country__text">{countryText}</span>
           </span>
         </div>
-        <p>{formatCategories(product)}</p>
+        <p>{formatCategories(product, locale)}</p>
       </div>
     </div>
   );
 }
 
 export default function DiscoveryDeck({ products, onLike }: DiscoveryDeckProps) {
+  const { locale, t } = useSiteLocale();
   const [deck, setDeck] = useState(() => createDeck(products));
   const [liked, setLiked] = useState(0);
   const [skipped, setSkipped] = useState(0);
@@ -537,13 +550,13 @@ export default function DiscoveryDeck({ products, onLike }: DiscoveryDeckProps) 
     maybeSwipeByGesture(clientX, clientY, "touch");
   }
 
-  const { t } = useLocale();
-
   if (!stack.length) {
     return (
       <div className="empty-state">
         <div className="empty-state-icon">✨</div>
-        <p className="empty-state-text">{t.discover.allDone}</p>
+        <p className="empty-state-text">
+          {t("已经看完这一轮，稍后再来看看新产品吧。", "You've reached the end of this round. Check back later for new products.")}
+        </p>
       </div>
     );
   }
@@ -552,6 +565,10 @@ export default function DiscoveryDeck({ products, onLike }: DiscoveryDeckProps) 
   const nextCard = stack[1] ?? null;
   const backCard = stack[2] ?? null;
   const website = normalizeWebsite(current.website);
+  const currentWhyMatters = getLocalizedProductWhyMatters(current, locale);
+  const currentDescription = cleanDescription(getLocalizedProductDescription(current, locale), locale);
+  const nextDescription = nextCard ? cleanDescription(getLocalizedProductDescription(nextCard, locale), locale) : "";
+  const backDescription = backCard ? cleanDescription(getLocalizedProductDescription(backCard, locale), locale) : "";
   const feedbackDirection = swipeOutDirection || (dragX > SWIPE_FEEDBACK_MIN ? "right" : dragX < -SWIPE_FEEDBACK_MIN ? "left" : null);
   const dragThreshold = gestureInputType === "touch" ? SWIPE_THRESHOLD_TOUCH : SWIPE_THRESHOLD_POINTER;
   const dragProgress = clamp(Math.abs(dragX) / (dragThreshold * 1.45), 0, 1);
@@ -584,32 +601,34 @@ export default function DiscoveryDeck({ products, onLike }: DiscoveryDeckProps) 
   } as const;
   const hintText =
     feedbackDirection === "right"
-      ? t.discover.hintContinueRight
+      ? t("继续右滑，松手即可收藏", "Keep swiping right and release to save")
       : feedbackDirection === "left"
-        ? t.discover.hintContinueLeft
+        ? t("继续左滑，松手跳过", "Keep swiping left and release to skip")
         : likeStreak >= 2
-          ? t.discover.hintStreak(likeStreak)
-          : t.discover.hintDefault;
+          ? locale === "en-US"
+            ? `Streak x${likeStreak}, keep swiping right for dark horses`
+            : `连击 x${likeStreak}，继续右滑挖黑马`
+          : t("左右拖动卡片即可滑动，右滑收藏，左滑跳过", "Drag left or right. Swipe right to save, left to skip");
   const swipeEchoText =
     lastSwipeAction === "right"
       ? lastSwipeHadInertia
-        ? t.discover.echoInertiaRight
-        : t.discover.echoRight
+        ? t("惯性右甩已收藏，继续滑更快", "Inertia right-swipe saved, keep swiping fast")
+        : t("已收藏，继续右滑快速筛选", "Saved. Keep swiping right to filter faster")
       : lastSwipeHadInertia
-        ? t.discover.echoInertiaLeft
-        : t.discover.echoLeft;
+        ? t("惯性左甩已跳过，继续左滑看下一个", "Inertia left-swipe skipped, continue left for next")
+        : t("已跳过，继续左滑看下一个", "Skipped. Continue swiping left for next");
 
   return (
     <div className="discover-shell">
       {showSwipeGuide ? (
-        <div className="swipe-onboarding" role="dialog" aria-label={t.discover.gestureGuide}>
-          <p className="swipe-onboarding__title">{t.discover.quickGuide}</p>
+        <div className="swipe-onboarding" role="dialog" aria-label={t("快速发现手势引导", "Quick discovery gesture guide")}>
+          <p className="swipe-onboarding__title">{t("左右滑动，30 秒筛出黑马", "Swipe left and right to shortlist dark horses in 30 seconds")}</p>
           <div className="swipe-onboarding__gestures" aria-hidden="true">
-            <span className="swipe-onboarding__gesture swipe-onboarding__gesture--left">{t.discover.swipeLeftSkip}</span>
-            <span className="swipe-onboarding__gesture swipe-onboarding__gesture--right">{t.discover.swipeRightSave}</span>
+            <span className="swipe-onboarding__gesture swipe-onboarding__gesture--left">← {t("左滑跳过", "Swipe left to skip")}</span>
+            <span className="swipe-onboarding__gesture swipe-onboarding__gesture--right">{t("右滑收藏", "Swipe right to save")} →</span>
           </div>
           <button className="swipe-onboarding__start" type="button" onClick={dismissSwipeGuide}>
-            {t.discover.startDiscover}
+            {t("开始发现", "Start exploring")}
           </button>
         </div>
       ) : null}
@@ -617,12 +636,18 @@ export default function DiscoveryDeck({ products, onLike }: DiscoveryDeckProps) 
         {backCard ? (
           <article className="swipe-card swipe-card--ghost swipe-card--ghost-back" style={backCardStyle} aria-hidden="true">
             <header className="swipe-card-header swipe-card-header--ghost">
-              <SwipeCardIdentity product={backCard} compact />
-              <span className="swipe-badge">{backCard.dark_horse_index ? `${backCard.dark_horse_index}${t.common.pointsSuffix}` : t.common.featured}</span>
+              <SwipeCardIdentity product={backCard} compact locale={locale} t={t} />
+              <span className="swipe-badge">
+                {backCard.dark_horse_index
+                  ? locale === "en-US"
+                    ? `${backCard.dark_horse_index}/5`
+                    : `${backCard.dark_horse_index}分`
+                  : t("精选", "Featured")}
+              </span>
             </header>
-            <p className="swipe-card-desc swipe-card-desc--ghost">{cleanDescription(backCard.description)}</p>
+            <p className="swipe-card-desc swipe-card-desc--ghost">{backDescription}</p>
             <div className="swipe-card-meta swipe-card-meta--ghost">
-              <span className="swipe-link swipe-link--pending">{t.discover.laterCandidate}</span>
+              <span className="swipe-link swipe-link--pending">{t("稍后候选", "Queued next")}</span>
             </div>
           </article>
         ) : null}
@@ -630,12 +655,18 @@ export default function DiscoveryDeck({ products, onLike }: DiscoveryDeckProps) 
         {nextCard ? (
           <article className="swipe-card swipe-card--ghost swipe-card--ghost-mid" style={nextCardStyle} aria-hidden="true">
             <header className="swipe-card-header swipe-card-header--ghost">
-              <SwipeCardIdentity product={nextCard} compact />
-              <span className="swipe-badge">{nextCard.dark_horse_index ? `${nextCard.dark_horse_index}${t.common.pointsSuffix}` : t.common.featured}</span>
+              <SwipeCardIdentity product={nextCard} compact locale={locale} t={t} />
+              <span className="swipe-badge">
+                {nextCard.dark_horse_index
+                  ? locale === "en-US"
+                    ? `${nextCard.dark_horse_index}/5`
+                    : `${nextCard.dark_horse_index}分`
+                  : t("精选", "Featured")}
+              </span>
             </header>
-            <p className="swipe-card-desc swipe-card-desc--ghost">{cleanDescription(nextCard.description)}</p>
+            <p className="swipe-card-desc swipe-card-desc--ghost">{nextDescription}</p>
             <div className="swipe-card-meta swipe-card-meta--ghost">
-              <span className="swipe-link swipe-link--pending">{t.discover.nextCandidate}</span>
+              <span className="swipe-link swipe-link--pending">{t("下一张候选", "Next candidate")}</span>
             </div>
           </article>
         ) : null}
@@ -656,26 +687,32 @@ export default function DiscoveryDeck({ products, onLike }: DiscoveryDeckProps) 
           <div className={`swipe-card__fade ${feedbackDirection ? `is-${feedbackDirection}` : ""}`} style={{ opacity: fadeOverlayOpacity }} aria-hidden="true" />
 
           <div className={`swipe-feedback ${feedbackDirection ? `is-${feedbackDirection}` : ""}`} style={{ opacity: feedbackOpacity }} aria-hidden="true">
-            <span>{feedbackDirection === "right" ? t.common.saved : t.discover.skip}</span>
+            <span>{feedbackDirection === "right" ? t("已收藏", "Saved") : t("已跳过", "Skipped")}</span>
           </div>
 
           <header className="swipe-card-header">
-            <SwipeCardIdentity product={current} />
-            <span className="swipe-badge">{current.dark_horse_index ? `${current.dark_horse_index}${t.common.pointsSuffix}` : t.common.featured}</span>
+            <SwipeCardIdentity product={current} locale={locale} t={t} />
+            <span className="swipe-badge">
+              {current.dark_horse_index
+                ? locale === "en-US"
+                  ? `${current.dark_horse_index}/5`
+                  : `${current.dark_horse_index}分`
+                : t("精选", "Featured")}
+            </span>
           </header>
 
-          <p className="swipe-card-desc">{cleanDescription(current.description)}</p>
+          <p className="swipe-card-desc">{currentDescription}</p>
 
-          {current.why_matters ? <p className="swipe-card-highlight">💡 {current.why_matters}</p> : null}
+          {currentWhyMatters ? <p className="swipe-card-highlight">💡 {currentWhyMatters}</p> : null}
           {current.funding_total ? <p className="swipe-card-highlight">💰 {current.funding_total}</p> : null}
 
           <div className="swipe-card-meta">
             {isValidWebsite(website) ? (
               <a className="swipe-link" href={website} target="_blank" rel="noopener noreferrer">
-                {t.discover.learnMore}
+                {t("了解更多", "Learn more")} →
               </a>
             ) : (
-              <span className="swipe-link swipe-link--pending">{t.common.websitePending}</span>
+              <span className="swipe-link swipe-link--pending">{t("官网待验证", "Website pending verification")}</span>
             )}
           </div>
         </article>
@@ -683,10 +720,10 @@ export default function DiscoveryDeck({ products, onLike }: DiscoveryDeckProps) 
 
       <div className="swipe-actions">
         <button className="swipe-btn swipe-btn--nope" type="button" onClick={() => animateSwipe("left")} disabled={!!swipeOutDirection}>
-          {t.discover.skip}
+          {t("跳过", "Skip")}
         </button>
         <button className="swipe-btn swipe-btn--like" type="button" onClick={() => animateSwipe("right")} disabled={!!swipeOutDirection}>
-          {t.discover.save}
+          {t("收藏", "Save")}
         </button>
       </div>
       <div className={`swipe-echo ${showSwipeEcho ? "is-visible" : ""} ${lastSwipeAction ? `is-${lastSwipeAction}` : ""}`}>
@@ -699,9 +736,15 @@ export default function DiscoveryDeck({ products, onLike }: DiscoveryDeckProps) 
           style={{ transform: `scaleX(${Math.max(0.08, swipePower)})` }}
         />
       </div>
-      {likeStreak >= 2 ? <div className={`swipe-streak ${showStreakBurst ? "is-visible" : ""}`}>{t.discover.streak(likeStreak)}</div> : null}
+      {likeStreak >= 2 ? (
+        <div className={`swipe-streak ${showStreakBurst ? "is-visible" : ""}`}>
+          {locale === "en-US" ? `🔥 Dark horse streak x${likeStreak}` : `🔥 黑马连击 x${likeStreak}`}
+        </div>
+      ) : null}
       <div className={`swipe-gesture-hint ${feedbackDirection ? `is-${feedbackDirection}` : ""}`}>{hintText}</div>
-      <div className="swipe-status">{t.discover.statsLine(liked, skipped)}</div>
+      <div className="swipe-status">
+        {t("已收藏", "Saved")} {liked} · {t("已跳过", "Skipped")} {skipped}
+      </div>
     </div>
   );
 }

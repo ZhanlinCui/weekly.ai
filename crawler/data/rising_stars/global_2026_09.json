@@ -146,5 +146,1465 @@
         "guardrail_reason": "insufficient_demand_data"
       }
     }
+  },
+  {
+    "name": "amberSearch",
+    "website": "https://ambersearch.ai",
+    "description": "amberSearch是一家德国AI企业搜索初创公司，提供AI驱动的搜索和聊天界面，帮助中小企业即时检索内部文档、数据和洞察。",
+    "category": "other",
+    "region": "🇩🇪",
+    "funding_total": "€2.1M Seed",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "获得Ventech领投的210万欧元种子轮融资，已在德国、奥地利和瑞士200多家中小企业部署，减少搜索时间40%以上，支持多平台（美欧软件、本地和云端）连接，区别于单一生态系统解决方案。",
+    "latest_news": "2026-02-25: 完成€2.1M种子轮融资，由Ventech领投，天使投资人跟投",
+    "source": "tech.eu",
+    "source_url": "https://tech.eu/2025/03/24/german-ai-search-firm-ambersearch-secures-eur21m-seed-investment/",
+    "company_country": "Germany",
+    "company_country_confidence": 1.0,
+    "confidence": 0.95,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-25T19:51:21.387644Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "KI Startup Finanzierung",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "country_flag": "🇩🇪",
+    "country_display": "🇩🇪 Germany",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Diaflow",
+    "website": "https://diaflow.io",
+    "description": "新加坡工作流自动化平台，通过AI加速企业业务流程自动化和采用",
+    "category": "agent",
+    "region": "🇸🇬",
+    "funding_total": "Seed round led by Insignia Ventures Partners",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "category_innovation"
+    ],
+    "why_matters": "获得东南亚顶级风投Insignia Ventures Partners领投的种子轮融资，专注于AI驱动的工作流自动化，正在加速全球市场扩张，符合新加坡2026年预算中AI采用的国家战略重点",
+    "latest_news": "2026-02-24: 完成由Insignia Ventures Partners领投的种子轮融资",
+    "source": "TechNode",
+    "source_url": "https://technode.global/2026/02/24/singapores-diaflow-secures-seed-funding-from-insignia-ventures-partners-to-accelerate-ai-adoption-in-business-workspaces/",
+    "company_country": "Singapore",
+    "company_country_confidence": 0.95,
+    "confidence": 0.8,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-25T19:51:37.507792Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Singapore AI startup funding 2026",
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "country_flag": "🇸🇬",
+    "country_display": "🇸🇬 Singapore",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "RIISE.AI",
+    "website": "https://riise.ai",
+    "description": "专为PropTech和SpaceTech打造的AI搜索引擎，聚合并语境化初创与市场数据。",
+    "category": "other",
+    "region": "Unknown",
+    "funding_total": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "category_innovation"
+    ],
+    "why_matters": "首个领域专用AI搜索工具，帮助投资者和分析师比传统研究更快发现PropTech/SpaceTech趋势信号。",
+    "latest_news": "2026: 最佳房地产初创推荐",
+    "source": "StartupMafia",
+    "source_url": "https://startupmafia.eu/best-real-estate-startups",
+    "company_country": "unknown",
+    "company_country_confidence": 0.4,
+    "confidence": 0.75,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-25T19:52:57.244766Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI unicorn startup valuation 2026",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown"
+  },
+  {
+    "name": "Vertu Floating Light",
+    "website": "https://vertu.com",
+    "description": "Luxury pivoting diamond smart ring with 24/7 AI health tracking.",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "ring",
+    "use_case": "health_monitoring",
+    "innovation_traits": [
+      "non_traditional_form",
+      "wearable",
+      "health",
+      "haptic"
+    ],
+    "region": "Unknown",
+    "funding_total": "unknown",
+    "price": "$980",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation",
+      "use_case_clear"
+    ],
+    "why_matters": "Pivoting removable luxury AI ring monitoring sleep, HR, SpO2, stress.",
+    "latest_news": "Available for $980 as of Feb 2026",
+    "source": "Vertu",
+    "source_url": "https://vertu.com/products/ai-diamond-ring/",
+    "company_country": "unknown",
+    "company_country_confidence": 0.4,
+    "confidence": 0.9,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-25T19:53:24.765262Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-25",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI ring wearable startup",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown"
+  },
+  {
+    "name": "EnFi",
+    "website": "https://enfi.ai",
+    "description": "为银行提供AI信贷分析的金融科技公司，完成1500万美元A轮融资。",
+    "category": "finance",
+    "region": "Unknown",
+    "funding_total": "$15M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "FINTOP Capital领投1500万美元A轮，总融资2250万美元，连接150+金融机构验证AI信贷需求。",
+    "latest_news": "2026-02-23: 完成1500万美元A轮融资",
+    "source": "Bayelsa Watch",
+    "source_url": "https://bayelsawatch.com/enfi-raises-15m-series-a/",
+    "company_country": "unknown",
+    "company_country_confidence": 0.5,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-26T19:45:17.086203Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown"
+  },
+  {
+    "name": "Portkey",
+    "website": "https://portkey.ai",
+    "description": "LLMOps平台提供AI网关，每日处理5000亿tokens，获1500万美元A轮。",
+    "category": "agent",
+    "region": "Unknown",
+    "funding_total": "$15M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "growth_anomaly"
+    ],
+    "why_matters": "Elevation Capital领投1500万美元A轮，每日处理5000亿tokens服务2.4万企业，核心网关免费降低采用门槛。",
+    "latest_news": "2026-02: 完成1500万美元A轮融资",
+    "source": "Parsers Substack",
+    "source_url": "https://parsers.substack.com/p/weekly-top-startup-vc-news-of-february-ab3",
+    "company_country": "unknown",
+    "company_country_confidence": 0.4,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-26T19:45:17.399134Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown"
+  },
+  {
+    "name": "VoiceLine",
+    "website": "https://voiceline.ai",
+    "description": "慕尼黑语音AI初创，为欧洲现场团队提供企业级语音AI平台。",
+    "category": "voice",
+    "region": "🇩🇪",
+    "funding_total": "€10M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Alstin Capital和Peak领投1000万欧元A轮，专注企业现场团队语音AI扩展欧洲市场。",
+    "latest_news": "2026-02-24: 完成€10M Series A融资",
+    "source": "The AI World",
+    "source_url": "https://theaiworld.org/news/voiceline-raises-10m-series-a-for-voice-ai-in-europe",
+    "company_country": "Germany",
+    "company_country_confidence": 0.95,
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-26T19:50:23.382477Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A Europe",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "country_flag": "🇩🇪",
+    "country_display": "🇩🇪 Germany",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "ecoplanet",
+    "website": "https://ecoplanet.tech",
+    "description": "AI驱动能源编排平台，获1600万欧元A轮扩展欧洲能源转型。",
+    "category": "other",
+    "region": "🇩🇪",
+    "funding_total": "€16M Series A",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "EQT Ventures领投1600万欧元A轮，HV Capital跟投，加速欧洲AI能源编排层部署。",
+    "latest_news": "2026-02-23: 完成€16M Series A融资",
+    "source": "ecoplanet",
+    "source_url": "https://www.ecoplanet.tech/ressourcen/blog/ecoplanet-secures-eu16-million-series-a-funding-led-by-eqt-ventures-with-continued-support-by-hv-capital",
+    "company_country": "Germany",
+    "company_country_confidence": 0.8,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-26T19:50:23.661432Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-26",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A Europe",
+    "country_code": "DE",
+    "country_name": "Germany",
+    "country_flag": "🇩🇪",
+    "country_display": "🇩🇪 Germany",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Beacon Health",
+    "website": "https://beaconhealth.ai/",
+    "description": "初级保健AI代理系统，自动化医疗工作流程",
+    "category": "healthcare",
+    "region": "🇺🇸",
+    "funding_total": "Unknown (YC W26)",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "category_innovation"
+    ],
+    "why_matters": "YC W26批次的医疗AI代理产品，专注初级保健自动化，属于YC春季2025年超过50%的代理AI浪潮中的垂直应用",
+    "latest_news": "2026-02: YC W26 batch",
+    "source": "TLDL",
+    "source_url": "https://www.tldl.io/blog/yc-ai-startups-2026",
+    "company_country": "US",
+    "company_country_confidence": 0.8,
+    "confidence": 0.72,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:19:22.444803Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "YC AI companies winter 2026",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Patientdesk.ai",
+    "website": "https://patientdesk.ai/",
+    "description": "牙科和医疗保险工作流自动化平台，已覆盖35+诊所",
+    "category": "healthcare",
+    "region": "🇳🇱",
+    "funding_total": "$1M Pre-Seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "growth_anomaly"
+    ],
+    "why_matters": "YC W26创业公司，已在35+医疗机构实现商业化验证，从牙科调度扩展至保险和支付领域，展现快速市场验证能力",
+    "latest_news": "2026-02-24: $1M Pre-Seed融资",
+    "source": "Founder Lodge",
+    "source_url": "https://founderlodge.com/round/Patientdeskai-YC-W26-raises-1000000-Pre-Seed-2026-02-24-Oncel-Ozgul-MjUzODc",
+    "company_country": "Netherlands",
+    "company_country_confidence": 0.95,
+    "confidence": 0.8,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:19:22.686953Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "YC AI companies winter 2026",
+    "country_code": "NL",
+    "country_name": "Netherlands",
+    "country_flag": "🇳🇱",
+    "country_display": "🇳🇱 Netherlands",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Trace",
+    "website": "https://trace.ai",
+    "description": "Y Combinator 2025夏季批次初创，专注企业AI代理工作流编排，提供上下文映射解决采用难题。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$3M",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "获300万美元种子轮，针对AI代理在企业落地慢的问题，通过映射复杂公司流程填补上下文空白，YC支持显示早期潜力。",
+    "latest_news": "2026-02-26: 完成300万美元融资，解决企业AI代理采用问题",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
+    "company_country": "US",
+    "company_country_confidence": 0.8,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:20:39.551597Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 2,
+          "top_story_id": "47177732",
+          "points": 1,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "comments_below_threshold",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "threshold_not_met"
+      }
+    },
+    "community_verdict": {
+      "source": "hackernews",
+      "window_days": 7,
+      "summary": "HN 暂无足够评论样本用于形成社区结论。 用户反馈既包含认可，也提出了执行层面的质疑。 对 PM 来说，关键是验证需求强度与可持续增长。",
+      "sentiment": "neutral",
+      "confidence": 0.3
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Gushwork",
+    "website": "https://gushwork.com",
+    "description": "印度初创，利用AI搜索工具从ChatGPT、Gemini等平台捕获客户线索。",
+    "category": "other",
+    "region": "🇮🇳",
+    "funding_total": "$9M",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "两年老公司刚获900万美元融资，早起显示吸引投资者支持，专注AI搜索重塑商业发现的客户获取机会。",
+    "latest_news": "2026-02-25: 完成900万美元融资，早起结果吸引投资者",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
+    "company_country": "India",
+    "company_country_confidence": 0.95,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:20:44.887594Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:techcrunch.com AI startup funding",
+    "country_code": "IN",
+    "country_name": "India",
+    "country_flag": "🇮🇳",
+    "country_display": "🇮🇳 India",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "KilM",
+    "website": "https://zalo.ai",
+    "description": "Zalo AI推出的越南语大型语言模型，为本地聊天机器人提供服务，支持语音识别和NLP。",
+    "category": "writing",
+    "region": "Unknown",
+    "funding_total": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "clear_innovation"
+    ],
+    "why_matters": "首个越南语大语言模型，集成Zalo应用生态，服务数千万越南用户，推动本地化AI发展。",
+    "latest_news": "2026: Zalo AI推出越南语LLM KilM",
+    "source": "Designveloper",
+    "source_url": "https://www.designveloper.com/blog/ai-development-companies-in-vietnam/",
+    "company_country": "Vietnam",
+    "company_country_confidence": 1.0,
+    "confidence": 0.8,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:21:33.457977Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI startup Indonesia Vietnam",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown"
+  },
+  {
+    "name": "MetaOptics AI Smart Glasses",
+    "website": "https://metaoptics.com",
+    "description": "运动型AI智能眼镜，采用超透镜相机系统支持手指手势控制。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "glasses",
+    "use_case": "gesture_control",
+    "innovation_traits": [
+      "wearable",
+      "gesture",
+      "new_form_factor"
+    ],
+    "region": "Unknown",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "form_innovation"
+    ],
+    "why_matters": "CES 2026展出突破性超透镜AI眼镜，精准追踪与直觉交互。",
+    "latest_news": "2026 CES展出五款超透镜产品包括AI眼镜",
+    "source": "PRNewswire",
+    "source_url": "https://www.prnewswire.com/apac/zh/news-releases/metaoptics-2026-302635084.html",
+    "company_country": "unknown",
+    "company_country_confidence": 0.4,
+    "confidence": 0.7,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:21:44.535998Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI hardware startup Singapore",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown"
+  },
+  {
+    "name": "Stilla AI",
+    "website": "https://stilla.ai",
+    "description": "连接人类与AI的产品团队协作平台，支持工作场所工具集成。",
+    "category": "other",
+    "region": "🇸🇪",
+    "funding_total": "€4.2M pre-seed",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "2025年斯德哥尔摩创立，420万欧元Pre-seed由General Catalyst领投，用于核心基础设施建设。",
+    "latest_news": "2026-01: 420万欧元Pre-seed轮",
+    "source": "Vestbee",
+    "source_url": "https://www.vestbee.com/insights/articles/top-european-funding-rounds-closed-in-january-2026",
+    "company_country": "Sweden",
+    "company_country_confidence": 0.95,
+    "confidence": 0.9,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T09:22:30.916841Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇪🇺",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "site:sifted.eu AI funding",
+    "country_code": "SE",
+    "country_name": "Sweden",
+    "country_flag": "🇸🇪",
+    "country_display": "🇸🇪 Sweden",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Ambiq Edge AI Solutions",
+    "website": "https://www.ambiq.com",
+    "description": "超低功耗边缘AI芯片解决方案，基于专利SPOT®技术，支持可穿戴、智能基础设施和工业系统",
+    "category": "hardware",
+    "hardware_type": "traditional",
+    "form_factor": "chip",
+    "use_case": "edge_ai_enabler",
+    "innovation_traits": [
+      "always_on",
+      "proactive_ai"
+    ],
+    "region": "🇺🇸",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "use_case_clear"
+    ],
+    "why_matters": "Ambiq在新加坡扩建多年期R&D中心，获新加坡经济发展局支持，已支持2.9亿台设备，是边缘AI硬件的关键赋能技术",
+    "latest_news": "2026-02-24: 宣布在新加坡启动多年期R&D计划，推进下一代边缘AI技术",
+    "source": "Ambiq官方新闻",
+    "source_url": "https://ambiq.com/cn/news/ambiq-expands-singapore-rd-to-advance-ultra-low-power-edge-ai-innovation/",
+    "company_country": "US",
+    "company_country_confidence": 0.85,
+    "confidence": 0.82,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T19:36:02.151438Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI hardware startup Singapore",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Bee Pioneer",
+    "website": "https://bee.computer/",
+    "description": "创新AI设备，具体形态未知但列入2026最佳 gadget。",
+    "category": "hardware",
+    "hardware_type": "innovative",
+    "form_factor": "unknown",
+    "use_case": "productivity",
+    "innovation_traits": [
+      "non_traditional_form",
+      "media_coverage"
+    ],
+    "region": "Unknown",
+    "funding_total": "unknown",
+    "price": "unknown",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "form_innovation"
+    ],
+    "why_matters": "新兴AI gadget，YouTube unbox 推荐",
+    "latest_news": "2026-02-24: 最佳AI设备视频推荐",
+    "source": "Unbox Daily",
+    "source_url": "https://www.youtube.com/watch?v=WGbnIw6etyI",
+    "company_country": "unknown",
+    "company_country_confidence": 0.3,
+    "confidence": 0.6,
+    "is_hardware": true,
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T19:37:22.444344Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI wearable gadget viral",
+    "country_code": "UNKNOWN",
+    "country_name": "Unknown",
+    "country_flag": "",
+    "country_display": "Unknown",
+    "country_source": "unknown"
+  },
+  {
+    "name": "Origa",
+    "website": "https://origa.ai",
+    "description": "语音AI平台，专为房地产、教育、金融等高价值B2C领域的复杂咨询式预售和资格认证对话设计。",
+    "category": "voice",
+    "region": "🇮🇳",
+    "funding_total": "$1M，总额包括Antler Singapore领投的$450K",
+    "dark_horse_index": 3,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "过去9个月收入增长12倍，服务33+客户，处理57万分钟对话，支持10万并发通话，零流失率，由Antler Singapore领投。",
+    "latest_news": "最近: 完成$450K融资，总额达$1M，用于扩展工程团队和印度、阿联酋市场",
+    "source": "Entrackr",
+    "source_url": "https://entrackr.com/snippets/voice-ai-startup-origa-raises-450k-led-by-antler-singapore-11160381",
+    "company_country": "India",
+    "company_country_confidence": 0.8,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T19:37:31.645441Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇸🇬",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "Singapore AI startup funding 2026",
+    "country_code": "IN",
+    "country_name": "India",
+    "country_flag": "🇮🇳",
+    "country_display": "🇮🇳 India",
+    "country_source": "explicit:company_country"
+  },
+  {
+    "name": "Profitmind",
+    "website": "https://profitmind.ai",
+    "description": "为零售团队提供代理式AI平台，帮助优化运营和决策过程。",
+    "category": "agent",
+    "region": "🇺🇸",
+    "funding_total": "$9M Series A",
+    "dark_horse_index": 2,
+    "criteria_met": [
+      "funding_signal"
+    ],
+    "why_matters": "Accenture Ventures领投，Andrew Ng的AI Fund参与，总额900万美元，用于扩展零售AI代理平台。",
+    "latest_news": "2026-02-26: 完成900万美元A轮融资",
+    "source": "The Fashion Law",
+    "source_url": "https://www.thefashionlaw.com/generative-ai-investment-and-ma-tracker/",
+    "company_country": "US",
+    "company_country_confidence": 0.7,
+    "confidence": 0.85,
+    "categories": [
+      "other"
+    ],
+    "extra": {
+      "demand": {
+        "version": "v1",
+        "computed_at": "2026-02-27T19:39:37.886632Z",
+        "window_days": 7,
+        "hn": {
+          "story_count": 0,
+          "top_story_id": "",
+          "points": 0,
+          "comments": 0,
+          "engagement_depth_ratio": 0.0,
+          "is_controversial": false,
+          "top_comments_sample": [],
+          "llm_summary_used": false,
+          "llm_summary_skipped_reason": "",
+          "status": "ok",
+          "window_days": 7
+        },
+        "x": {
+          "official_handle": "",
+          "non_official_mentions_7d": 0,
+          "unique_authors_7d": 0,
+          "status_urls_sample": [],
+          "query": "",
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "official_handle_missing"
+        },
+        "github": {
+          "repo": "",
+          "stars_total": 0,
+          "stars_7d_delta": 0,
+          "stars_velocity_per_day": 0.0,
+          "is_open_source": false,
+          "status": "skipped",
+          "window_days": 7,
+          "skipped_reason": "repo_not_found"
+        },
+        "demand_score_raw": 0.0,
+        "demand_tier": "low",
+        "guardrail_applied": "none",
+        "guardrail_reason": "insufficient_demand_data"
+      }
+    },
+    "source_region": "🇺🇸",
+    "discovered_at": "2026-02-27",
+    "discovery_method": "perplexity_search",
+    "search_keyword": "AI Series A 2026",
+    "country_code": "US",
+    "country_name": "United States",
+    "country_flag": "🇺🇸",
+    "country_display": "🇺🇸 United States",
+    "country_source": "explicit:company_country"
   }
 ]

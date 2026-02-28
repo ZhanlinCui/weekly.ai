@@ -23,10 +23,10 @@ export default function HeroCanvas() {
         window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
       const isDarkMode = () => document.documentElement.getAttribute("data-theme") === "dark";
-      const lightPalette = ["#635bff", "#00d4aa", "#764ba2", "#86868b"];
-      const darkPalette = ["#7a73ff", "#00e4b8", "#a855f7", "#86868b"];
+      const lightPalette = ["#E61E4D", "#FFB400", "#222222", "#9CA3AF"];
+      const darkPalette = ["#D61F3D", "#FFB400", "#F7F7F7", "#9E9E9E"];
       const lightBg: [number, number, number] = [255, 255, 255];
-      const darkBg: [number, number, number] = [10, 10, 15];
+      const darkBg: [number, number, number] = [11, 11, 11];
 
       const getPalette = () => (isDarkMode() ? darkPalette : lightPalette);
       const getBgColor = () => (isDarkMode() ? darkBg : lightBg);

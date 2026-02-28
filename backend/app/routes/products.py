@@ -272,18 +272,3 @@ def get_industry_leaders():
             'data': None,
             'message': str(e)
         }), 500
-
-
-@products_bp.route('/reader', methods=['GET'])
-def read_article():
-    """Fetch and return cleaned article content for in-app reading."""
-    url = request.args.get('url', '').strip()
-    if not url:
-        return jsonify({'success': False, 'error': 'url parameter required'}), 400
-
-    try:
-        from app.services.reader_service import fetch_article
-        result = fetch_article(url)
-        return jsonify(result)
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
